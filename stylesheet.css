@@ -19,12 +19,16 @@ p {
 	color: #444444;
 }
 
-a {
+a:link {
 	color: #94D5CA;
 	text-decoration: none;
 }
 
 a:hover {
+	color: #2F777D;
+}
+
+a:active {
 	color: #2F777D;
 }
 
