@@ -28,12 +28,16 @@ a:hover {
 	color: #2F777D;
 }
 
-a:active {
+a:visited {
+	color: #D9592E;
+}
+
+a:visited:hover {
 	color: #2F777D;
 }
 
-a:visited {
-	color: #D9592E;
+a:active {
+	color: #2F777D;
 }
 
 #intro {
