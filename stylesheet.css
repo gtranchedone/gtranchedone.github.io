@@ -1,0 +1,45 @@
+body {
+	text-align: center;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+h1 {
+	color: #FF9C01;
+	font-size: 36px;
+	font-weight: 900;
+}
+
+h5 {
+	color: #A9A9A9;
+}
+
+p {
+	color: #444444;
+}
+
+a {
+	color: #94D5CA;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2F777D;
+}
+
+a:visited {
+	color: #D9592E;
+}
+
+#intro {
+	
+}
+
+#descrition {
+	
+}
+
+#links {
+	
+}
