@@ -9,61 +9,31 @@
 	font-style: normal;
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-	
-	body {
-/*
-		background:url('images/brickwall@2x.png');
-		background-size: 200px 138px;
-*/
-/*
-		background:url('images/cream_dust@2x.png');
-		background-size: 100px 100px;
-*/
-/*
-		background:url('images/grey@2x.png');
-		background-size: 794px 644px;
-*/
-		
-	}
-}
-
 body {
-/*
-	background:url('images/brickwall.png');
-	background-size: 100px 69px;
-*/
-/*
-	background:url('images/cream_dust.png');
-	background-size: 50px 50px;
-*/
-/*
-	background:url('images/grey.png');
-	background-size: 397px 322px;
-*/
+	background-color: #343e47;/* #3c3a48; *//* #123950; */
 	text-align: center;
 	font-family: Lato;
 	font-weight: 300;
 	font-size: 18px;
-	color: #444444;
+	color: white;
+}
+
+strong {
+	color: #94D5CA;/* #26A6D1; *//* #FF9C01; */
+	font-weight: normal;
+	text-decoration: none;
 }
 
 h1 {
+	color: white;
 	margin: 0.4em;
-	color: #444444;
 	font-size: 48px;
-	font-weight: 100;
+	font-weight: 300;
 	text-transform: capitalize;
 }
 
 h1 span {
-	color: #FF9C01;
+	color: #94D5CA;/* #F1C40F; *//* #FF9C01; */
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -74,27 +44,21 @@ h5 {
 	font-weight: 300;
 }
 
-strong {
-	color: inherit;
-	font-weight: bold;
-	text-decoration: none;
-}
-
 a:link {
-	color: #D9592E;
+	color: #FF9C01;/* #F1C40F; */
 	text-decoration: none;
 }
 
 a:hover {
-	color: #94D5CA;
+	color: #D9592E;
 }
 
 a:visited {
-	color: #2F777D;
+	color: #FF9C01;
 }
 
 a:visited:hover {
-	color: #94D5CA;
+	color: #D9592E;
 }
 
 a:active {
@@ -127,11 +91,10 @@ a:active {
 
 .socialButton:hover {
 	background-color: red;
-	/*
-	border-radius: 30px;
-	height: 60px;
-	width: 60px;
-	*/
+	/* Animation */
+	-webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
 }
 
 #intro {
@@ -139,8 +102,8 @@ a:active {
 }
 
 #descrition {
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 #links {
