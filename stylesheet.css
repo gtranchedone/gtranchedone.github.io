@@ -18,22 +18,40 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
 	
 	body {
-		/*
+/*
 		background:url('images/brickwall@2x.png');
 		background-size: 200px 138px;
-		background:url('images/cream_pixels@2x.png');
-		background-size: 320px 320px;
-		*/
+*/
+/*
+		background:url('images/cream_dust@2x.png');
+		background-size: 100px 100px;
+*/
+/*
+		background:url('images/subtle_white_feathers@2x.png');
+		background-size: 1000px 666px;
+*/
+/*
+		background:url('images/grey@2x.png');
+		background-size: 794px 644px;
+*/
+		
 	}
 }
 
 body {
-	/*
+/*
 	background:url('images/brickwall.png');
 	background-size: 100px 69px;
-	background:url('images/cream_pixels.png');
-	background-size: 160px 160px;
-	*/
+*/
+/*
+	background:url('images/cream_dust.png');
+	background-size: 50px 50px;
+*/
+/*
+	background:url('images/grey.png');
+	background-size: 397px 322px;
+*/
+	
 	text-align: center;
 	font-family: Lato;
 	font-weight: 400;
@@ -57,24 +75,29 @@ p {
 }
 
 a:link {
-	color: #94D5CA;
+	color: #D9592E;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #2F777D;
+	color: #94D5CA;
 }
 
 a:visited {
-	color: #D9592E;
+	color: #2F777D;
 }
 
 a:visited:hover {
-	color: #2F777D;
+	color: #94D5CA;
 }
 
 a:active {
-	color: #2F777D;
+	color: #D9592E;
+}
+
+.mainContainer {
+	margin: 0px auto;
+	max-width: 800px;
 }
 
 .socialButton {
