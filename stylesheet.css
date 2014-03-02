@@ -1,3 +1,16 @@
+/*
+@font-face {
+	font-family: 'Grands';
+	src:url('fonts/Grands.eot');
+	src:url('fonts/Grands.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Grands.svg#Grands') format('svg'),
+		url('fonts/Grands.woff') format('woff'),
+		url('fonts/Grands.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+
 body {
 	text-align: center;
 	font-family: Lato;
@@ -9,10 +22,12 @@ h1 {
 	color: #FF9C01;
 	font-size: 36px;
 	font-weight: 900;
+	text-transform: uppercase;
 }
 
 h5 {
 	color: #A9A9A9;
+	font-weight: 400;
 }
 
 p {
@@ -40,14 +55,79 @@ a:active {
 	color: #2F777D;
 }
 
+.socialButton {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	display: inline-block;
+	background-color: lime;
+	/* Animation */
+	-webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    /* Icons Font */
+    font-family: 'Grands';
+}
+
+.socialButton:hover {
+	background-color: red;
+	/*
+	border-radius: 30px;
+	height: 60px;
+	width: 60px;
+	*/
+}
+
+.socialButtonIcon {
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+}
+
 #intro {
-	
+	margin-top: 40px;
 }
 
 #descrition {
-	
+	margin-top: 40px;
 }
 
 #links {
-	
+	margin-top: 40px;
+}
+
+#profilePicture {
+	border-radius: 100px;
+}
+
+#socialButtonTwitter {
+	background-color: #26A6D1;
+}
+
+#socialButtonGitHub {
+	background-color: #3F729B;
+}
+
+#socialButtonStackOverflow {
+	background-color: #F1C40F;
+}
+
+#socialButtonEmail {
+	background-color: #F29C36;
+}
+
+#socialButtonTwitter:hover {
+	background-color: #D9592E;
+}
+
+#socialButtonGitHub:hover {
+	background-color: #F08557;
+}
+
+#socialButtonStackOverflow:hover {
+	background-color: #6414A2;
+}
+
+#socialButtonEmail:hover {
+	background-color: #26AB64;
 }
