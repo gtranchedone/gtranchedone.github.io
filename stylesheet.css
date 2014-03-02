@@ -9,7 +9,31 @@
 	font-style: normal;
 }
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+	
+	body {
+		/*
+		background:url('images/brickwall@2x.png');
+		background-size: 200px 138px;
+		background:url('images/cream_pixels@2x.png');
+		background-size: 320px 320px;
+		*/
+	}
+}
+
 body {
+	/*
+	background:url('images/brickwall.png');
+	background-size: 100px 69px;
+	background:url('images/cream_pixels.png');
+	background-size: 160px 160px;
+	*/
 	text-align: center;
 	font-family: Lato;
 	font-weight: 400;
@@ -20,7 +44,7 @@ h1 {
 	color: #FF9C01;
 	font-size: 36px;
 	font-weight: 900;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 h5 {
@@ -54,6 +78,7 @@ a:active {
 }
 
 .socialButton {
+	margin: 4px;
 	width: 50px;
 	height: 50px;
 	line-height: 50px;
@@ -86,14 +111,15 @@ a:active {
 
 #descrition {
 	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 #links {
-	margin-top: 40px;
+	margin-top: 25px;
 }
 
 #profilePicture {
-	border-radius: 100px;
+	border-radius: 80px;
 }
 
 #socialButtonTwitter {
