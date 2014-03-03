@@ -9,69 +9,45 @@
 	font-style: normal;
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
+@media screen and (max-width: 1024px) {
+	#softwareCraftsmanshipLink {
+		display: none;
+	}
 	
-	body {
-/*
-		background:url('images/brickwall@2x.png');
-		background-size: 200px 138px;
-*/
-/*
-		background:url('images/cream_dust@2x.png');
-		background-size: 100px 100px;
-*/
-/*
-		background:url('images/grey@2x.png');
-		background-size: 794px 644px;
-*/
-		
+	#wifeLink {
+		display: none;
 	}
 }
 
 body {
-/*
-	background:url('images/brickwall.png');
-	background-size: 100px 69px;
-*/
-/*
-	background:url('images/cream_dust.png');
-	background-size: 50px 50px;
-*/
-/*
-	background:url('images/grey.png');
-	background-size: 397px 322px;
-*/
 	text-align: center;
 	font-family: Lato;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 18px;
-	color: #444444;
+	color: #908F8F;
 }
 
 h1 {
 	margin: 0.4em;
 	color: #444444;
-	font-size: 48px;
+	font-size: 32px;
 	font-weight: 100;
+	line-height: 50px;
 	text-transform: capitalize;
 }
 
 h1 span {
 	color: #FF9C01;
-	font-weight: 700;
+	font-size: 36px;
+	font-weight: 400;
+	font-family: 'Sorts Mill Goudy';
 	text-transform: uppercase;
 }
 
 h5 {
 	margin: 0.4em;
 	color: #A9A9A9;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 strong {
@@ -81,7 +57,7 @@ strong {
 }
 
 a:link {
-	color: #D9592E;
+	color: #2F777D;
 	text-decoration: none;
 }
 
@@ -98,13 +74,15 @@ a:visited:hover {
 }
 
 a:active {
-	color: #D9592E;
+	color: #2F777D;
 }
 
+/*
 .mainContainer {
 	margin: 0px auto;
-	max-width: 900px;
+	max-width: 560px;
 }
+*/
 
 .socialButton {
 	margin: 4px;
@@ -127,18 +105,19 @@ a:active {
 
 .socialButton:hover {
 	background-color: red;
-	/*
-	border-radius: 30px;
-	height: 60px;
-	width: 60px;
-	*/
+	/* Animation */
+	-webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
 }
 
 #intro {
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
-#descrition {
+#description {
+	margin: auto;
+	width: 680px;
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
@@ -147,8 +126,12 @@ a:active {
 	margin: 25px;
 }
 
+#footer {
+	margin-bottom: 20px;
+}
+
 #profilePicture {
-	border-radius: 100px;
+	border-radius: 120px;
 }
 
 #socialButtonTwitter {
@@ -189,4 +172,25 @@ a:active {
 
 #socialButtonStackOverflow:hover {
 	background-color: #26AB64;
+}
+
+/*** Floating Text ***/
+
+.floatingText {
+	position: absolute;
+	font-weight: 300;
+	font-size: 14px;
+	z-index: 10;
+	width: 90%;
+}
+
+#wifeLink {
+	text-align: right;
+	top: 330px;
+	width: 34%;
+}
+
+#softwareCraftsmanshipLink {
+	text-align: right;
+	top: 150px;
 }
