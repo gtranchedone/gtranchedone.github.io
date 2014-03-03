@@ -181,6 +181,7 @@ a:active {
 
 #floatingElements {
 	padding-top: 10px;
+	position: relative;
 }
 
 .floatingText {
