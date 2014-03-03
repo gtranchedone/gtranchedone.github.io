@@ -185,9 +185,9 @@ a:active {
 }
 
 .floatingText {
-	width: calc(50% - 120px - 10px);
+	width: calc(50% - 120px - 10px) !important;
+	position: absolute !important;
 	display: inline-block;
-	position: absolute;
 	font-weight: 300;
 	font-size: 14px;
 	z-index: 1;
