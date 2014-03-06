@@ -19,7 +19,7 @@
 	}
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
 	h1 {
 		font-size: 24px;
 	}
