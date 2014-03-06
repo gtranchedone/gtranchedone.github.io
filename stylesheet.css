@@ -9,14 +9,15 @@
 	font-style: normal;
 }
 
-@media screen and (device-aspect-ratio: 40/71) {}
+@media screen and (device-aspect-ratio: 40/71) {
 	h1 {
-		font-size: 24px;
+		font-size: 22px;
 	}
 	
-	#profilePicture {
-		height: 200px;
-		width: 200px;
+	.roundedImage {
+		border-radius: 80px;
+		height: 160px;
+		width: 160px;
 	}
 	
 	.socialButton {
@@ -24,6 +25,14 @@
 		height: 40px;
 		line-height: 40px;
 		border-radius: 20px;
+	}
+	
+	#softwareCraftsmanshipLink {
+		display: none;
+	}
+	
+	#wifeLink {
+		display: none;
 	}
 }
 
@@ -91,11 +100,6 @@ a:visited {
 
 a:visited:hover {
 	color: #94D5CA;
-}
-
-.roundedImage {
-	width: 240px;
-	border-radius: 120px;
 }
 
 .socialButton {
@@ -190,6 +194,10 @@ a:visited:hover {
 #profilePicture {
 	display: inline-block;
 	position: relative;
+}
+
+.roundedImage {
+	border-radius: 120px;
 	height: 240px;
 	width: 240px;
 	z-index: 0;
