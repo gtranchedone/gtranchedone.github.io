@@ -20,7 +20,7 @@
 }
 
 body {
-	background-color: #F9F9F9;
+	background-color: #FBFBFB;
 	text-align: center;
 	font-family: Lato;
 	font-weight: 400;
@@ -170,6 +170,7 @@ a:active {
 
 #intro {
 	margin-top: 20px;
+	position: relative;
 }
 
 #profilePicture {
