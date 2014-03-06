@@ -185,6 +185,7 @@ a:active {
 }
 
 .floatingText {
+	width: 40%; /* Fallback for browsers that don't support calc  */
 	width: calc(50% - 120px - 10px) !important;
 	position: absolute !important;
 	display: inline-block;
