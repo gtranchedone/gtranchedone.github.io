@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-@media screen and (device-aspect-ratio: 40/71) {
+@media screen and (device-aspect-ratio: 40/71) and (-webkit-min-device-pixel-ratio: 2) {
 	h1 {
 		font-size: 22px;
 	}
