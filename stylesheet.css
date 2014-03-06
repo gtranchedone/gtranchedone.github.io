@@ -20,17 +20,16 @@
 }
 
 body {
-	background-color: #FBFBFB;
+	background-color: #FDFDFD;
 	text-align: center;
 	font-family: Lato;
 	font-weight: 400;
 	font-size: 18px;
-	color: #908F8F;
+	color: #888888;
 }
 
 h1 {
 	margin: 0.4em;
-	color: #908F8F;
 	font-size: 32px;
 	font-weight: 300;
 	line-height: 50px;
@@ -59,7 +58,7 @@ strong {
 }
 
 a:link {
-	color: #2F777D;
+	color: #48ACB5;
 	text-decoration: none;
 }
 
@@ -68,15 +67,12 @@ a:hover {
 }
 
 a:visited {
-	color: #2F777D;
+	color: #48ACB5;
+	text-decoration: none;
 }
 
 a:visited:hover {
 	color: #94D5CA;
-}
-
-a:active {
-	color: #2F777D;
 }
 
 .roundedImage {
