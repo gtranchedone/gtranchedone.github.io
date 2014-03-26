@@ -1,6 +1,7 @@
 name: Gianluca Tranchedone
 markdown: redcarpet
 pygments: true
-baseurl: /
 encoding: utf-8
 timezone: Europe/London
+baseurl: /
+url: http://gtranchedone.com
