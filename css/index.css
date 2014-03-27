@@ -1,0 +1,228 @@
+/*****************************************************************************/
+/*
+/* Home Screen General
+/*
+/*****************************************************************************/
+
+@font-face {
+	font-family: 'Grands';
+	src:url('../fonts/Grands.eot');
+	src:url('../fonts/Grands.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Grands.svg#Grands') format('svg'),
+		url('../fonts/Grands.woff') format('woff'),
+		url('../fonts/Grands.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.mainContainer h1 {
+	margin: 0.4em;
+	color: #888888;
+	font-size: 32px;
+	font-weight: 300;
+	line-height: 50px;
+	text-transform: capitalize;
+}
+
+.mainContainer h1 span {
+	color: #FF9C01;
+	font-size: 36px;
+	font-weight: 400;
+	font-family: 'Sorts Mill Goudy';
+	text-transform: uppercase;
+}
+
+/*****************************************************************************/
+/*
+/* Intro Area
+/*
+/*****************************************************************************/
+
+#intro {
+	margin-top: 20px;
+	position: relative;
+}
+
+#profilePicture {
+	display: inline-block;
+	position: relative;
+}
+
+.roundedImage {
+	border-radius: 120px;
+	height: 240px;
+	width: 240px;
+	z-index: 0;
+}
+
+#floatingElements {
+	padding-top: 10px;
+	position: relative;
+}
+
+.floatingText {
+	position: absolute;
+	display: inline-block;
+	width: 40%; /* Fallback for browsers that don't support calc  */
+	width: calc(50% - 120px - 10px) !important;
+	font-weight: 300;
+	font-size: 14px;
+	z-index: 1;
+}
+
+#wifeLink {
+	left: 0;
+	margin-top: 210px;
+	text-align: right;
+}
+
+#softwareCraftsmanshipLink {
+	margin-top: -20px;
+	text-align: left;
+	right: 0;
+}
+
+/*****************************************************************************/
+/*
+/* Main Content Area
+/*
+/*****************************************************************************/
+
+#description {
+	margin: auto;
+	max-width: 720px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+/*****************************************************************************/
+/*
+/* Links Area
+/*
+/*****************************************************************************/
+
+.socialButton {
+	margin: 4px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: lime;
+	/* Animation */
+	-webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    /* Icons Font */
+    font-family: 'Grands';
+    font-size: 36px;
+    color: white;
+}
+
+.socialButton:hover {
+	background-color: red;
+	/* Animation */
+	-webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+}
+
+#links {
+	margin: 20px;
+}
+
+#socialButtonTwitter {
+	background-color: #26A6D1;
+}
+
+#socialButtonTwitter:hover {
+	background-color: #D9592E;
+}
+
+#socialButtonLinkedIn {
+	background-color: #3F729B;
+}
+
+#socialButtonLinkedIn:hover {
+	background-color: #F08557;
+}
+
+#socialButtonGitHub {
+	background-color: #DD4B39;
+}
+
+#socialButtonGitHub:hover {
+	background-color: #22B4C6;
+}
+
+#socialButtonEmail {
+	background-color: #F1C40F;
+}
+
+#socialButtonEmail:hover {
+	background-color: #6414A2;
+}
+
+#socialButtonStackOverflow {
+	background-color: #F29C36;
+}
+
+#socialButtonStackOverflow:hover {
+	background-color: #26AB64;
+}
+
+/*****************************************************************************/
+/*
+/* Responsive Design Code
+/*
+/*****************************************************************************/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+	h1 {
+		font-size: 24px;
+		line-height: normal;
+	}
+
+	h1 span {
+		font-size: 26px;
+	}
+
+	.roundedImage {
+		border-radius: 80px;
+		height: 160px;
+		width: 160px;
+	}
+
+	.socialButton {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		font-size: 32px;
+	}
+
+	.socialButton:hover {
+		-webkit-transform: scale(1, 1);
+		-moz-transform: scale(1, 1);
+		-o-transform: scale(1, 1);
+}
+
+	#softwareCraftsmanshipLink {
+		display: none;
+	}
+
+	#wifeLink {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#softwareCraftsmanshipLink {
+		display: none;
+	}
+
+	#wifeLink {
+		display: none;
+	}
+}
