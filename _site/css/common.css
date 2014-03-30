@@ -1,3 +1,20 @@
+/*****************************************************************************/
+/*
+/* General
+/*
+/*****************************************************************************/
+
+@font-face {
+	font-family: 'Grands';
+	src:url('../fonts/Grands.eot');
+	src:url('../fonts/Grands.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Grands.svg#Grands') format('svg'),
+		url('../fonts/Grands.woff') format('woff'),
+		url('../fonts/Grands.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
 	background-color: #FDFDFD;
 	text-align: center;
@@ -5,6 +22,7 @@ body {
 	font-weight: 400;
 	font-size: 18px;
 	color: #888888;
+	margin: 0px;
 }
 
 h1 {
@@ -17,7 +35,8 @@ h1 {
 }
 
 h5 {
-	margin: 0.4em;
+	margin: 0px;
+	padding: 1.5em;
 	color: #A9A9A9;
 	font-weight: 400;
 }
@@ -46,6 +65,111 @@ a:visited:hover {
 	color: #94D5CA;
 }
 
+/*****************************************************************************/
+/*
+/* Header
+/*
+/*****************************************************************************/
+
+#header {
+	clear: both;
+	height: 80px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.header_item {
+	margin: 10px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.menu_item {
+	margin: 14px;
+	color: #888888;
+	font-size: 22px;
+	display: inline-block;
+}
+
+.menu_item a {
+	color: #888888;
+}
+
+.menu_item a:hover {
+	color: #94D5CA;
+}
+
+.socialButton {
+	margin: 4px;
+	width: 50px;
+	height: 50px;
+	color: inherit;
+	font-size: 36px;
+	line-height: 50px;
+	border-radius: 25px;
+	font-family: 'Grands';
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#header_social_links a {
+	color: #888888;
+}
+
+#header_social_links a:hover {
+	color: #94D5CA;
+}
+
+#site_logo {
+	border-radius: 30px;
+}
+
+#site_title {
+	color: #888888;
+	font-size: 30px;
+	line-height: normal;
+}
+
+#logo_container {
+	float: left;
+}
+
+#logo_container a div {
+	display: inline-block;
+	margin-right: 10px;
+	height: 60px;
+	float: left;
+}
+
+#menu_items_container {
+	float: right;
+}
+
+#social_menu_items_container {
+	float: right;
+	height: 60px;
+}
+
+/*****************************************************************************/
+/*
+/* Footer
+/*
+/*****************************************************************************/
+
 #footer {
-	margin-bottom: 20px;
+	clear: both;
+}
+
+/*****************************************************************************/
+/*
+/* Content
+/*
+/*****************************************************************************/
+
+#page_container {
+	margin: auto;
+	max-width: 720px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }

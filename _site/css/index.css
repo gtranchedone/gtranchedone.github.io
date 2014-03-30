@@ -4,17 +4,6 @@
 /*
 /*****************************************************************************/
 
-@font-face {
-	font-family: 'Grands';
-	src:url('../fonts/Grands.eot');
-	src:url('../fonts/Grands.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Grands.svg#Grands') format('svg'),
-		url('../fonts/Grands.woff') format('woff'),
-		url('../fonts/Grands.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
 .mainContainer h1 {
 	margin: 0.4em;
 	color: #888888;
@@ -101,6 +90,14 @@
 /*
 /*****************************************************************************/
 
+#links {
+	margin-top: 20px;
+	/* Animation */
+	-webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
 .socialButton {
 	margin: 4px;
 	width: 50px;
@@ -126,10 +123,6 @@
 	-webkit-transform: scale(1.2, 1.2);
     -moz-transform: scale(1.2, 1.2);
     -o-transform: scale(1.2, 1.2);
-}
-
-#links {
-	margin: 20px;
 }
 
 #socialButtonTwitter {
