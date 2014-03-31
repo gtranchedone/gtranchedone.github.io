@@ -1,50 +1,104 @@
 /*****************************************************************************/
 /*
-/* General
+/* Fonts
 /*
 /*****************************************************************************/
 
 @font-face {
 	font-family: 'Grands';
-	src:url('../fonts/Grands.eot');
-	src:url('../fonts/Grands.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Grands.svg#Grands') format('svg'),
-		url('../fonts/Grands.woff') format('woff'),
-		url('../fonts/Grands.ttf') format('truetype');
+	src:url('/fonts/Grands.eot');
+	src:url('/fonts/Grands.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Grands.svg#Grands') format('svg'),
+		url('/fonts/Grands.woff') format('woff'),
+		url('/fonts/Grands.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
+@font-face {
+    font-family: 'Sorts Mill Goudy';
+    src: url('/fonts/SortsMillGoudy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sorts Mill Goudy';
+    src: url('/fonts/SortsMillGoudy-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Hairline.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Hairline.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Black.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-BlackItalic.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/*****************************************************************************/
+/*
+/* Texts and General Background
+/*
+/*****************************************************************************/
+
 body {
 	background-color: #FDFDFD;
+	font-family: 'Lato';
+	font-weight: normal;
 	text-align: center;
-	font-family: Lato;
-	font-weight: 400;
 	font-size: 18px;
 	color: #888888;
 	margin: 0px;
-}
-
-h1 {
-	margin: 0.4em;
-	color: #FF9C01;
-	font-size: 36px;
-	font-weight: 700;
-	line-height: 50px;
-	text-transform: capitalize;
-}
-
-h5 {
-	margin: 0px;
-	padding: 1.5em;
-	color: #A9A9A9;
-	font-weight: 400;
-}
-
-strong {
-	color: inherit;
-	font-weight: bold;
-	text-decoration: none;
 }
 
 a:link {
@@ -63,6 +117,64 @@ a:visited {
 
 a:visited:hover {
 	color: #94D5CA;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px 10px;
+	color: #FF9C01;
+	font-size: 36px;
+	line-height: 50px;
+	font-weight: normal;
+	text-shadow: 0px 1px white;
+	text-transform: capitalize;
+	font-family: 'Sorts Mill Goudy';
+}
+
+h1 a {
+	color: #FF9C01;
+}
+
+h1 a:visited {
+	color: #FF9C01;
+}
+
+h2 {
+	margin: 10px;
+	padding: 10px 0px;
+	font-size: 32px;
+	text-shadow: 0px 1px white;
+}
+
+h3 {
+	margin: 10px;
+	text-shadow: 0px 1px white;
+}
+
+h4 {
+	margin: 10px;
+	color: #A9A9A9;
+	font-weight: normal;
+	text-shadow: 0px 1px white;
+}
+
+h5 {
+	margin: 0px;
+	padding: 1.5em;
+	color: #A9A9A9;
+	font-weight: normal;
+	text-shadow: 0px 1px white;
+}
+
+p {
+	margin: 10px;
+	text-shadow: 0px 1px white;
+}
+
+strong {
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 /*****************************************************************************/
@@ -126,13 +238,25 @@ a:visited:hover {
 }
 
 #site_title {
-	color: #888888;
-	font-size: 30px;
+	vertical-align: middle; 
+	display: inline-block;
 	line-height: normal;
+	text-align: center;
+	line-height: 60px;
+	font-size: 30px;
+	color: #888888;
+	margin: 0px;
 }
 
 #logo_container {
 	float: left;
+}
+
+.header_logo_item {
+	vertical-align: middle; 
+	display: inline-block;
+	line-height: normal;
+	text-align: center;
 }
 
 #logo_container a div {
@@ -170,5 +294,5 @@ a:visited:hover {
 #page_container {
 	margin: auto;
 	margin-top: 25px;
-	max-width: 1000px;
+	max-width: 800px;
 }

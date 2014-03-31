@@ -6,14 +6,11 @@
         <title>Welcome to Jekyll!</title>
         <!--<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" title="favicon">-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- External Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
         <!-- Syntax Highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
         <!-- Custom CSS -->
         <link href="/css/common.css" type="text/css" rel="stylesheet"/>
-        <link href= type="text/css" rel="stylesheet"/>
+        <link href=/css/blog.css type="text/css" rel="stylesheet"/>
         <!-- RSS Feed -->
         <link href="/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Atom RSS Feed">
     </head>
@@ -22,8 +19,8 @@
     	<div id="header">
     		<div class="header_item" id="logo_container">
     			<a href="/">
-    				<div><img id="site_logo" src="http://www.gravatar.com/avatar/2b98c09b232d45d7b03fd6804ed23e40?s=60"/></div>
-    				<div><h1 id="site_title">Gianluca Tranchedone</h1></div>
+    				<div class="header_logo_item"><img id="site_logo" src="http://www.gravatar.com/avatar/2b98c09b232d45d7b03fd6804ed23e40?s=60"/></div>
+    				<div class="header_logo_item"><h2 id="site_title">Gianluca Tranchedone</h2></div>
     			</a>
     		</div>
     		<div class="header_item" id="social_menu_items_container">
@@ -41,15 +38,18 @@
     		</div>
     		<div class="header_item" id="menu_items_container">
     			<div class="menu_item"><a href="/">Home</a></div>
-    			<div class="menu_item"><a href="/blog.html">Blog</a></div>
+    			<div class="menu_item"><a href="/blog">Blog</a></div>
     		</div>
     	</div>
     	
     	<div id="page_container">
     		<div id="blog">
 	<div class="post_header">
+	
+	<img class="post_featured_image" src="http://cocoabeans.me/wp-content/uploads/2013/07/AppStoreBanner.png" alt="Welcome to Jekyll!" />
+	
 	<h1>Welcome to Jekyll!</h1>
-	<p class="meta">25 Mar 2014</p>
+	<h4 class="meta"><em>Written by <a href="/">Gianluca Tranchedone</a> on 25 Mar 2014</em></h4>
 </div>
 <div class="post">
 	<p>You&#39;ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
@@ -64,10 +64,22 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
 <span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span>
 </code></pre></div>
 
+<h2>Header 2</h2>
+
 <p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/mojombo/jekyll">Jekyll&#39;s GitHub repo</a>.</p>
 
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+</ul>
+
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+</ol>
+
 </div>
-<div class="postFooter">
+<div class="post_footer">
 </div>
 </div>
 
@@ -75,11 +87,13 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
     	<div id="footer">
     		
     		<div id="copyright">
-				<h5>&copy 2013-<script language="JavaScript" type="text/javascript">
+				<h5>&copy 2013-
+					<script language="JavaScript" type="text/javascript">
 						now = new Date
 						theYear = now.getYear()
 						if (theYear < 1900) theYear += 1900
-						document.write(theYear)</script> Gianluca Tranchedone. All rights reserved.
+						document.write(theYear)
+					</script> Gianluca Tranchedone. All rights reserved.
 				</h5>
     		</div>
 		</div>

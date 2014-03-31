@@ -1,81 +1,63 @@
 /*****************************************************************************/
 /*
-/* Posts
+/* Post's Content
 /*
 /*****************************************************************************/
 
-.post {
-	padding: 10px;
-	border: 1px dashed;
-	text-align: justify;
-}
-
-.post p {
-	margin: 10px;
-}
-
-.post h1 {
-	margin: 10px;
-	margin-top: 0px;
+.meta {
 	text-align: center;
+}
+
+.post {
+	padding: 10px 10px 0px 10px;
+	line-height: 1.3em;
+	text-align: justify;
+	color: #666666;	
 }
 
 .post_excerpt {
-	padding: 10px;
-	border: 1px dashed;
+	padding: 0px 10px;
 	text-align: justify;
 }
 
-.post_excerpt p {
-	margin: 10px;
+.post_header {
+	padding: 0px 10px;
 }
 
-.post_excerpt h1 {
-	margin: 10px;
+.post_footer {
+	padding: 0px 10px;
+}
+
+.post_featured_image {
+	width: auto;
+	height: auto;
+	max-width: 600px;
+	max-height: 300px;
+	display: block;
+	margin: 0px auto 20px auto;
+}
+
+/*****************************************************************************/
+/*
+/* Text and Code
+/*
+/*****************************************************************************/
+
+h1 {
 	margin-top: 0px;
+	font-size: 54px;
 	text-align: center;
 }
 
-/* standard */
-/*
+.highlight {
+	margin: 10px;
+}
+
 .post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+	margin: 0px;
+	padding: 10px;
 }
-*/
 
-/*
 .post ul, .post ol {
-  margin-left: 1.35em;
+	margin-left: 1.35em;
 }
-*/
-
-/*
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-*/
-
-/*
-.post pre code {
-  border: none;
-}
-*/
-
-/* terminal */
-/*
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-*/
-
-/*
-.post pre.terminal code {
-  background-color: #333;
-}
-*/

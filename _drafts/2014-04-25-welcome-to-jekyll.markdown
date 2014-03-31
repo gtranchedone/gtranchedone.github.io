@@ -3,6 +3,9 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2014-03-25 14:32:41
 categories: jekyll update
+featured_image: http://cocoabeans.me/wp-content/uploads/2013/07/AppStoreBanner.png
+author: Gianluca Tranchedone
+author_url: /
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
@@ -18,7 +21,15 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
+## Header 2
+
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+
+* Item 1
+* Item 2
+
+1. Item 1
+2. Item 2
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll]:    http://jekyllrb.com

@@ -3,11 +3,14 @@ layout: blog
 ---
 
 <div class="post_header">
+	{% if page.featured_image %}
+	<img class="post_featured_image" src="{{page.featured_image}}" alt="{{ page.title }}" />
+	{% endif %}
 	<h1>{{ page.title }}</h1>
-	<p class="meta">{{ page.date | date_to_string }}</p>
+	<h4 class="meta"><em>Written by <a href="{{ page.author_url }}">{{ page.author }}</a> on {{ page.date | date_to_string }}</em></h4>
 </div>
 <div class="post">
 	{{ content }}
 </div>
-<div class="postFooter">
+<div class="post_footer">
 </div>

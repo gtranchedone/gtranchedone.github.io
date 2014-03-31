@@ -4,25 +4,22 @@
 /*
 /*****************************************************************************/
 
-#page_container {
-	max-width: 720px;
-}
-
 .mainContainer h1 {
 	margin: 0.4em;
 	color: #888888;
 	font-size: 32px;
-	font-weight: 300;
 	line-height: 50px;
+	font-family: 'Lato';
+	font-weight: lighter;
 	text-transform: capitalize;
 }
 
 .mainContainer h1 span {
 	color: #FF9C01;
 	font-size: 36px;
-	font-weight: 400;
-	font-family: 'Sorts Mill Goudy';
+	font-weight: normal;
 	text-transform: uppercase;
+	font-family: 'Sorts Mill Goudy';
 }
 
 /*****************************************************************************/
