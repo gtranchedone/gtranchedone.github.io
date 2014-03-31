@@ -1,7 +1,8 @@
 name: Gianluca Tranchedone
+url: http://gtranchedone.com
+description: "Gianluca's Personal Website"
 markdown: redcarpet
 pygments: true
 encoding: utf-8
 timezone: Europe/London
 baseurl: /
-url: http://gtranchedone.com
