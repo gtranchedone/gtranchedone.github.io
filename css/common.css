@@ -169,7 +169,6 @@ a:visited:hover {
 
 #page_container {
 	margin: auto;
-	max-width: 720px;
 	margin-top: 25px;
-	margin-bottom: 25px;
+	max-width: 720px;
 }
