@@ -5,12 +5,13 @@
 /*****************************************************************************/
 
 .mainContainer h1 {
+	padding: 0px;
 	margin: 0.4em;
 	color: #888888;
 	font-size: 32px;
 	line-height: 50px;
-	font-family: 'Lato';
-	font-weight: lighter;
+	font-weight: normal;
+	font-family: 'Lato Lite';
 	text-transform: capitalize;
 }
 
@@ -36,6 +37,8 @@
 #profilePicture {
 	display: inline-block;
 	position: relative;
+	height: 240px;
+	width: 240px;
 }
 
 .roundedImage {
@@ -46,30 +49,33 @@
 }
 
 #floatingElements {
-	padding-top: 10px;
 	position: relative;
 }
 
 .floatingText {
 	position: absolute;
 	display: inline-block;
-	width: 40%; /* Fallback for browsers that don't support calc  */
-	width: calc(50% - 120px - 10px) !important;
-	font-weight: 300;
+	width: 33%; /* Fallback for browsers that don't support calc  */
+	width: calc(50% - 120px - 10px);
+	font-family: 'Lato Lite';
 	font-size: 14px;
 	z-index: 1;
 }
 
+.floatingText p {
+	margin: 0px;
+}
+
 #wifeLink {
 	left: 0;
-	margin-top: 210px;
 	text-align: right;
+	margin-top: 210px;
+	margin-right: 10px;
 }
 
 #softwareCraftsmanshipLink {
-	margin-top: -20px;
+	margin: -15px 10px 0px 10px;
 	text-align: left;
-	right: 0;
 }
 
 /*****************************************************************************/
@@ -108,6 +114,7 @@
 	display: inline-block;
 	vertical-align: middle;
 	background-color: lime;
+	text-shadow: none;
 	/* Animation */
 	-webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
