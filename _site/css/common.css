@@ -140,6 +140,7 @@ h1 a:visited {
 h2 {
 	margin: 20px 0px;
 	padding: 10px 10px;
+	color: #4E5860;
 	font-size: 32px;
 	font-weight: normal;
 	font-family: 'Lato Bold';
@@ -148,6 +149,7 @@ h2 {
 h3 {
 	padding: 10px;
 	margin: 20px 0px;
+	color: #4E5860;
 	font-size: 24px;
 	font-weight: normal;
 	font-family: 'Lato Bold';
@@ -184,10 +186,6 @@ p {
 
 .header_item {
 	margin: 10px;
-	text-align: center;
-	display: table-cell;
-	vertical-align: middle;
-	text-shadow: 0px 1px white;
 }
 
 .menu_item {
@@ -231,15 +229,12 @@ p {
 }
 
 #site_title {
+	margin: -4px 0px 0px 0px;
 	font-family: 'Lato Lite';
-	vertical-align: middle; 
-	display: inline-block;
-	text-align: center;
 	line-height: 60px;
-	font-size: 30px;
+	font-size: 28px;
 	color: #888888;
 	padding: 0px;
-	margin: 0px;
 }
 
 #logo_container {
@@ -257,6 +252,7 @@ p {
 }
 
 #menu_items_container {
+	margin: 10px 0px;
 	float: right;
 }
 
@@ -293,4 +289,26 @@ p {
 	margin: auto;
 	margin-top: 25px;
 	max-width: 800px;
+}
+
+/*****************************************************************************/
+/*
+/* Responsive Design Code
+/*
+/*****************************************************************************/
+
+@media screen and (max-width: 499px) {
+	#site_title {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 999px) {
+	#menu_items_container {
+		display: none;
+	}
+	
+	#social_menu_items_container {
+		display: none;
+	}
 }
