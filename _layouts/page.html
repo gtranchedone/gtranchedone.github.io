@@ -12,7 +12,6 @@
         <link href={{ page.style }} type="text/css" rel="stylesheet"/>
         <!-- RSS Feed -->
         <link href="/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Atom RSS Feed">
-        {% include google_analytics.html %}
     </head>
     <body>
     	{% if  page.show_header %}
@@ -51,5 +50,6 @@
 				</h5>
     		</div>
 		</div>
+		{% include google_analytics.html %}
     </body>
 </html>
