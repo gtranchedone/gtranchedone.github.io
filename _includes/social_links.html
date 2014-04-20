@@ -1,22 +1,36 @@
 <!-- Social Links -->
-<a href="http://twitter.com/gtranchedone">
-	<div class="socialButton" id="socialButtonTwitter">&#xe005;</div>
-</a>
-<a href="http://linkedin.com/in/gtranchedone">
-	<div class="socialButton" id="socialButtonLinkedIn">&#xe015;</div>
-</a>
-<a href="http://github.com/gtranchedone">
-<div class="socialButton" id="socialButtonGitHub">&#xe01d;</div>
-</a>
-<a href="http://stackoverflow.com/users/737105/gianluca-tranchedone">
-	<div class="socialButton" id="socialButtonStackOverflow">&#xe008;</div>
-</a>
-<a href="mailto:g.tranchedone@gmail.com">
-	<div class="socialButton" id="socialButtonEmail">&#xe023;</div>
-</a>
-{% if page.show_rssfeed %}
-<a href="/blog/feed.xml">
-	<div class="socialButton" id="socialButtonRSS">&#xe00c;</div>
-</a>
-{% endif %}
+<ul class="social_links_list" id="social">
+	<li>
+		<a href="http://twitter.com/gtranchedone">
+			<div class="socialButton" id="socialButtonTwitter">&#xe005;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://linkedin.com/in/gtranchedone">
+			<div class="socialButton" id="socialButtonLinkedIn">&#xe015;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://github.com/gtranchedone">
+			<div class="socialButton" id="socialButtonGitHub">&#xe01d;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://stackoverflow.com/users/737105/gianluca-tranchedone">
+			<div class="socialButton" id="socialButtonStackOverflow">&#xe008;</div>
+		</a>
+	</li>
+	<li>
+		<a href="mailto:g.tranchedone@gmail.com">
+			<div class="socialButton" id="socialButtonEmail">&#xe023;</div>
+		</a>
+	</li>
+	{% if page.show_rss_feed_link %}
+	<li>
+		<a href="/blog/feed.xml">
+			<div class="socialButton" id="socialButtonRSS">&#xe00c;</div>
+		</a>
+	</li>
+	{% endif %}
+</ul>
 <!-- END Social Links -->

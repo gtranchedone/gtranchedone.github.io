@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-03-25 14:32:41
+title: "Welcome to Jekyll!"
+date: 2014-03-25 14:32:41
 categories: jekyll update
-featured_image: http://cocoabeans.me/wp-content/uploads/2013/07/AppStoreBanner.png
-author: Gianluca Tranchedone
-author_url: /
+
 comments_enabled: false
+author: Gianluca Tranchedone
+author_url: https://plus.google.com/u/1/+GianlucaTranchedone
+featured_image: http://cocoabeans.me/wp-content/uploads/2013/07/AppStoreBanner.png
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

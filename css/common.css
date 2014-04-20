@@ -1,3 +1,7 @@
+/* IE10+ VIEWPORT FIX */
+@-ms-viewport { width:device-width; }
+@viewport { width:device-width; }
+
 /*****************************************************************************/
 /*
 /* Fonts
@@ -174,113 +178,6 @@ p {
 
 /*****************************************************************************/
 /*
-/* Header
-/*
-/*****************************************************************************/
-
-#header {
-	clear: both;
-	height: 80px;
-	padding: 0px 20px;
-}
-
-.header_item {
-	margin: 10px;
-}
-
-.menu_item {
-	margin: 14px;
-	color: #888888;
-	font-size: 22px;
-	display: inline-block;
-}
-
-.menu_item a {
-	color: #888888;
-}
-
-.menu_item a:hover {
-	color: #94D5CA;
-}
-
-.socialButton {
-	margin: 4px;
-	width: 50px;
-	height: 50px;
-	color: inherit;
-	font-size: 36px;
-	line-height: 50px;
-	border-radius: 25px;
-	font-family: 'Grands';
-	display: inline-block;
-	vertical-align: middle;
-}
-
-#header_social_links a {
-	color: #888888;
-}
-
-#header_social_links a:hover {
-	color: #94D5CA;
-}
-
-#site_logo {
-	border-radius: 30px;
-}
-
-#site_title {
-	margin: -4px 0px 0px 0px;
-	font-family: 'Lato Lite';
-	line-height: 60px;
-	font-size: 28px;
-	color: #888888;
-	padding: 0px;
-}
-
-#logo_container {
-	float: left;
-}
-
-.header_logo_item {
-	vertical-align: middle; 
-	display: inline-block;
-	line-height: normal;
-	text-align: center;
-	margin: 0px 10px;
-	height: 60px;
-	float: left;
-}
-
-#menu_items_container {
-	margin: 10px 0px;
-	float: right;
-}
-
-#social_menu_items_container {
-	float: right;
-	height: 60px;
-}
-
-#current_menu_item a {
-	color: #48ACB5;
-}
-
-/*****************************************************************************/
-/*
-/* Footer
-/*
-/*****************************************************************************/
-
-#footer {
-	clear: both;
-}
-
-#copyright {
-	font-style: italic;
-}
-
-/*****************************************************************************/
-/*
 /* Content
 /*
 /*****************************************************************************/
@@ -293,22 +190,19 @@ p {
 
 /*****************************************************************************/
 /*
-/* Responsive Design Code
+/* Header and Footer
 /*
 /*****************************************************************************/
 
-@media screen and (max-width: 499px) {
-	#site_title {
-		display: none;
-	}
+#header {
+	clear: both;
 }
 
-@media screen and (max-width: 999px) {
-	#menu_items_container {
-		display: none;
-	}
-	
-	#social_menu_items_container {
-		display: none;
-	}
+#footer {
+	clear: both;
+	color: #A9A9A9;
+}
+
+#copyright {
+	font-style: italic;
 }

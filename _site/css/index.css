@@ -105,6 +105,20 @@
     -o-transition: all 0.25s ease-in-out;
 }
 
+#links ul {
+	float: none;
+}
+
+#links ul li {
+	margin: 0px;
+	padding: 0px;
+}
+
+#links ul li a {
+	margin: 0px;
+	padding: 0px;
+}
+
 .socialButton {
 	margin: 4px;
 	width: 50px;
