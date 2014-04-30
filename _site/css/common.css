@@ -167,7 +167,6 @@ h4 {
 
 h5 {
 	margin: 0px;
-	padding: 1.5em;
 	color: #A9A9A9;
 	font-weight: normal;
 }
@@ -201,6 +200,7 @@ p {
 #footer {
 	clear: both;
 	color: #A9A9A9;
+	padding-bottom: 1.5em;
 }
 
 #copyright {

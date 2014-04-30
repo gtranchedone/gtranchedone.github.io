@@ -75,12 +75,13 @@
 }
 
 .social_links_list {
+	padding: 0px;
+	margin: 10px auto;
+	border-radius: 25px;
 	list-style-type: none;
 	font-family: 'Grands';
 	font-size: 36px;
-	float: right;
-	padding: 0px;
-	margin: 10px auto;
+	float: inherit;
 }
 
 .social_links_list li {
@@ -90,7 +91,6 @@
 .social_links_list a {
 	color: inherit;
 	display: block;
-	padding: 10px 10px;
 }
 
 .social_links_list a:hover {
@@ -119,6 +119,14 @@
 
 .nav_menu {
 	display: none;
+}
+
+.socialButton {
+	margin: 4px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 25px;
 }
 
 /*****************************************************************************/
