@@ -10,7 +10,12 @@ title: Gianluca Tranchedone - Blog
 	<img class="post_featured_image" src="{{post.featured_image}}" alt="{{ page.title }}" />
 	{% endif %}
 	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-	{{ post.excerpt }}
+	{% if post.content contains '<!--more-->' %}
+	    {{ post.content | split:'<!--more-->' | first }}
+		<p><a href="{{ post.url }}">Continue reading</a></p>
+	{% else %}
+		{{ post.content }}
+    {% endif %}
 </div>
 {% endfor %}
 <!-- END Blog -->
