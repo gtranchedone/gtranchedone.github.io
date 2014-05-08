@@ -99,7 +99,7 @@ strong {
 	text-decoration: none;
 }
 
-a:link {
+a {
 	color: #48ACB5;
 	text-decoration: none;
 }
@@ -110,7 +110,6 @@ a:hover {
 
 a:visited {
 	color: #48ACB5;
-	text-decoration: none;
 }
 
 a:visited:hover {
@@ -162,6 +161,7 @@ h3 {
 h4 {
 	margin: 10px;
 	color: #A9A9A9;
+	font-size: 18px;
 	font-weight: normal;
 }
 

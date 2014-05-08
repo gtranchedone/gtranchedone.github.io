@@ -6,5 +6,14 @@
 		<link>http://gtranchedone.com</link>
 		<atom:link href="http://gtranchedone.com/blog/feed.xml" rel="self" type="application/rss+xml" />
 		
+			<item>
+				<title>Working with Legacy Code</title>
+				<description>&lt;p&gt;Every developer with a decent amount of work history has at least once experienced the feeling that, no matter how hard you try, at some point - blame the raising pressure to deliver quickly, requirements change, or whatever - your got full of tiny little annoying bugs. How do you fix that? Michael Feathers offers a straightforward solution:&lt;/p&gt;
+</description>
+				<pubDate>Fri, 09 May 2014 10:00:00 +0100</pubDate>
+				<link>http://gtranchedone.com/software/craftsmanship/2014/05/09/working-with-legacy-code.html</link>
+				<guid isPermaLink="true">http://gtranchedone.com/software/craftsmanship/2014/05/09/working-with-legacy-code.html</guid>
+			</item>
+		
 	</channel>
 </rss>
