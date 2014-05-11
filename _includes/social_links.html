@@ -25,7 +25,14 @@
 			<div class="socialButton" id="socialButtonEmail">&#xe023;</div>
 		</a>
 	</li>
-	{% if page.show_rss_feed_link %}
+	{% if page.show_link_to_blog %}
+	<li>
+		<a href="/blog">
+			<div class="socialButton" id="socialButtonBlog">&#xe00c;</div>
+		</a>
+	</li>
+	{% endif %}
+	{% if page.show_link_to_rss_feed %}
 	<li>
 		<a href="/blog/feed.xml">
 			<div class="socialButton" id="socialButtonRSS">&#xe00c;</div>

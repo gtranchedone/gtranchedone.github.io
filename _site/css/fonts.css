@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato Lite';
+    src: url('/fonts/Lato-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Lite';
+    src: url('/fonts/Lato-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('/fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('/fonts/Lato-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sorts Mill Goudy';
+    src: url('/fonts/SortsMillGoudy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sorts Mill Goudy';
+    src: url('/fonts/SortsMillGoudy-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'Grands';
+	src:url('/fonts/Grands.eot');
+	src:url('/fonts/Grands.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Grands.svg#Grands') format('svg'),
+		url('/fonts/Grands.woff') format('woff'),
+		url('/fonts/Grands.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('/fonts/MonoSocialIconsFont-1.10/MonoSocialIconsFont-1.10.eot');
+    src: url('/fonts/MonoSocialIconsFont-1.10/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/MonoSocialIconsFont-1.10/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('/fonts/MonoSocialIconsFont-1.10/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('/fonts/MonoSocialIconsFont-1.10/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('/fonts/MonoSocialIconsFont-1.10/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Linecons';
+    src: url('/fonts/Linecons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

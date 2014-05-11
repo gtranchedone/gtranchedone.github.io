@@ -45,21 +45,22 @@
 
 .nav_list {
 	list-style-type: none;
-	font-size: 22px;
+	font-size: 30px;
 	display: block;
 	float: right;
 	padding: 0px;
-	margin: 3.5px 0px;
+	margin: 0px;
 }
 
 .nav_list li {
 	float: left;
+	font-family: 'Linecons';
 }
 
 .nav_list a {
 	color: #888888;
 	display: block;
-	padding: 20px 10px;
+	padding: 20px;
 }
 
 .nav_list a:hover {
@@ -77,11 +78,7 @@
 .social_links_list {
 	padding: 0px;
 	margin: 10px auto;
-	border-radius: 25px;
 	list-style-type: none;
-	font-family: 'Grands';
-	font-size: 36px;
-	float: inherit;
 }
 
 .social_links_list li {
@@ -126,6 +123,18 @@
 	height: 50px;
 	line-height: 50px;
 	border-radius: 25px;
+	font-family: 'Grands';
+	font-size: 36px;
+	float: inherit;
+}
+
+#nav_button_rss {
+	font-family: 'Grands';
+	font-size: 42px;
+}
+
+#nav_button_rss a {
+	padding: 16px 14px 12px 14px;
 }
 
 /*****************************************************************************/

@@ -6,8 +6,9 @@
         <!--<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" title="favicon">-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         <!-- Syntax Highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css"/>
+        <link href="/css/syntax.css" type="text/css" rel="stylesheet"/>
         <!-- Custom CSS -->
+        <link href="/css/fonts.css" type="text/css" rel="stylesheet"/>
         <link href="/css/common.css" type="text/css" rel="stylesheet"/>
         <link href="/css/navbar.css" type="text/css" rel="stylesheet"/>
         <link href=/css/blog.css type="text/css" rel="stylesheet"/>
@@ -40,8 +41,14 @@
 		<a href="/" class="nav_logo">Gianluca Tranchedone</a>
 		<a class="nav_menu" id="nav_menu">&#9776;</a>
 		<ul class="nav_list" id="nav">
-			<li ><a href="/">Home</a></li>
-    		<li class="current_menu_item"><a href="/blog">Blog</a></li>
+			<li ><a href="/">&#xe011;</a></li>
+    		<li class="current_menu_item"><a href="/blog">&#xe00f;</a></li>
+    		
+			<li id="nav_button_rss">
+				<a href="/blog/feed.xml">&#xe00c;</a>
+				</a>
+			</li>
+			
 		</ul>
 	</div>
 </nav>
@@ -51,24 +58,20 @@
     		<div id="blog">
 	<!-- Blog -->
 
-<div class="post_excerpt">
+<div class="post_header">
 	
-	<h1><a href="/software/craftsmanship/2014/05/09/working-with-legacy-code.html">Working with Legacy Code</a></h1>
-	<h4 class="meta">Written by <a href="https://plus.google.com/u/1/+GianlucaTranchedone?rel=author">Gianluca Tranchedone</a> on 09 May 2014</h4>
+	<img class="post_featured_image" src="/images/legacy-code-banner.png" alt="Gianluca Tranchedone - Blog" />
 	
-		<p>Every developer with a decent amount of work history has at least once experienced the feeling that, no matter how hard you try, at some point - blame the raising pressure to deliver quickly, requirements change, or whatever - your got full of tiny little annoying bugs. How do you fix that? Michael Feathers offers a straightforward solution:</p>
+	<a href="/blog/working-with-legacy-code" class="excerpt_post_title"><h1>Working with Legacy Code</h1></a>
+	<h4 class="meta">Written by <a href="https://plus.google.com/u/1/+GianlucaTranchedone?rel=author">Gianluca Tranchedone</a> on 11 May 2014</h4>
+</div>
+<div class="post">
+	
+    	<p>Every software engineer feels a sense disgust when hearing the words <em>legacy code</em>. Strictly speaking legacy code it&#39;s code you &quot;inherit&quot; from someone else, however, the term is more broadly used to indicate a piece of software that&#39;s no longer maintained. Often it&#39;s code that, although deprecated, is still in use because of dependencies spread across a large system. Anyway, Michael Feathers has a better definition:</p>
 
-<blockquote>
-<p>To me, <em>legacy code</em> is simply code without tests. I&#39;ve gotten some grief for this definition. What do tests have to do with whether code is bad? To me, the answer is straightforward, and it is a point that I elaborate throughout the book:</p>
 
-<p><em>Code without tests is bad code. It doesn&#39;t matter how well written it is; it doesn&#39;t matter how pretty or object-oriented or well-encapsulated it is. With tests, we can change the bahavior or our code quickly and verifiably. Without them, we really don&#39;t know if our code is getting better or worse.</em></p>
-
-<p>You might think that this is severe. What about clean code? If a code base is very clean and well structured, isn&#39;t that enough? Well, make no mistake. I love clean code. I love it more than most people I know, but while clean code is good, it&#39;s not enough. Teams take serious chances when they try to make large changes without tests. It is like doing aerial gymnastic without a net. It requires incredible skill and a clear understanding of what can happen at every step. Knowing precisely what will happen if you change a couple of variables is often like knowing whether another gymnast is going to catch your arms after you come out of a somersault.</p>
-</blockquote>
-
-<p>I wish I had read Michael Feathers&#39; <a href="http://www.amazon.co.uk/gp/product/B005OYHF0A/ref=as_li_ss_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=B005OYHF0A&amp;linkCode=as2&amp;tag=gtranchedone-21">Effectively Working with Legacy Code</a> when I first started programming. I&#39;ve had it on my Amazon wish-list for a long time. One day I&#39;ve purchased it but I&#39;ve committed the sin of not reading it until just a few days ago. <strong>If you are - or want to be - a software engineer you absolutely have to read this book now!</strong> <a href="http://www.amazon.co.uk/gp/product/B005OYHF0A/ref=as_li_ss_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=B005OYHF0A&amp;linkCode=as2&amp;tag=gtranchedone-21">Go get it!</a></p>
-
-    
+    	<p><a href="/blog/working-with-legacy-code">Continue reading</a></p>
+	
 </div>
 
 <!-- END Blog -->
@@ -105,6 +108,7 @@
 			<div class="socialButton" id="socialButtonEmail">&#xe023;</div>
 		</a>
 	</li>
+	
 	
 	<li>
 		<a href="/blog/feed.xml">

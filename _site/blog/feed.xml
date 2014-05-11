@@ -8,11 +8,11 @@
 		
 			<item>
 				<title>Working with Legacy Code</title>
-				<description>&lt;p&gt;Every developer with a decent amount of work history has at least once experienced the feeling that, no matter how hard you try, at some point - blame the raising pressure to deliver quickly, requirements change, or whatever - your got full of tiny little annoying bugs. How do you fix that? Michael Feathers offers a straightforward solution:&lt;/p&gt;
-</description>
-				<pubDate>Fri, 09 May 2014 10:00:00 +0100</pubDate>
-				<link>http://gtranchedone.com/software/craftsmanship/2014/05/09/working-with-legacy-code.html</link>
-				<guid isPermaLink="true">http://gtranchedone.com/software/craftsmanship/2014/05/09/working-with-legacy-code.html</guid>
+				<description>Working with legacy code may be a daunting task. Michael Feathers in his &#39;Working Effectively with Legacy Code&#39; gives a precise definition for it: &#39;[...]legacy code is simply code without tests&#39;. His book is a must read for every software engineer or aspiring one.</description>
+				<pubDate>Sun, 11 May 2014 20:00:00 +0100</pubDate>
+				<link>http://gtranchedone.com/blog/working-with-legacy-code</link>
+				<guid isPermaLink="true">http://gtranchedone.com/blog/working-with-legacy-code</guid>
+				<enclosure url="/images/legacy-code-banner.png" length="62470" type="image/png" />
 			</item>
 		
 	</channel>

@@ -104,25 +104,11 @@
     -o-transition: all 0.25s ease-in-out;
 }
 
-#links ul {
-	float: none;
-}
-
-#links ul li {
-	margin: 0px;
-	padding: 0px;
-}
-
-#links ul li a {
-	margin: 0px;
-	padding: 0px;
-}
-
 .socialButton {
 	margin: 4px;
 	color: white;
 	text-shadow: none;
-	background-color: lime;
+	background-color: #61CA37;
 	/* Animation */
 	-webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -130,7 +116,7 @@
 }
 
 .socialButton:hover {
-	background-color: red;
+	background-color: #DB93E3;
 	/* Animation */
 	-webkit-transform: scale(1.2, 1.2);
     -moz-transform: scale(1.2, 1.2);
@@ -211,7 +197,7 @@
 		-webkit-transform: scale(1, 1);
 		-moz-transform: scale(1, 1);
 		-o-transform: scale(1, 1);
-}
+	}
 
 	#softwareCraftsmanshipLink {
 		display: none;

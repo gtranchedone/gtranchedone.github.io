@@ -4,79 +4,6 @@
 
 /*****************************************************************************/
 /*
-/* Fonts
-/*
-/*****************************************************************************/
-
-@font-face {
-    font-family: 'Lato';
-    src: url('/fonts/Lato-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('/fonts/Lato-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Lato Lite';
-    src: url('/fonts/Lato-Light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato Lite';
-    src: url('/fonts/Lato-LightItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Lato Bold';
-    src: url('/fonts/Lato-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato Bold';
-    src: url('/fonts/Lato-BoldItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Sorts Mill Goudy';
-    src: url('/fonts/SortsMillGoudy-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sorts Mill Goudy';
-    src: url('/fonts/SortsMillGoudy-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-	font-family: 'Grands';
-	src:url('/fonts/Grands.eot');
-	src:url('/fonts/Grands.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/Grands.svg#Grands') format('svg'),
-		url('/fonts/Grands.woff') format('woff'),
-		url('/fonts/Grands.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/*****************************************************************************/
-/*
 /* Texts and General Background
 /*
 /*****************************************************************************/
@@ -118,11 +45,11 @@ a:visited:hover {
 
 h1 {
 	margin: 0px;
-	padding: 20px 10px 0px 10px;
+	padding: 0px;
 	color: #FF9C01;
 	font-size: 36px;
-	line-height: 50px;
 	font-weight: normal;
+	line-height: normal;
 	text-shadow: 0px 1px white;
 	text-transform: capitalize;
 	font-family: 'Sorts Mill Goudy';
@@ -141,8 +68,8 @@ h1 a:visited {
 }
 
 h2 {
+	padding: 10px;
 	margin: 20px 0px;
-	padding: 10px 10px;
 	color: #4E5860;
 	font-size: 32px;
 	font-weight: normal;
@@ -173,6 +100,30 @@ h5 {
 
 p {
 	margin: 20px 10px;
+}
+
+/*****************************************************************************/
+/*
+/* Text Selection
+/*
+/*****************************************************************************/
+
+*::selection {
+  background: #F8C72E;
+  text-shadow: none;
+  color: #FFFFFF;
+}
+
+*::-moz-selection {
+  background: #F8C72E;
+  text-shadow: none;
+  color: #FFFFFF;
+}
+
+*::-webkit-selection {
+  background: #F8C72E;
+  text-shadow: none;
+  color: #FFFFFF;
 }
 
 /*****************************************************************************/

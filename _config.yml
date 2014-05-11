@@ -1,4 +1,5 @@
 baseurl: /
+permalink: /blog/:title
 url: http://gtranchedone.com
 name: Gianluca Tranchedone
 description: "Gianluca's Personal Website"
@@ -8,3 +9,6 @@ encoding: utf-8
 pygments: true
 safe: true
 lsi: false
+
+gems:
+  - jekyll-sitemap
