@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2014-05-11 18:00:00
-title: "Working with Legacy Code"
+title: "Welcome to Jekyll!"
 
 comments_enabled: true
 categories: software-craftsmanship
@@ -9,8 +9,9 @@ categories: software-craftsmanship
 author: Gianluca Tranchedone
 author_url: https://plus.google.com/u/1/+GianlucaTranchedone
 
-featured_image: /images/legacy-code-banner.png
+featured_image: 2014-04-25-welcome-to-jekyll/banner.png
 featured_image_length: 62470
+featured_image_width: 249
 
 rss_description: "Working with legacy code may be a daunting task. Michael Feathers in his 'Working Effectively with Legacy Code' gives a precise definition for it: '[...]legacy code is simply code without tests'. His book is a must read for every software engineer or aspiring one."
 ---

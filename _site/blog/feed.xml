@@ -7,12 +7,21 @@
 		<atom:link href="http://gtranchedone.com/blog/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Swift</title>
+				<description>Apple has just introduced a new programming language for iOS and OS X development, Swift. Here are my first thoughts about this new language.</description>
+				<pubDate>Tue, 10 Jun 2014 12:00:00 +0100</pubDate>
+				<link>http://gtranchedone.com/blog/swift</link>
+				<guid isPermaLink="true">http://gtranchedone.com/blog/swift</guid>
+				<enclosure url="http://gtranchedone.com/images/posts/2014-06-10-swift/banner.png" length="26325" type="image/png" />
+			</item>
+		
+			<item>
 				<title>Working with Legacy Code</title>
 				<description>Working with legacy code may be a daunting task. Michael Feathers in his &#39;Working Effectively with Legacy Code&#39; gives a precise definition for it: &#39;[...]legacy code is simply code without tests&#39;. His book is a must read for every software engineer or aspiring one.</description>
 				<pubDate>Sun, 11 May 2014 20:00:00 +0100</pubDate>
 				<link>http://gtranchedone.com/blog/working-with-legacy-code</link>
 				<guid isPermaLink="true">http://gtranchedone.com/blog/working-with-legacy-code</guid>
-				<enclosure url="http://gtranchedone.com/images/legacy-code-banner.png" length="62470" type="image/png" />
+				<enclosure url="http://gtranchedone.com/images/posts/2014-05-09-working-with-legacy-code/banner.png" length="62470" type="image/png" />
 			</item>
 		
 	</channel>

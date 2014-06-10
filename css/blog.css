@@ -5,22 +5,23 @@
 /*****************************************************************************/
 
 .meta {
+	margin: 0px;
 	text-align: center;
 	font-style: italic;
 	font-family: 'Lato Lite';
-	margin: 0px 10px 10px 10px;
 }
 
 .post {
 	color: #666666;
-	font-size: 20px;
+	font-size: 22px;
+	line-height: 1.5;
 	padding: 0px 10px;
-	line-height: 1.3em;
 	text-align: justify;
+	text-justify: inter-word;
 }
 
 .post_header {
-	padding: 0px 10px;
+	padding: 20px 10px;
 	margin-bottom: 40px;
 }
 
@@ -29,10 +30,10 @@
 }
 
 .post_featured_image {
-	width: 100%;
 	height: auto;
+	max-width: 100%;
 	max-height: 300px;
-	margin: 0px auto 20px auto;
+	margin: 30px auto;
 	display: block;
 }
 
@@ -69,6 +70,28 @@
 	color: #94D5CA;
 }
 
+.read_more_button {
+	color: #999999;
+	font-size: 20px;
+	padding: 10px 20px;
+	border: 1px solid;
+	border-radius: 30px;
+	display: inline-block;
+	text-transform: capitalize;
+}
+
+.read_more_button:hover {
+	color: #94D5CA;
+}
+
+.read_more_button:visited {
+	color: #999999;
+}
+
+.read_more_button:visited:hover {
+	color: #94D5CA;
+}
+
 /*****************************************************************************/
 /*
 /* Blockquote
@@ -77,8 +100,7 @@
 
 blockquote {
 	margin: 20px;
-	display:block;
-	padding: 20px 0px 0px 50px;
+	padding: 10px 0px 0px 50px;
 	position: relative;
 }
 
@@ -94,11 +116,11 @@ blockquote::before {
 	font-size: 120px;
 	color: #EEEEEE;
 	z-index: -1;
-	
+
 	/*Positioning*/
 	position: absolute;
-	left: -10px;
-	top: 40px;
+	left: -15px;
+	top: -45px;
 }
 
 blockquote::after {
@@ -106,12 +128,17 @@ blockquote::after {
 	content: "";
 }
 
-blockquote p {
-	margin: 0px auto 20px auto;
+blockquote {
 	font-family: 'Lato Lite';
 }
 
 blockquote p em {
+	font-style: italic;
+}
+
+.quote_author {
+	display: block;
+	text-align: right;
 	font-style: italic;
 }
 
@@ -122,12 +149,13 @@ blockquote p em {
 /*****************************************************************************/
 
 h1 {
-	font-size: 60px;
+	font-size: 48px;
+	line-height: 1.2;
 	text-align: center;
 }
 
 .highlight {
-	margin: 10px;
+	margin: 30px 0px;
 	text-shadow: none;
 }
 
@@ -138,6 +166,18 @@ h1 {
 
 .post ul, .post ol {
 	margin-left: 1.35em;
+}
+
+code {
+	padding: 0px;
+	color: #586E75;
+	text-shadow: none;
+	background-color: #EFEFEF;
+}
+
+.comments {
+	color: black; /* disqus determines the theme to use based on the text color */
+	padding: 10px;
 }
 
 /*****************************************************************************/
@@ -151,7 +191,7 @@ h1 {
 	h1 {
 		font-size: 48px;
 	}
-	
+
 	h4 {
 		font-size: 14px;
 	}

@@ -5,10 +5,15 @@ name: Gianluca Tranchedone
 description: "Gianluca's Personal Website"
 timezone: Europe/London
 markdown: redcarpet
+redcarpet:
+  extensions: ["strikethrough"]
 encoding: utf-8
 pygments: true
 safe: true
 lsi: false
 
 gems:
-  - jekyll-sitemap
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap

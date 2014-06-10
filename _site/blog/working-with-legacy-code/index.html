@@ -11,7 +11,9 @@
         <link href="/css/fonts.css" type="text/css" rel="stylesheet"/>
         <link href="/css/common.css" type="text/css" rel="stylesheet"/>
         <link href="/css/navbar.css" type="text/css" rel="stylesheet"/>
+        
         <link href=/css/blog.css type="text/css" rel="stylesheet"/>
+        
         <!-- JQuery -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <!-- JavaScript -->
@@ -56,15 +58,16 @@
 		
     	<div id="page_container">
     		<div id="blog">
-	<div class="post_header">
-	
-	<img class="post_featured_image" src="/images/legacy-code-banner.png" alt="Working with Legacy Code" />
-	
-	<h1>Working with Legacy Code</h1>
-	<h4 class="meta">Written by <a href="https://plus.google.com/u/1/+GianlucaTranchedone?rel=author">Gianluca Tranchedone</a> on 11 May 2014</h4>
-</div>
-<div class="post">
-	<p>Every software engineer feels a sense disgust when hearing the words <em>legacy code</em>. Strictly speaking legacy code it&#39;s code you &quot;inherit&quot; from someone else, however, the term is more broadly used to indicate a piece of software that&#39;s no longer maintained. Often it&#39;s code that, although deprecated, is still in use because of dependencies spread across a large system. Anyway, Michael Feathers has a better definition:</p>
+	<article>
+	<section class="post_header">
+		
+		<img class="post_featured_image" src="/images/posts/2014-05-09-working-with-legacy-code/banner.png" alt="Working with Legacy Code" width="760" />
+		
+		<h1>Working with Legacy Code</h1>
+		<h4 class="meta">11 May 2014</h4>
+	</section>
+	<section class="post">
+		<p>Every software engineer feels a sense disgust when hearing the words <em>legacy code</em>. Strictly speaking legacy code it&#39;s code you &quot;inherit&quot; from someone else, however, the term is more broadly used to indicate a piece of software that&#39;s no longer maintained. Often it&#39;s code that, although deprecated, is still in use because of dependencies spread across a large system. Anyway, Michael Feathers has a better definition:</p>
 
 <!-- more -->
 
@@ -73,28 +76,33 @@
 
 <p><em>Code without tests is bad code. It doesn&#39;t matter how well written it is; it doesn&#39;t matter how pretty or object-oriented or well-encapsulated it is. With tests, we can change the behavior or our code quickly and verifiably. Without them, we really don&#39;t know if our code is getting better or worse.</em></p>
 
-<p>You might think that this is severe. What about clean code? If a code base is very clean and well structured, isn&#39;t that enough? Well, make no mistake. I love clean code. I love it more than most people I know, but while clean code is good, it&#39;s not enough. Teams take serious chances when they try to make large changes without tests. It is like doing aerial gymnastic without a net. It requires incredible skill and a clear understanding of what can happen at every step. Knowing precisely what will happen if you change a couple of variables is often like knowing whether another gymnast is going to catch your arms after you come out of a somersault.</p>
+<p>You might think that this is severe. What about clean code? If a code base is very clean and well structured, isn&#39;t that enough? Well, make no mistake. I love clean code. I love it more than most people I know, but while clean code is good, it&#39;s not enough. Teams take serious chances when they try to make large changes without tests. It is like doing aerial gymnastic without a net. It requires incredible skill and a clear understanding of what can happen at every step. Knowing precisely what will happen if you change a couple of variables is often like knowing whether another gymnast is going to catch your arms after you come out of a somersault.
+<span class="quote_author">--Michael Feathers</span></p>
 </blockquote>
 
 <p>I wish I had read Michael Feathers&#39; <a href="http://www.amazon.co.uk/gp/product/B005OYHF0A/ref=as_li_ss_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=B005OYHF0A&amp;linkCode=as2&amp;tag=gtranchedone-21">Effectively Working with Legacy Code</a> when I first started programming. I&#39;ve had it on my Amazon wish-list for a long time. One day I&#39;ve purchased the book but I&#39;ve committed the sin of not reading it until just a few days ago. <strong>If you are - or want to be - a software engineer you absolutely have to read this book now! <a href="http://www.amazon.co.uk/gp/product/B005OYHF0A/ref=as_li_ss_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=B005OYHF0A&amp;linkCode=as2&amp;tag=gtranchedone-21">Go get it!</a></strong></p>
 
-	
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-		var disqus_shortname = 'gtranchedone';
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-	</script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-	
-</div>
-<div class="post_footer">
-</div>
+	</section>
+	<section class="post_footer">
+	</section>
+	<section class="comments">
+		
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_shortname = 'gtranchedone';
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</section>
+</article>
+
 </div>
 
     	</div>

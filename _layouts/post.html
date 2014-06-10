@@ -1,30 +1,33 @@
 ---
 layout: blog
 ---
-
-<div class="post_header">
-	{% if page.featured_image %}
-	<img class="post_featured_image" src="{{page.featured_image}}" alt="{{ page.title }}" />
-	{% endif %}
-	<h1>{{ page.title }}</h1>
-	<h4 class="meta">Written by <a href="{{ page.author_url }}?rel=author">{{ page.author }}</a> on {{ page.date | date_to_string }}</h4>
-</div>
-<div class="post">
-	{{ content }}
-	{% if page.comments_enabled %}
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-		var disqus_shortname = 'gtranchedone';
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-	</script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-	{% endif %}
-</div>
-<div class="post_footer">
-</div>
+<article>
+	<section class="post_header">
+		{% if page.featured_image %}
+		<img class="post_featured_image" src="/images/posts/{{page.featured_image}}" alt="{{ page.title }}" width="{{page.featured_image_width}}" />
+		{% endif %}
+		<h1>{{ page.title }}</h1>
+		<h4 class="meta">{{ page.date | date_to_long_string }}</h4>
+	</section>
+	<section class="post">
+		{{ content }}
+	</section>
+	<section class="post_footer">
+	</section>
+	<section class="comments">
+		{% if page.comments_enabled %}
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_shortname = 'gtranchedone';
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		{% endif %}
+	</section>
+</article>
