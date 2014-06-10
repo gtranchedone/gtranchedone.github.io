@@ -168,6 +168,10 @@ h1 {
 	margin-left: 1.35em;
 }
 
+.emoji {
+	width: 20;
+}
+
 code {
 	padding: 0px;
 	color: #586E75;
