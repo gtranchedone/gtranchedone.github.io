@@ -2,19 +2,19 @@
 layout: blog
 ---
 <article>
-	<section class="post_header">
+	<header class="post_header">
 		{% if page.featured_image %}
 		<img class="post_featured_image" src="/images/posts/{{page.featured_image}}" alt="{{ page.title }}" width="{{page.featured_image_width}}" />
 		{% endif %}
 		<h1>{{ page.title }}</h1>
 		<h4 class="meta">{{ page.date | date_to_long_string }}</h4>
-	</section>
+	</header>
 	<section class="post">
 		{{ content }}
 	</section>
-	<section class="post_footer">
-	</section>
-	<section class="comments">
+	<footer class="post_footer">
+	</footer>
+	<footer class="comments">
 		{% if page.comments_enabled %}
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
@@ -29,5 +29,5 @@ layout: blog
 		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 		{% endif %}
-	</section>
+	</footer>
 </article>

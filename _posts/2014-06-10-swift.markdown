@@ -13,7 +13,7 @@ featured_image: 2014-06-10-swift/banner.png
 featured_image_length: 26325
 featured_image_width: 128
 
-rss_description: "Apple has just introduced a new programming language for iOS and OS X development, Swift. Here are my first thoughts about this new language."
+social_description: "Apple has just introduced a new programming language for iOS and OS X development, Swift. Here are my first thoughts about this new language."
 ---
 This year's [WWDC Keynote](https://www.youtube.com/watch?v=w87fOAG8fjk), the main event at Apple's yearly developer conference, has been mind-blowing. The company has released an impressive amount of tools and APIs for iOS 8 and OS X 10.10 Yosemite. They say it's the biggest release since the iPhone SDK was originally introduced… and I believe that!
 

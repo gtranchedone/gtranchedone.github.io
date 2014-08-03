@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head profile="http://www.w3.org/2005/10/profile">
+		<link rel="icon" type="image/png" href="/images/favicon.png">
     	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>{{ page.title }}</title>
-        <!--<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" title="favicon">-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         <!-- Syntax Highlighting CSS -->
         <link href="/css/syntax.css" type="text/css" rel="stylesheet"/>
@@ -21,21 +21,47 @@
         <!-- RSS Feed -->
         <link href="/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Atom RSS Feed"/>
         {% include google_analytics.html %}
+        <!-- Common Social Media Optimization -->
+        {% if page.social_description %}
+        <html itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="name" content="{{ page.title }}">
+		<meta itemprop="description" content="{{ page.social_description }}"> 
+		<meta name="description" content="{{ page.social_description }}" />
+		{% endif %}
+		<!-- Google Authorship -->
+		{% if page.author_url %}
+		<link rel="author" href="{{ page.author_url }}"/>
+		{% endif %}
+		{% if page.featured_image %}
+		<meta itemprop="image" content="{{ site.url }}/images/posts/{{ page.featured_image }}">
+		{% endif %}
+        <!-- Facebook Sharing Optimization -->
+        {% if page.title %}
+        <meta property="og:title" content="{{ page.title }}" />
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+        {% endif %}
+		{% if page.featured_image %}
+		<meta property="og:image" content="{{ site.url }}/images/posts/{{ page.featured_image }}" />
+		{% endif %}
+		{% if page.social_description %}
+		<meta property="og:description" content="{{ page.social_description }}" />
+		<meta property="og:type" content="article" />
+		{% endif %}
     </head>
     <body>
     	{% if  page.show_navigation_bar %}
-    	<div id="header">
+    	<header>
     		{% include navigation_bar.html %}
-		</div>
+		</header>
 		{% endif %}
-    	<div id="page_container">
+    	<section class="page_container">
     		{{ content }}
     	</div>
-    	<div id="footer">
+    	<footer>
     		{% if  page.show_site_footer %}
     			{% include social_links.html %}
     		{% endif %}
-    		<div id="copyright">
+    		<div class="copyright">
 				<h5>&copy; 2013-
 					<script type="text/javascript">
 						now = new Date
@@ -45,6 +71,6 @@
 					</script> Gianluca Tranchedone. All rights reserved.
 				</h5>
     		</div>
-		</div>
+		</footer>
     </body>
 </html>

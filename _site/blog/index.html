@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head profile="http://www.w3.org/2005/10/profile">
+		<link rel="icon" type="image/png" href="/images/favicon.png">
     	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Gianluca Tranchedone - Blog</title>
-        <!--<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" title="favicon">-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         <!-- Syntax Highlighting CSS -->
         <link href="/css/syntax.css" type="text/css" rel="stylesheet"/>
@@ -34,10 +34,22 @@
 
 </script>
 <!-- END Google Anaytics -->
+        <!-- Common Social Media Optimization -->
+        
+		<!-- Google Authorship -->
+		
+		
+        <!-- Facebook Sharing Optimization -->
+        
+        <meta property="og:title" content="Gianluca Tranchedone - Blog" />
+        <meta property="og:url" content="http://gtranchedone.com/blog/index.html" />
+        
+		
+		
     </head>
     <body>
     	
-    	<div id="header">
+    	<header>
     		<nav class="nav_bar" id="nav_bar">
 	<div class="nav_hold">
 		<a href="/" class="nav_logo">Gianluca Tranchedone</a>
@@ -54,20 +66,18 @@
 		</ul>
 	</div>
 </nav>
-		</div>
+		</header>
 		
-    	<div id="page_container">
-    		<div id="blog">
-	<!-- Blog -->
-
+    	<section class="page_container">
+    		
 <article>
-	<section class="post_header">
+	<header class="post_header">
 		
 			<img class="post_featured_image" src="/images/posts/2014-06-10-swift/banner.png" alt="Swift" width="128" />
 		
 		<a href="/blog/swift" class="excerpt_post_title"><h1>Swift</h1></a>
 		<h4 class="meta">10 June 2014</h4>
-	</section>
+	</header>
 	<section class="post">
 		
 			<p>This year&#39;s <a href="https://www.youtube.com/watch?v=w87fOAG8fjk">WWDC Keynote</a>, the main event at Apple&#39;s yearly developer conference, has been mind-blowing. The company has released an impressive amount of tools and APIs for iOS 8 and OS X 10.10 Yosemite. They say it&#39;s the biggest release since the iPhone SDK was originally introduced… and I believe that!</p>
@@ -81,13 +91,13 @@
 </article>
 
 <article>
-	<section class="post_header">
+	<header class="post_header">
 		
 			<img class="post_featured_image" src="/images/posts/2014-05-09-working-with-legacy-code/banner.png" alt="Working with Legacy Code" width="760" />
 		
 		<a href="/blog/working-with-legacy-code" class="excerpt_post_title"><h1>Working with Legacy Code</h1></a>
 		<h4 class="meta">11 May 2014</h4>
-	</section>
+	</header>
 	<section class="post">
 		
 			<p>Every software engineer feels a sense disgust when hearing the words <em>legacy code</em>. Strictly speaking legacy code it&#39;s code you &quot;inherit&quot; from someone else, however, the term is more broadly used to indicate a piece of software that&#39;s no longer maintained. Often it&#39;s code that, although deprecated, is still in use because of dependencies spread across a large system. Anyway, Michael Feathers has a better definition:</p>
@@ -98,12 +108,10 @@
 	</section>
 </article>
 
-<!-- END Blog -->
 
-</div>
 
     	</div>
-    	<div id="footer">
+    	<footer>
     		
     			<!-- Social Links -->
 <ul class="social_links_list" id="social">
@@ -143,7 +151,7 @@
 </ul>
 <!-- END Social Links -->
     		
-    		<div id="copyright">
+    		<div class="copyright">
 				<h5>&copy; 2013-
 					<script type="text/javascript">
 						now = new Date
@@ -153,6 +161,6 @@
 					</script> Gianluca Tranchedone. All rights reserved.
 				</h5>
     		</div>
-		</div>
+		</footer>
     </body>
 </html>
