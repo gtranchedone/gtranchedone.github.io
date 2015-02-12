@@ -4,7 +4,7 @@
 /*
 /*****************************************************************************/
 
-.mainContainer h1 {
+#intro h1 {
 	padding: 0px;
 	margin: 0.4em;
 	color: #888888;
@@ -15,7 +15,7 @@
 	text-transform: capitalize;
 }
 
-.mainContainer h1 span {
+#intro h1 span {
 	color: #FF9C01;
 	font-size: 36px;
 	font-weight: normal;
@@ -30,7 +30,6 @@
 /*****************************************************************************/
 
 #intro {
-	margin-top: 20px;
 	position: relative;
 }
 
@@ -86,6 +85,13 @@
 
 #description {
 	margin: auto;
+}
+
+#posts {
+	margin: 20px;
+}
+
+#description_body {
 	max-width: 720px;
 	margin: 25px auto;
 }
