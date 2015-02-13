@@ -11,7 +11,7 @@ author_url: https://plus.google.com/u/1/+GianlucaTranchedone
 
 featured_image: 2014-05-09-working-with-legacy-code/banner.png
 featured_image_length: 62470
-featured_image_width: 760
+featured_image_width: 600
 
 social_description: "Working with legacy code may be a daunting task. Michael Feathers in his 'Working Effectively with Legacy Code' gives a precise definition for it: '[...]legacy code is simply code without tests'. His book is a must read for every software engineer or aspiring one."
 ---
