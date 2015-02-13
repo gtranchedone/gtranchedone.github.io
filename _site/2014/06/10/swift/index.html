@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         <!-- Syntax Highlighting CSS -->
         <!-- <link href="/css/syntax.css" type="text/css" rel="stylesheet"/> -->
-		<link rel="stylesheet" href="/highlight/styles/solarized_dark.css">
+		<link rel="stylesheet" href="/highlight/styles/xcode.css">
 		<script src="/highlight/highlight.pack.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
         <!-- Custom CSS -->
@@ -56,7 +56,7 @@
         <!-- Facebook Sharing Optimization -->
         
         <meta property="og:title" content="The Swift Programming Language" />
-        <meta property="og:url" content="http://gtranchedone.com/blog/swift" />
+        <meta property="og:url" content="http://gtranchedone.com/2014/06/10/swift" />
         
 		
 		<meta property="og:image" content="http://gtranchedone.com/images/posts/2014-06-10-swift/banner.png" />
@@ -72,17 +72,43 @@
     		<nav class="nav_bar" id="nav_bar">
 	<div class="nav_hold">
 		<a href="/" class="nav_logo">Gianluca Tranchedone</a>
-		<a class="nav_menu" id="nav_menu">&#9776;</a>
-		<ul class="nav_list" id="nav">
-			<li ><a href="/">&#xe011;</a></li>
-    		<li class="current_menu_item"><a href="/blog">&#xe00f;</a></li>
-    		
-			<li id="nav_button_rss">
-				<a href="/blog/feed.xml">&#xe00c;</a>
-				</a>
-			</li>
-			
-		</ul>
+		<!-- Social Links -->
+<ul class="social_links_list" id="social">
+	<li>
+		<a href="http://twitter.com/gtranchedone">
+			<div class="socialButton" id="socialButtonTwitter">&#xe005;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://linkedin.com/in/gtranchedone">
+			<div class="socialButton" id="socialButtonLinkedIn">&#xe015;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://github.com/gtranchedone">
+			<div class="socialButton" id="socialButtonGitHub">&#xe01d;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://stackoverflow.com/users/737105/gianluca-tranchedone">
+			<div class="socialButton" id="socialButtonStackOverflow">&#xe008;</div>
+		</a>
+	</li>
+	<li>
+		<a href="mailto:g.tranchedone@gmail.com">
+			<div class="socialButton" id="socialButtonEmail">&#xe023;</div>
+		</a>
+	</li>
+	
+	
+	<li>
+		<a href="/blog/feed.xml">
+			<div class="socialButton" id="socialButtonRSS">&#xe00c;</div>
+		</a>
+	</li>
+	
+</ul>
+<!-- END Social Links -->
 	</div>
 </nav>
 		</header>
@@ -104,7 +130,7 @@
 
 <h2>A modern programming language</h2>
 
-<p>I don&#39;t know about you, but while I was watching the Keynote that announcement literally kept me with my mouth open for a good five minutes! A new programming language?? When you&#39;ve got Objective-C?? What do you need that for?!?! :anguished:</p>
+<p>I don&#39;t know about you, but while I was watching the Keynote that announcement literally kept me with my mouth open for a good five minutes! A new programming language?? When you&#39;ve got Objective-C?? What do you need that for?!?! <img class='emoji' title=':anguished:' alt=':anguished:' src='https://assets.github.com/images/icons/emoji/anguished.png' height='20' width='20' align='absmiddle' /></p>
 
 <blockquote>
 <p>Swift is an innovative new programming language for Cocoa and Cocoa Touch. Writing code is interactive and fun, the syntax is concise yet expressive, and apps run lightning-fast.</p>
@@ -114,12 +140,12 @@
 
 <p>I need to admit that I was a bit shocked and sceptical at first, but now I&#39;ve got to say I&#39;m impressed by Swift. It resolves many problems that Objective-C inherited from C and makes sure, by design, that programmers avoid some common mistakes. Moreover, although Swift&#39;s syntax is very different and more compact, it keeps some of the best qualities of Objective-C and you can use all of Cocoa and Cocoa Touch frameworks with it. My favourite feature is named parameters:</p>
 
-<div class="highlight"><pre><code class="ruby"><span class="n">func</span> <span class="n">join</span><span class="p">(</span><span class="n">string</span> <span class="ss">s1</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span> <span class="n">toString</span> <span class="ss">s2</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span> <span class="n">withJoiner</span> <span class="ss">joiner</span><span class="p">:</span> <span class="nb">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">String</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="objc"><span class="n">func</span> <span class="n">join</span><span class="p">(</span><span class="n">string</span> <span class="n">s1</span><span class="o">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">toString</span> <span class="n">s2</span><span class="o">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">withJoiner</span> <span class="n">joiner</span><span class="o">:</span> <span class="n">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">String</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">joiner</span> <span class="o">+</span> <span class="n">s2</span>
 <span class="p">}</span>
 
-<span class="n">join</span><span class="p">(</span><span class="ss">string</span><span class="p">:</span> <span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="ss">toString</span><span class="p">:</span> <span class="s2">&quot;world&quot;</span><span class="p">,</span> <span class="ss">withJoiner</span><span class="p">:</span> <span class="s2">&quot;, &quot;</span><span class="p">)</span>
-<span class="sr">//</span> <span class="n">returns</span> <span class="s2">&quot;hello, world&quot;</span>
+<span class="n">join</span><span class="p">(</span><span class="n">string</span><span class="o">:</span> <span class="s">&quot;hello&quot;</span><span class="p">,</span> <span class="n">toString</span><span class="o">:</span> <span class="s">&quot;world&quot;</span><span class="p">,</span> <span class="n">withJoiner</span><span class="o">:</span> <span class="s">&quot;, &quot;</span><span class="p">)</span>
+<span class="c1">// returns &quot;hello, world&quot;</span>
 </code></pre></div>
 
 <p>Without this feature I would have hated writing code, honestly! It&#39;s my biggest complain against all other languages out there: the ability to clearly specify what each parameter of a function is for. That&#39;s invaluable.</p>
@@ -142,6 +168,7 @@
 
 <p>What do you think about it? Tell me in the comments!</p>
 
+		<p><a href="/">&#x3031; All Blog Posts</a></p>
 	</section>
 	<footer class="post_footer">
 	</footer>

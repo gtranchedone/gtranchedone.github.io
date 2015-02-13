@@ -43,6 +43,10 @@
 	float: left;
 }
 
+.nav_bar #social {
+	text-align: right;
+}
+
 .nav_list {
 	list-style-type: none;
 	font-size: 30px;
@@ -181,5 +185,13 @@
 	
 	.nav_list_open {
 		height: auto;
+	}
+	
+	.nav_bar #social li a .socialButton {
+		width: 24px;
+		height: 24px;
+		line-height: 40px;
+		border-radius: 10px;
+		font-size: 20px;
 	}
 }

@@ -3,22 +3,4 @@ layout: blog
 title: Gianluca Tranchedone - Blog
 style: /css/blog.css
 ---
-{% for post in site.posts %}
-<article>
-	<header class="post_header">
-		{% if post.featured_image %}
-			<img class="post_featured_image" src="/images/posts/{{post.featured_image}}" alt="{{ post.title }}" width="{{post.featured_image_width}}" />
-		{% endif %}
-		<a href="{{ post.url }}" class="excerpt_post_title"><h1>{{ post.title }}</h1></a>
-		<h4 class="meta">{{ post.date | date_to_long_string }}</h4>
-	</header>
-	<section class="post">
-		{% if post.content contains "<!-- more -->" %}
-			{{ post.content | split:"<!-- more -->" | first % }}
-			<p><a class="read_more_button" href="{{ post.url }}">Continue reading</a></p>
-		{% else %}
-			{{ post.content }}
-		{% endif %}
-	</section>
-</article>
-{% endfor %}
+

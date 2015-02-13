@@ -31,7 +31,7 @@ I've been in love with Objective-C from the moment I first started developing fo
 
 I need to admit that I was a bit shocked and sceptical at first, but now I've got to say I'm impressed by Swift. It resolves many problems that Objective-C inherited from C and makes sure, by design, that programmers avoid some common mistakes. Moreover, although Swift's syntax is very different and more compact, it keeps some of the best qualities of Objective-C and you can use all of Cocoa and Cocoa Touch frameworks with it. My favourite feature is named parameters:
 
-{% highlight ruby %}
+{% highlight objc %}
 func join(string s1: String, toString s2: String, withJoiner joiner: String) -> String {
 	return s1 + joiner + s2
 }

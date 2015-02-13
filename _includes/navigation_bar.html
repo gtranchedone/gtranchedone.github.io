@@ -1,16 +1,6 @@
 <nav class="nav_bar" id="nav_bar">
 	<div class="nav_hold">
-		<a href="/" class="nav_logo">{{ site.name }}</a>
-		<a class="nav_menu" id="nav_menu">&#9776;</a>
-		<ul class="nav_list" id="nav">
-			<li {% if page.id == 'Home' %}class="current_menu_item"{% endif %}><a href="/">&#xe011;</a></li>
-    		<li {% if page.id == 'Blog' %}class="current_menu_item"{% endif %}><a href="/blog">&#xe00f;</a></li>
-    		{% if page.show_link_to_rss_feed %}
-			<li id="nav_button_rss">
-				<a href="/blog/feed.xml">&#xe00c;</a>
-				</a>
-			</li>
-			{% endif %}
-		</ul>
+		<a href="/" class="nav_logo">{{ site.title }}</a>
+		{% include social_links.html %}
 	</div>
 </nav>

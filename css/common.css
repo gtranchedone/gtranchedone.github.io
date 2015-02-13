@@ -14,7 +14,7 @@ body {
 	font-family: 'Lato';
 	font-weight: normal;
 	font-size: 20px;
-	color: #888888;
+	color: #666666;
 	
 	/* Fix for code wrapping */
 	word-wrap: break-word;
@@ -115,8 +115,8 @@ p {
 
 article {
 	max-width: 800px;
-	margin: 60px auto;
-	padding: 0px 20px;
+	margin: 40px auto;
+	padding: 20px;
 }
 
 img {
@@ -124,6 +124,10 @@ img {
 	max-width: 100%;
 	display: block;
 	margin: auto;
+}
+
+.emoji {
+	display: inline-block;
 }
 
 /*****************************************************************************/
@@ -209,6 +213,10 @@ footer {
 	-webkit-transform: scale(1.2, 1.2);
     -moz-transform: scale(1.2, 1.2);
     -o-transform: scale(1.2, 1.2);
+}
+
+.pagination {
+	text-align: center;
 }
 
 /*****************************************************************************/

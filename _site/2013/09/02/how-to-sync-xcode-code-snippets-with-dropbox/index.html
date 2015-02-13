@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head profile="http://www.w3.org/2005/10/profile">
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>How to Sync Xcode Code Snippets via Dropbox</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <!-- Syntax Highlighting CSS -->
+        <!-- <link href="/css/syntax.css" type="text/css" rel="stylesheet"/> -->
+		<link rel="stylesheet" href="/highlight/styles/xcode.css">
+		<script src="/highlight/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+        <!-- Custom CSS -->
+        <link href="/css/fonts.css" type="text/css" rel="stylesheet"/>
+        <link href="/css/common.css" type="text/css" rel="stylesheet"/>
+        <link href="/css/navbar.css" type="text/css" rel="stylesheet"/>
+        
+        <link href=/css/blog.css type="text/css" rel="stylesheet"/>
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <!-- JavaScript -->
+        <script type="text/javascript" src="/javascript.js"></script>
+        <!-- RSS Feed -->
+        <link href="/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Atom RSS Feed"/>
+        <!-- Google Anaytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49946891-1', 'gtranchedone.com');
+  ga('require', 'linkid', 'linkid.js');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<!-- END Google Anaytics -->
+        <!-- Bit.ly Verification -->
+        <meta name="bitly-verification" content="1629f330e22d"/>
+        <!-- Common Social Media Optimization -->
+        
+		<!-- Google Authorship -->
+		
+		<link rel="author" href="https://plus.google.com/u/1/+GianlucaTranchedone"/>
+		
+		
+		<meta itemprop="image" content="http://gtranchedone.com/images/posts/2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/post_banner.png">
+		
+        <!-- Facebook Sharing Optimization -->
+        
+        <meta property="og:title" content="How to Sync Xcode Code Snippets via Dropbox" />
+        <meta property="og:url" content="http://gtranchedone.com/2013/09/02/how-to-sync-xcode-code-snippets-with-dropbox" />
+        
+		
+		<meta property="og:image" content="http://gtranchedone.com/images/posts/2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/post_banner.png" />
+		
+		
+    </head>
+    <body>
+    	
+    	<header>
+    		<nav class="nav_bar" id="nav_bar">
+	<div class="nav_hold">
+		<a href="/" class="nav_logo">Gianluca Tranchedone</a>
+		<!-- Social Links -->
+<ul class="social_links_list" id="social">
+	<li>
+		<a href="http://twitter.com/gtranchedone">
+			<div class="socialButton" id="socialButtonTwitter">&#xe005;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://linkedin.com/in/gtranchedone">
+			<div class="socialButton" id="socialButtonLinkedIn">&#xe015;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://github.com/gtranchedone">
+			<div class="socialButton" id="socialButtonGitHub">&#xe01d;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://stackoverflow.com/users/737105/gianluca-tranchedone">
+			<div class="socialButton" id="socialButtonStackOverflow">&#xe008;</div>
+		</a>
+	</li>
+	<li>
+		<a href="mailto:g.tranchedone@gmail.com">
+			<div class="socialButton" id="socialButtonEmail">&#xe023;</div>
+		</a>
+	</li>
+	
+	
+	<li>
+		<a href="/blog/feed.xml">
+			<div class="socialButton" id="socialButtonRSS">&#xe00c;</div>
+		</a>
+	</li>
+	
+</ul>
+<!-- END Social Links -->
+	</div>
+</nav>
+		</header>
+		
+    	<article>
+	<header class="post_header">
+		
+		<img class="post_featured_image" src="/images/posts/2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/post_banner.png" alt="How to Sync Xcode Code Snippets via Dropbox" width="500" />
+		
+		<h1>How to Sync Xcode Code Snippets via Dropbox</h1>
+		<h4 class="meta">02 September 2013</h4>
+	</header>
+	<section class="post">
+		<p><em>Disclaimer: This post is based on an answer on StackOverflow to the question “How Can One Transfer Xcode 4 Code Snippets From One Machine To Another?”. I&#39;ve tried the following method myself and it works like magic. I&#39;m also using it to sync Xcode&#39;s custom colour schemes and other user-specific data across my Macs.</em></p>
+
+<p>Xcode&#39;s Code Snippets are located in <code>~/Library/Developer/Xcode/UserData/CodeSnippets/</code>. If you want to have all your code snippets synchronised between multiple Macs, you can use Dropbox to do so.</p>
+
+<!-- more -->
+
+<h2>Creating Code Snippets</h2>
+
+<p>To create a code snippet in Xcode, you proceed as follows:</p>
+
+<ol>
+<li>Write and select some code</li>
+<li><p>Drag and drop your code in the snippet&#39;s section in Xcode</p>
+
+<p><img src="/images/posts/2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/create_custom_code_snippet_xcode.png" alt="create custom code snippet in Xcode"></p></li>
+<li><p>Replace variables with placeholders if appropriate. To do so, select the code you want to replace and substitute it with a description wrapped in brackets and hash-signs like so <em>&lt;#yourDescription#&gt;</em>.</p></li>
+<li><p>Add name, a description and a shortcut</p>
+
+<p><img src="/images/posts/2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/edit_code_snippet_xcode.png" alt="edit custom code snippet in Xcode"></p></li>
+</ol>
+
+<p>You&#39;re done! Do the same for all of your snippets and keep reading once you&#39;re done or ready to synchronise. Any snippet created after you&#39;ve set up Dropbox to sync your Xcode data will automatically be synced.</p>
+
+<h2>Synchronising Code Snippets with Dropbox</h2>
+
+<p>To synchronise all your snippets using Dropbox, follow these steps:</p>
+
+<ol>
+<li>Quit Xcode.</li>
+<li>Move your CodeSnippets directory to your Dropbox. For example, let&#39;s say you moved them to <code>~/Dropbox/CodeSnippets</code>.</li>
+<li>Let Dropbox upload them.</li>
+<li>Pause Dropbox&#39;s syncing.</li>
+<li>Move them back to where Xcode stores them.</li>
+<li>Create a symbolic link into Dropbox: <code>ln -s ~/Library/Developer/Xcode/UserData/CodeSnippets ~/Dropbox/CodeSnippets</code>.</li>
+<li>Resume Dropbox syncing.</li>
+<li>Relaunch Xcode.</li>
+</ol>
+
+<p>On your other computer:</p>
+
+<ol>
+<li>Quit Xcode.</li>
+<li>Let Dropbox download everything, if it hasn&#39;t yet.</li>
+<li>Pause Dropbox syncing.</li>
+<li>Remove your local Xcode user data: <code>rm -R ~/Library/Developer/Xcode/UserData/CodeSnippets</code>.</li>
+<li>Move your UserData from Dropbox to Xcode: <code>mv ~/Dropbox/CodeSnippets ~/Library/Developer/Xcode/UserData/CodeSnippets</code>.</li>
+<li>Create a symbolic link from your UserData to DropBox: <code>ln -s ~/Library/Developer/Xcode/UserData/CodeSnippets ~/Dropbox/CodeSnippets</code>.</li>
+<li>Resume Dropbox syncing.</li>
+<li>Relaunch Xcode.</li>
+</ol>
+
+<p>The convolutions are necessary because Xcode will not follow a symlink, but Dropbox will. Dropbox will treat that symlink exactly as if the directory was actually there. This is not perfect; you will probably have to quit Xcode to have it recognise new snippets.</p>
+
+<p>I sync my entire UserData directory, which gets me synchronised key bindings, named tabs, font &amp; color schemes and code snippets. To do this, move and <code>ln ~/Library/Developer/Xcode/UserData</code> instead.</p>
+
+		<p><a href="/">&#x3031; All Blog Posts</a></p>
+	</section>
+	<footer class="post_footer">
+	</footer>
+	<footer class="comments">
+		
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_shortname = 'gtranchedone';
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</footer>
+</article>
+
+
+    	<footer>
+    		
+    			<!-- Social Links -->
+<ul class="social_links_list" id="social">
+	<li>
+		<a href="http://twitter.com/gtranchedone">
+			<div class="socialButton" id="socialButtonTwitter">&#xe005;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://linkedin.com/in/gtranchedone">
+			<div class="socialButton" id="socialButtonLinkedIn">&#xe015;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://github.com/gtranchedone">
+			<div class="socialButton" id="socialButtonGitHub">&#xe01d;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://stackoverflow.com/users/737105/gianluca-tranchedone">
+			<div class="socialButton" id="socialButtonStackOverflow">&#xe008;</div>
+		</a>
+	</li>
+	<li>
+		<a href="mailto:g.tranchedone@gmail.com">
+			<div class="socialButton" id="socialButtonEmail">&#xe023;</div>
+		</a>
+	</li>
+	
+	
+	<li>
+		<a href="/blog/feed.xml">
+			<div class="socialButton" id="socialButtonRSS">&#xe00c;</div>
+		</a>
+	</li>
+	
+</ul>
+<!-- END Social Links -->
+    		
+    		<div class="copyright">
+				<h5>&copy; 2013-
+					<script type="text/javascript">
+						now = new Date
+						theYear = now.getYear()
+						if (theYear < 1900) theYear += 1900
+						document.write(theYear)
+					</script> Gianluca Tranchedone. All rights reserved.
+				</h5>
+    		</div>
+		</footer>
+    </body>
+</html>
