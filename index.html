@@ -6,30 +6,19 @@ title: Gianluca Tranchedone
 show_link_to_blog: false
 ---
 <!-- Home Page -->
-<main>
-	<section id="description">
+<div class="centered_content_container">
+	<div class="centered_content">
 		<div id="intro">
-			<h1>Hi, I'm Gianluca<br><span>I'm a Software Craftsman*</span></h1>
-			<div id="floatingElements">
-				<div class="floatingText" id="wifeLink">
-					<p>...and she's my lovely wife <a href="http://twitter.com/jexyla">Jessica</a></p>
-				</div>
-				<div id="profilePicture">
-					<img class="roundedImage" src="/images/home_page_profile_picture.jpeg" alt="Gianluca's Profile Picture" />
-				</div>
-				<div class="floatingText" id="softwareCraftsmanshipLink">
-					<p>*Read the <a href="http://manifesto.softwarecraftsmanship.org/">Software Craftsmanship's Manifesto</a></p>
-				</div>
-			</div>
-		</div>
-		<div id="description_body">
-					<p>My speciality is <strong>iOS & OS X development</strong> but in my spare time I also like to play with Ruby, HTML, CSS and JavaScript. By day I work as an <strong>independent contractor</strong> under my limited company, <a href="http://cocoabeans.io">Cocoa Beans</a>, and by night I work on personal projects<!-- and write on my <a href="blog">blog</a>-->.</p>
-		<p>Feel free to get in touch to discuss how I can help your team develop great apps!<br/>Don't forget to have a look at my <a href="/blog">blog</a> too!</p>
-		<!-- <p>Please have a look at my <a href="/blog">blog</a>. You may also want to check out my <a href="http://cocoabeans.me/projects">latest projects</a> and my <a href="cv.pdf">CV</a>. If you feel I'd be a good addition to your team, don't hesitate to get in touch!</p> -->
+			<h1>Hi, I'm Gianluca<br><span>I'm a Software Craftsman</span></h1>
+			<img id="profile_picture" src="http://www.gravatar.com/avatar/2b98c09b232d45d7b03fd6804ed23e40?s=400" alt="Gianluca's Profile Picture" />
+			<p>
+				My speciality is <strong>iOS & OS X development</strong> but in my spare time I also like to play with Ruby, HTML, CSS and JavaScript. By day I work as an <strong>independent contractor</strong> under my limited company, <a href="http://cocoabeans.io">Cocoa Beans</a>, and by night I work on personal projects.
+			</p>
 		</div>
 		{% include social_links.html %}
-	</section>
-</main>
+		<a href="#posts"><img id="arrow_down" src="/images/arrow-down.png" width="28px"></a>
+	</div>
+</div>
 <section id="posts">
 	{% for post in site.posts %}
 		<article>

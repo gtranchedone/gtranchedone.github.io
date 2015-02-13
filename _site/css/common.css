@@ -10,11 +10,9 @@
 
 body {
 	-webkit-font-smoothing:antialiased;
-	text-shadow: 0px 1px white;
 	background-color: #FEFEFE;
 	font-family: 'Lato';
 	font-weight: normal;
-	text-align: center;
 	font-size: 18px;
 	color: #888888;
 	
@@ -30,12 +28,6 @@ html, body {
 	height: 100%;
 	padding: 0px;
 	margin: 0px;
-}
-
-main {
-	padding: 20px;
-	min-height: 100%;
-	background-color: floralwhite;
 }
 
 strong {
@@ -71,9 +63,7 @@ h1 {
 	font-size: 36px;
 	font-weight: normal;
 	line-height: normal;
-	text-shadow: 0px 1px white;
-	text-transform: capitalize;
-	font-family: 'Sorts Mill Goudy';
+	font-family: 'Lato Bold';
 }
 
 h1 a {
@@ -101,22 +91,36 @@ h3 {
 }
 
 h4 {
-	margin: 10px;
+	margin: 0px;
 	color: #A9A9A9;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: normal;
+	font-family: 'Lato Lite';
 }
 
 h5 {
-	margin: 0px;
+	margin: 10px 0px;
 	color: #A9A9A9;
+	font-size: 16px;
 	font-weight: normal;
+	font-family: 'Lato Lite';
 }
 
 p {
-	max-width: 800px;
 	margin: 30px auto;
-	padding: 0px 30px;
+	line-height: 1.5;
+}
+
+article {
+	max-width: 800px;
+	margin: 60px auto;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	display: block;
+	margin: auto;
 }
 
 /*****************************************************************************/
@@ -154,10 +158,76 @@ header {
 }
 
 footer {
+	margin: 20px;
 	color: #A9A9A9;
+	text-align: center;
 }
 
-.copyright {
-	font-style: italic;
-	margin: 20px;
+/*****************************************************************************/
+/*
+/* Links
+/*
+/*****************************************************************************/
+
+.read_more_button {
+	color: #48ACB5;
+	padding: 10px 20px;
+	border: 1px solid;
+	border-radius: 30px;
+	display: inline-block;
+	text-transform: capitalize;
+}
+
+.read_more_button:hover {
+	color: #94D5CA;
+}
+
+.read_more_button:visited {
+	color: #48ACB5;
+}
+
+.read_more_button:visited:hover {
+	color: #94D5CA;
+}
+
+.socialButton {
+	margin: 4px;
+	text-shadow: none;
+	background-color: none; /* #61CA37; */
+	/* Animation */
+	-webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+.socialButton:hover {
+	background-color: none; /* #DB93E3; */
+	/* Animation */
+	-webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+}
+
+/*****************************************************************************/
+/*
+/* Responsive Design Code
+/*
+/*****************************************************************************/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+	
+	.socialButton {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		font-size: 32px;
+	}
+
+	.socialButton:hover {
+		-webkit-transform: scale(1, 1);
+		-moz-transform: scale(1, 1);
+		-o-transform: scale(1, 1);
+	}
+	
 }

@@ -1,13 +1,33 @@
 /*****************************************************************************/
 /*
-/* Home Screen General
+/* Intro Area
 /*
 /*****************************************************************************/
 
+.centered_content_container {
+	display: table;
+	width: 100%;
+	min-height: 100%;
+	color: white;
+	text-align: center;
+	background-color: #E96944;
+}
+
+.centered_content {
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+   padding: 20px;
+}
+
+#intro {
+	position: relative;
+}
+
 #intro h1 {
+	color: inherit;
 	padding: 0px;
 	margin: 0.4em;
-	color: #888888;
 	font-size: 32px;
 	line-height: 50px;
 	font-weight: normal;
@@ -16,84 +36,46 @@
 }
 
 #intro h1 span {
-	color: #FF9C01;
 	font-size: 36px;
 	font-weight: normal;
 	text-transform: uppercase;
 	font-family: 'Sorts Mill Goudy';
 }
 
-/*****************************************************************************/
-/*
-/* Intro Area
-/*
-/*****************************************************************************/
-
-#intro {
-	position: relative;
+#intro p {
+	max-width: 720px;
+	margin: 0px auto;
 }
 
-#profilePicture {
-	display: inline-block;
-	position: relative;
-	height: 240px;
-	width: 240px;
+#intro a {
+	color: #94D5CA;
 }
 
-.roundedImage {
-	border-radius: 120px;
-	height: 240px;
-	width: 240px;
-	z-index: 0;
+#intro a:hover {
+	color: #F8C72E;
 }
 
-#floatingElements {
-	position: relative;
+#intro a:visited {
+	color: #94D5CA;
 }
 
-.floatingText {
-	position: absolute;
-	display: inline-block;
-	width: 33%; /* Fallback for browsers that don't support calc  */
-	width: calc(50% - 120px - 10px);
-	font-family: 'Lato Lite';
-	font-size: 14px;
-	z-index: 1;
+#intro a:visited:hover {
+	color: #F8C72E;
 }
 
-.floatingText p {
-	margin: 0px;
+#profile_picture {
+	border-radius: 100px;
+	margin: 20px auto;
+	width: 160px;
+	height: auto;
 }
 
-#wifeLink {
-	left: 0;
-	text-align: right;
-	margin-top: 210px;
-	margin-right: 10px;
-}
-
-#softwareCraftsmanshipLink {
-	margin: -15px 10px 0px 10px;
-	text-align: left;
-}
-
-/*****************************************************************************/
-/*
-/* Main Content Area
-/*
-/*****************************************************************************/
-
-#description {
-	margin: auto;
-}
-
-#posts {
+#social {
 	margin: 20px;
 }
 
-#description_body {
-	max-width: 720px;
-	margin: 25px auto;
+#arrow_down {
+	margin: 20px auto;
 }
 
 /*****************************************************************************/
@@ -102,33 +84,24 @@
 /*
 /*****************************************************************************/
 
-#links {
-	margin: 25px auto;
-	/* Animation */
-	-webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-}
-
 .socialButton {
-	margin: 4px;
 	color: white;
-	text-shadow: none;
-	background-color: #61CA37;
-	/* Animation */
-	-webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
 }
 
 .socialButton:hover {
-	background-color: #DB93E3;
-	/* Animation */
-	-webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 1.2);
+	color: #F8C72E;
 }
 
+/*
+#links {
+	margin: 25px auto;
+	-webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+*/
+
+/*
 #socialButtonTwitter {
 	background-color: #26A6D1;
 }
@@ -168,6 +141,17 @@
 #socialButtonStackOverflow:hover {
 	background-color: #26AB64;
 }
+*/
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+#posts {
+	margin: 20px;
+}
 
 /*****************************************************************************/
 /*
@@ -176,6 +160,7 @@
 /*****************************************************************************/
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+
 	h1 {
 		font-size: 24px;
 		line-height: normal;
@@ -185,41 +170,4 @@
 		font-size: 26px;
 	}
 
-	.roundedImage {
-		border-radius: 80px;
-		height: 160px;
-		width: 160px;
-	}
-
-	.socialButton {
-		width: 40px;
-		height: 40px;
-		line-height: 40px;
-		border-radius: 20px;
-		font-size: 32px;
-	}
-
-	.socialButton:hover {
-		-webkit-transform: scale(1, 1);
-		-moz-transform: scale(1, 1);
-		-o-transform: scale(1, 1);
-	}
-
-	#softwareCraftsmanshipLink {
-		display: none;
-	}
-
-	#wifeLink {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	#softwareCraftsmanshipLink {
-		display: none;
-	}
-
-	#wifeLink {
-		display: none;
-	}
 }
