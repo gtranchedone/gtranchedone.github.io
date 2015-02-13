@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2014-06-10 11:00:00
-title: "Swift"
+title: "The Swift Programming Language"
 
 comments_enabled: true
 categories: [cocoa, cocoa-touch]

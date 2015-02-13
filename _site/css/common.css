@@ -13,7 +13,7 @@ body {
 	background-color: #FEFEFE;
 	font-family: 'Lato';
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 20px;
 	color: #888888;
 	
 	/* Fix for code wrapping */
@@ -57,10 +57,11 @@ a:visited:hover {
 }
 
 h1 {
-	margin: 0px;
+	margin: 20px 0 0 0;
 	padding: 0px;
 	color: #FF9C01;
-	font-size: 36px;
+	font-size: 48px;
+	text-align: center;
 	font-weight: normal;
 	line-height: normal;
 	font-family: 'Lato Bold';
@@ -96,10 +97,11 @@ h4 {
 	font-size: 16px;
 	font-weight: normal;
 	font-family: 'Lato Lite';
+	text-align: center;
 }
 
 h5 {
-	margin: 10px 0px;
+	margin: 0px;
 	color: #A9A9A9;
 	font-size: 16px;
 	font-weight: normal;
@@ -114,6 +116,7 @@ p {
 article {
 	max-width: 800px;
 	margin: 60px auto;
+	padding: 0px 20px;
 }
 
 img {
@@ -158,7 +161,7 @@ header {
 }
 
 footer {
-	margin: 20px;
+	padding: 30px;
 	color: #A9A9A9;
 	text-align: center;
 }
@@ -217,11 +220,11 @@ footer {
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
 	
 	.socialButton {
-		width: 40px;
-		height: 40px;
+		width: 32px;
+		height: 32px;
 		line-height: 40px;
 		border-radius: 20px;
-		font-size: 32px;
+		font-size: 28px;
 	}
 
 	.socialButton:hover {
