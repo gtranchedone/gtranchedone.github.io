@@ -62,37 +62,13 @@
 /*****************************************************************************/
 
 blockquote {
-	margin: 20px;
-	padding: 0px 0px 0px 40px;
-	position: relative;
+	font-family: 'Lato Light';
+	padding: 0px 0px 0px 20px;
+	border-left: 4px solid #FF9C01;
 }
 
 blockquote blockquote {
 	margin-bottom: 0px;
-}
-
-blockquote::before {
-	content: "\201C"; /*Unicode for Left Double Quote*/
-	/*Font*/
-	font-family: Georgia, serif;
-	font-weight: bold;
-	font-size: 80px;
-	color: #EEEEEE;
-	z-index: -1;
-
-	/*Positioning*/
-	position: absolute;
-	left: -15px;
-	top: -25px;
-}
-
-blockquote::after {
-	/*Reset to make sure*/
-	content: "";
-}
-
-blockquote {
-	font-family: 'Lato Light';
 }
 
 blockquote p em {
