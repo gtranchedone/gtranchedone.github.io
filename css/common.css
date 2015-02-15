@@ -59,12 +59,16 @@ a:visited:hover {
 h1 {
 	margin: 20px 0 0 0;
 	padding: 0px;
-	color: /* #3B3B3B; */ #FF9C01;
+	color: #FF9C01;
 	font-size: 48px;
 	text-align: center;
 	font-weight: normal;
 	line-height: normal;
 	font-family: 'Lato Black';
+}
+
+h1:hover {
+	color: inherit;
 }
 
 h1 a {
