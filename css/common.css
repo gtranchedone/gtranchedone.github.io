@@ -13,8 +13,8 @@ body {
 	background-color: #FEFEFE;
 	font-family: 'Lato';
 	font-weight: normal;
-	font-size: 18px;
-	color: #888888;
+	font-size: 20px;
+	color: #666666;
 	
 	/* Fix for code wrapping */
 	word-wrap: break-word;
@@ -57,13 +57,14 @@ a:visited:hover {
 }
 
 h1 {
-	margin: 0px;
+	margin: 20px 0 0 0;
 	padding: 0px;
-	color: #FF9C01;
-	font-size: 36px;
+	color: /* #3B3B3B; */ #FF9C01;
+	font-size: 48px;
+	text-align: center;
 	font-weight: normal;
 	line-height: normal;
-	font-family: 'Lato Bold';
+	font-family: 'Lato Black';
 }
 
 h1 a {
@@ -95,25 +96,28 @@ h4 {
 	color: #A9A9A9;
 	font-size: 16px;
 	font-weight: normal;
-	font-family: 'Lato Lite';
+	font-family: 'Lato Light';
+	text-align: center;
 }
 
 h5 {
-	margin: 10px 0px;
+	margin: 0px;
 	color: #A9A9A9;
 	font-size: 16px;
 	font-weight: normal;
-	font-family: 'Lato Lite';
+	font-family: 'Lato Light';
 }
 
 p {
-	margin: 30px auto;
 	line-height: 1.5;
+	margin: 30px auto;
+	text-align: justify;
 }
 
 article {
 	max-width: 800px;
-	margin: 60px auto;
+	margin: 0px auto;
+	padding: 20px;
 }
 
 img {
@@ -121,6 +125,10 @@ img {
 	max-width: 100%;
 	display: block;
 	margin: auto;
+}
+
+.emoji {
+	display: inline-block;
 }
 
 /*****************************************************************************/
@@ -149,30 +157,14 @@ img {
 
 /*****************************************************************************/
 /*
-/* Header and Footer
-/*
-/*****************************************************************************/
-
-header {
-	clear: both;
-}
-
-footer {
-	margin: 20px;
-	color: #A9A9A9;
-	text-align: center;
-}
-
-/*****************************************************************************/
-/*
 /* Links
 /*
 /*****************************************************************************/
 
 .read_more_button {
 	color: #48ACB5;
-	padding: 10px 20px;
-	border: 1px solid;
+	/* padding: 10px 20px; */
+	/* border: 1px solid; */
 	border-radius: 30px;
 	display: inline-block;
 	text-transform: capitalize;
@@ -192,20 +184,46 @@ footer {
 
 .socialButton {
 	margin: 4px;
-	text-shadow: none;
-	background-color: none; /* #61CA37; */
-	/* Animation */
+	font-family: 'Grands';
+	background-color: none;
 	-webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
 }
 
 .socialButton:hover {
-	background-color: none; /* #DB93E3; */
-	/* Animation */
+	background-color: none;
 	-webkit-transform: scale(1.2, 1.2);
     -moz-transform: scale(1.2, 1.2);
     -o-transform: scale(1.2, 1.2);
+}
+
+.pagination {
+	text-align: center;
+}
+
+/*****************************************************************************/
+/*
+/* Header and Footer
+/*
+/*****************************************************************************/
+
+header {
+	clear: both;
+}
+
+footer {
+	padding: 30px;
+	color: #A9A9A9;
+	text-align: center;
+}
+
+footer #social {
+	margin: 10px auto;
+}
+
+footer #social .socialButton {
+	color: inherit;
 }
 
 /*****************************************************************************/
@@ -217,11 +235,11 @@ footer {
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
 	
 	.socialButton {
-		width: 40px;
-		height: 40px;
+		width: 32px;
+		height: 32px;
 		line-height: 40px;
 		border-radius: 20px;
-		font-size: 32px;
+		font-size: 28px;
 	}
 
 	.socialButton:hover {

@@ -6,38 +6,21 @@ title: Gianluca Tranchedone
 show_link_to_blog: false
 ---
 <!-- Home Page -->
-<div class="centered_content_container">
+<div class="centered_content_container" id="main">
 	<div class="centered_content">
 		<div id="intro">
-			<h1>Hi, I'm Gianluca<br><span>I'm a Software Craftsman</span></h1>
 			<img id="profile_picture" src="http://www.gravatar.com/avatar/2b98c09b232d45d7b03fd6804ed23e40?s=400" alt="Gianluca's Profile Picture" />
+			<h3>Gianluca Tranchedone</h3>
+			<h1>Hello! I'm a Software Craftsman.</h1>
 			<p>
-				My speciality is <strong>iOS & OS X development</strong> but in my spare time I also like to play with Ruby, HTML, CSS and JavaScript. By day I work as an <strong>independent contractor</strong> under my limited company, <a href="http://cocoabeans.io">Cocoa Beans</a>, and by night I work on personal projects.
+				My speciality is <strong>iOS & OS X development</strong> but in my spare time I also like to play with Ruby, HTML, CSS and JavaScript. By day I work as an <strong>independent contractor</strong> under my limited company, Cocoa Beans, and by night I work on personal projects.
 			</p>
 		</div>
 		{% include social_links.html %}
-		<a href="#posts"><img id="arrow_down" src="/images/arrow-down.png" width="28px"></a>
 	</div>
 </div>
+<a href="#posts"><img id="arrow_down" src="/images/arrow-down.png" width="28px"></a>
 <section id="posts">
-	{% for post in site.posts %}
-		<article>
-			<header class="post_header">
-				{% if post.featured_image %}
-				<img class="post_featured_image" src="/images/posts/{{post.featured_image}}" alt="{{ post.title }}" width="{{post.featured_image_width}}" />
-				{% endif %}
-					<a href="{{ post.url }}" class="excerpt_post_title"><h1>{{ post.title }}</h1></a>
-				<h4 class="meta">{{ post.date | date_to_long_string }}</h4>
-			</header>
-			<section class="post">
-				{% if post.content contains "<!-- more -->" %}
-					{{ post.content | split:"<!-- more -->" | first % }}
-					<p><a class="read_more_button" href="{{ post.url }}">Continue reading</a></p>
-				{% else %}
-					{{ post.content }}
-				{% endif %}
-			</section>
-		</article>
-	{% endfor %}
+	{% include blog_excerpts.html %}
 </section>
 <!-- END Home Page -->

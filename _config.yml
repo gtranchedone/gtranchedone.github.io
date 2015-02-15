@@ -1,19 +1,28 @@
-baseurl: /
-permalink: /blog/:title
-url: http://gtranchedone.com
-name: Gianluca Tranchedone
-description: "Gianluca's Personal Website"
 timezone: Europe/London
 markdown: redcarpet
 redcarpet:
   extensions: ["strikethrough"]
 encoding: utf-8
 pygments: true
-safe: true
+safe: false
 lsi: false
 
+baseurl: /
+permalink: /:year/:month/:day/:title
+url: http://gtranchedone.com
+
+title: Gianluca Tranchedone
+description: "Gianluca's Personal Website"
+author :
+  name : Gianluca Tranchedone
+  email : g.tranchedone@gmail.com
+  github : gtranchedone
+  twitter: gtranchedone
+
+paginate: 4
+
 gems:
-- jekyll-mentions
-- jemoji
-- jekyll-redirect-from
-- jekyll-sitemap
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jemoji

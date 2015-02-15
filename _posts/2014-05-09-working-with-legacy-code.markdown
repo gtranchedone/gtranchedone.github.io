@@ -9,14 +9,14 @@ categories: software-craftsmanship
 author: Gianluca Tranchedone
 author_url: https://plus.google.com/u/1/+GianlucaTranchedone
 
-featured_image: 2014-05-09-working-with-legacy-code/banner.png
+featured_image: 2014-05-09-working-with-legacy-code/legacy_code.png
 featured_image_length: 62470
-featured_image_width: 600
+featured_image_width: 760
 
 social_description: "Working with legacy code may be a daunting task. Michael Feathers in his 'Working Effectively with Legacy Code' gives a precise definition for it: '[...]legacy code is simply code without tests'. His book is a must read for every software engineer or aspiring one."
 ---
 
-Every software engineer feels a sense disgust when hearing the words *legacy code*. Strictly speaking legacy code it's code you "inherit" from someone else, however, the term is more broadly used to indicate a piece of software that's no longer maintained. Often it's code that, although deprecated, is still in use because of dependencies spread across a large system. Anyway, Michael Feathers has a better definition:
+Every software engineer feels a sense disgust when hearing the words *legacy code*. Strictly speaking legacy code it's code you "inherit" from someone else, however, the term is more broadly used to indicate a piece of software that's no longer maintained. Often it's code that, although deprecated, is still in use because of dependencies spread across a large system. Anyway, Michael Feathers has a better definition
 
 <!-- more -->
 

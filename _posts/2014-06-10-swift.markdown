@@ -1,17 +1,17 @@
 ---
 layout: post
 date: 2014-06-10 11:00:00
-title: "Swift"
+title: "The Swift Programming Language"
 
 comments_enabled: true
-categories: [cocoa, cocoa-touch]
+categories: swift
 
 author: Gianluca Tranchedone
 author_url: https://plus.google.com/u/1/+GianlucaTranchedone
 
-featured_image: 2014-06-10-swift/banner.png
-featured_image_length: 26325
-featured_image_width: 128
+featured_image: 2014-06-10-swift/apple_swift.png
+featured_image_length: 239004
+featured_image_width: 760
 
 social_description: "Apple has just introduced a new programming language for iOS and OS X development, Swift. Here are my first thoughts about this new language."
 ---
@@ -31,7 +31,7 @@ I've been in love with Objective-C from the moment I first started developing fo
 
 I need to admit that I was a bit shocked and sceptical at first, but now I've got to say I'm impressed by Swift. It resolves many problems that Objective-C inherited from C and makes sure, by design, that programmers avoid some common mistakes. Moreover, although Swift's syntax is very different and more compact, it keeps some of the best qualities of Objective-C and you can use all of Cocoa and Cocoa Touch frameworks with it. My favourite feature is named parameters:
 
-{% highlight ruby %}
+{% highlight objc %}
 func join(string s1: String, toString s2: String, withJoiner joiner: String) -> String {
 	return s1 + joiner + s2
 }

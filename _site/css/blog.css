@@ -10,16 +10,12 @@
 }
 
 .post {
-	color: #666666;
-	font-size: 22px;
-	line-height: 1.5;
-	padding: 0px 10px;
+	/* font-size: 22px; */
 	text-align: justify;
 	text-justify: inter-word;
 }
 
 .post_header {
-	padding: 20px 10px;
 	margin-bottom: 40px;
 }
 
@@ -67,7 +63,7 @@
 
 blockquote {
 	margin: 20px;
-	padding: 10px 0px 0px 50px;
+	padding: 0px 0px 0px 40px;
 	position: relative;
 }
 
@@ -80,14 +76,14 @@ blockquote::before {
 	/*Font*/
 	font-family: Georgia, serif;
 	font-weight: bold;
-	font-size: 120px;
+	font-size: 80px;
 	color: #EEEEEE;
 	z-index: -1;
 
 	/*Positioning*/
 	position: absolute;
 	left: -15px;
-	top: -45px;
+	top: -25px;
 }
 
 blockquote::after {
@@ -96,7 +92,7 @@ blockquote::after {
 }
 
 blockquote {
-	font-family: 'Lato Lite';
+	font-family: 'Lato Light';
 }
 
 blockquote p em {
@@ -111,7 +107,7 @@ blockquote p em {
 
 /*****************************************************************************/
 /*
-/* Text and Code
+/* Text
 /*
 /*****************************************************************************/
 
@@ -124,38 +120,10 @@ sup {
 	font-size: 14px;
 }
 
-.highlight {
-	font-size: 16px;
-	margin: 30px 0px;
-	text-shadow: none;
-	overflow: auto;
-	word-wrap: normal;
-}
-
-.post pre {
-	margin: 0px;
-}
-
 .post ul, .post ol {
 	margin-bottom: 30px;
 	margin-left: 1.5em;
 	margin-top: 0px;
-}
-
-.post .emoji {
-	width: 20px;
-}
-
-code {
-	padding: 0px;
-	color: #586E75;
-	text-shadow: none;
-	background-color: #EFEFEF;
-}
-
-.comments {
-	color: black; /* disqus determines the theme to use based on the text color */
-	padding: 10px;
 }
 
 .post .footnotes {
@@ -165,8 +133,33 @@ code {
 	padding: 0px;
 }
 
+.comments {
+	color: black; /* disqus determines the theme to use based on the text color */
+	padding: 10px;
+}
+
 li sup {
 	font-size: 8px;
+}
+
+/*****************************************************************************/
+/*
+/* Code
+/*
+/*****************************************************************************/
+
+.hljs {
+	font: 14px/1.8em menlo, monospace;
+	border: 1px solid #E5E5E5;
+	background-color: #F9FAFA;
+	padding: 20px;
+}
+
+code {
+	padding: 0px;
+	color: #586E75;
+	text-shadow: none;
+	background-color: #EFEFEF;
 }
 
 /*****************************************************************************/

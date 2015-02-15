@@ -10,14 +10,14 @@ author: Gianluca Tranchedone
 author_url: https://plus.google.com/u/1/+GianlucaTranchedone
 
 featured_image: 2014-06-23-testing-code/banner.png
-featured_image_length: 242576
+featured_image_length: 239379
 featured_image_width: 760
 
 social_description: "Working with legacy code may be a daunting task. Michael Feathers in his 'Working Effectively with Legacy Code' gives a precise definition for it: '[...]legacy code is simply code without tests'. His book is a must read for every software engineer or aspiring one."
 ---
 _Disclaimer: what follows are my personal opinions about testing code and test-driven development (TDD). The definitions I give in this post are my personal interpretation of this concepts. I'm not trying to start yet another infinite discussion about this topics, however, I'd like to hear from you in the comments. One last note: this is a long article._
 
-I've been familiar with the concept of testing code for a long time now but, as many fellow developers, I've not regularly written tests for most of my career. That has recently changed. Nowadays I almost exclusively<sup id="fn1back"><a href="#fn1">1</a></sup> write code test-first. Most people find that quite a challenging thing to do. The 'believers', those that actually try to get into the habit of regularly writing tests, find it hard to stick with this practice, to make it an habit. Therefore, once of the reasons I'm writing this post is to explain why I got into testing and how I got stuck on it.
+I've been familiar with the concept of testing code for a long time now but, as many fellow developers, I've not regularly written tests for most of my career. That has recently changed. Nowadays I almost exclusively[^The only exception I’ve made so far has been fixing a few bugs the last two days before a tight deadline for submitting an update to Lowdown to Apple. In that case, the code I had to fix wasn’t already under test and the time required to make it testable would have made me miss the deadline, which isn’t great.] write code test-first. Most people find that quite a challenging thing to do. The 'believers', those that actually try to get into the habit of regularly writing tests, find it hard to stick with this practice, to make it an habit. Therefore, once of the reasons I'm writing this post is to explain why I got into testing and how I got stuck on it.
 
 <!-- more -->
 
@@ -29,7 +29,7 @@ Therefore, to start with, I want to give _my own_ definitions of some key concep
 
 ##A simple, yet powerful concept
 
-Testing code is a very simple idea that's been around for the last 15 years already. In its essence tests are snippets of code that exercise some behaviour in your system. This are organised in test suites - a collection of tests - that can be manually or automatically run by developers to make sure everything is working as expected, without the necessity of manually testing the software<sup id="fn2back"><a href="#fn2">2</a></sup>.
+Testing code is a very simple idea that's been around for the last 15 years already. In its essence tests are snippets of code that exercise some behaviour in your system. This are organised in test suites - a collection of tests - that can be manually or automatically run by developers to make sure everything is working as expected, without the necessity of manually testing the software[^Manually testing software is still an invaluable part of the development process. Tests can have bugs too!].
 
 >Tests are snippets of code meant to exercise the behaviour of a small section in a software system to ensure that its functionality remains unchanged as you modify it to, for example, make performance improvements or fix bugs.
 
@@ -119,14 +119,3 @@ To conclude, I thought I'd answer some of the questions I had when I first start
 ###How do I test private methods?
 
 …
-
-----
-<ol class="footnotes">
-<li>
-<sup id="fn1">1</sup><span>The only exception I've made so far has been fixing a few bugs the last two days before a tight deadline for submitting an update to Lowdown to Apple. In that case, the code I had to fix wasn't already under test and the time required to make it testable would have made me miss the deadline, which isn't great.<a href="#fn1back">&#8617;</a></span>
-</li>
-
-<li>
-<sup id="fn2">2</sup><span>Manually testing software is still an invaluable part of the development process. Tests can have bugs too!<a href="#fn2back">&#8617;</a></span>
-</li>
-</ol>

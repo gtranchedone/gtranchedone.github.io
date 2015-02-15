@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         <!-- Syntax Highlighting CSS -->
         <!-- <link href="/css/syntax.css" type="text/css" rel="stylesheet"/> -->
-		<link rel="stylesheet" href="/highlight/styles/solarized_dark.css">
+		<link rel="stylesheet" href="/highlight/styles/xcode.css">
 		<script src="/highlight/highlight.pack.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
         <!-- Custom CSS -->
@@ -57,66 +57,8 @@
     	<header>
     		<nav class="nav_bar" id="nav_bar">
 	<div class="nav_hold">
-		<a href="/" class="nav_logo">Gianluca Tranchedone</a>
-		<a class="nav_menu" id="nav_menu">&#9776;</a>
-		<ul class="nav_list" id="nav">
-			<li ><a href="/">&#xe011;</a></li>
-    		<li class="current_menu_item"><a href="/blog">&#xe00f;</a></li>
-    		
-			<li id="nav_button_rss">
-				<a href="/blog/feed.xml">&#xe00c;</a>
-				</a>
-			</li>
-			
-		</ul>
-	</div>
-</nav>
-		</header>
-		
-    	
-<article>
-	<header class="post_header">
-		
-			<img class="post_featured_image" src="/images/posts/2014-06-10-swift/banner.png" alt="Swift" width="128" />
-		
-		<a href="/blog/swift" class="excerpt_post_title"><h1>Swift</h1></a>
-		<h4 class="meta">10 June 2014</h4>
-	</header>
-	<section class="post">
-		
-			<p>This year&#39;s <a href="https://www.youtube.com/watch?v=w87fOAG8fjk">WWDC Keynote</a>, the main event at Apple&#39;s yearly developer conference, has been mind-blowing. The company has released an impressive amount of tools and APIs for iOS 8 and OS X 10.10 Yosemite. They say it&#39;s the biggest release since the iPhone SDK was originally introduced… and I believe that!</p>
-
-<p>I&#39;ve been following the WWDC for a few years now, and every time Apple is able to surprise me. Most of the Keynote has been quite standard: updates about how the company is doing, new operating system for the Mac with fancy new features and UI, new operating system for mobile devices (iOS 8), etc. But then something happened: the last 20 minutes or so have seen Craig Federighi (Senior VP of Software Engineering) announce a bunch of new frameworks and tools for developers. So what? - you would say. Well, what has really been a surprise to all (you can tell by the loud &#39;wow&#39; from the on-site audience at the Moscone Center, where the conference was held), has been the introduction of a <strong>new programming language for iOS and OS X development, <a href="https://developer.apple.com/swift/">Swift</a></strong>.</p>
-
-
-			<p><a class="read_more_button" href="/blog/swift">Continue reading</a></p>
-		
-	</section>
-</article>
-
-<article>
-	<header class="post_header">
-		
-			<img class="post_featured_image" src="/images/posts/2014-05-09-working-with-legacy-code/banner.png" alt="Working with Legacy Code" width="600" />
-		
-		<a href="/blog/working-with-legacy-code" class="excerpt_post_title"><h1>Working with Legacy Code</h1></a>
-		<h4 class="meta">11 May 2014</h4>
-	</header>
-	<section class="post">
-		
-			<p>Every software engineer feels a sense disgust when hearing the words <em>legacy code</em>. Strictly speaking legacy code it&#39;s code you &quot;inherit&quot; from someone else, however, the term is more broadly used to indicate a piece of software that&#39;s no longer maintained. Often it&#39;s code that, although deprecated, is still in use because of dependencies spread across a large system. Anyway, Michael Feathers has a better definition:</p>
-
-
-			<p><a class="read_more_button" href="/blog/working-with-legacy-code">Continue reading</a></p>
-		
-	</section>
-</article>
-
-
-
-    	<footer>
-    		
-    			<!-- Social Links -->
+		<a href="/" class="nav_logo"><img id="small_profile_picture" src="http://www.gravatar.com/avatar/2b98c09b232d45d7b03fd6804ed23e40?s=80" alt="Gianluca's Profile Picture" /><span>Gianluca</span> Tranchedone</a>
+		<!-- Social Links -->
 <ul class="social_links_list" id="social">
 	<li>
 		<a href="http://twitter.com/gtranchedone">
@@ -130,7 +72,7 @@
 	</li>
 	<li>
 		<a href="http://github.com/gtranchedone">
-			<div class="socialButton" id="socialButtonGitHub">&#xe01d;</div>
+			<div class="socialButton" id="socialButtonGitHub">&#xe01c;<!--&#xe01d;--></div>
 		</a>
 	</li>
 	<li>
@@ -153,7 +95,50 @@
 	
 </ul>
 <!-- END Social Links -->
-    		
+	</div>
+</nav>
+		</header>
+		
+    	
+
+    	<footer>
+    		<!-- Social Links -->
+<ul class="social_links_list" id="social">
+	<li>
+		<a href="http://twitter.com/gtranchedone">
+			<div class="socialButton" id="socialButtonTwitter">&#xe005;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://linkedin.com/in/gtranchedone">
+			<div class="socialButton" id="socialButtonLinkedIn">&#xe015;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://github.com/gtranchedone">
+			<div class="socialButton" id="socialButtonGitHub">&#xe01c;<!--&#xe01d;--></div>
+		</a>
+	</li>
+	<li>
+		<a href="http://stackoverflow.com/users/737105/gianluca-tranchedone">
+			<div class="socialButton" id="socialButtonStackOverflow">&#xe008;</div>
+		</a>
+	</li>
+	<li>
+		<a href="mailto:g.tranchedone@gmail.com">
+			<div class="socialButton" id="socialButtonEmail">&#xe023;</div>
+		</a>
+	</li>
+	
+	
+	<li>
+		<a href="/blog/feed.xml">
+			<div class="socialButton" id="socialButtonRSS">&#xe00c;</div>
+		</a>
+	</li>
+	
+</ul>
+<!-- END Social Links -->
     		<div class="copyright">
 				<h5>&copy; 2013-
 					<script type="text/javascript">
