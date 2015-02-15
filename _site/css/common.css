@@ -36,7 +36,7 @@ strong {
 	text-decoration: none;
 }
 
-a {
+a, a:visited {
 	color: #48ACB5;
 	text-decoration: none;
 	-webkit-transition: all 0.25s ease-in-out;
@@ -44,22 +44,14 @@ a {
     -o-transition: all 0.25s ease-in-out;
 }
 
-a:hover {
-	color: #94D5CA;
-}
-
-a:visited {
-	color: #48ACB5;
-}
-
-a:visited:hover {
+a:hover, a:visited:hover {
 	color: #94D5CA;
 }
 
 h1 {
 	margin: 20px 0 0 0;
 	padding: 0px;
-	color: /* #3B3B3B; */ #FF9C01;
+	color: #FF9C01;
 	font-size: 48px;
 	text-align: center;
 	font-weight: normal;
@@ -67,16 +59,19 @@ h1 {
 	font-family: 'Lato Black';
 }
 
-h1 a {
+h1:hover {
+	-webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    color: inherit;
+}
+
+h1 a, h1 a:visited {
 	color: #FF9C01;
 }
 
-h1 a:hover {
+h1 a:hover, h1 a:visited:hover {
 	color: #94D5CA;
-}
-
-h1 a:visited {
-	color: #FF9C01;
 }
 
 h2 {

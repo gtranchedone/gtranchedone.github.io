@@ -36,7 +36,7 @@ strong {
 	text-decoration: none;
 }
 
-a {
+a, a:visited {
 	color: #48ACB5;
 	text-decoration: none;
 	-webkit-transition: all 0.25s ease-in-out;
@@ -44,15 +44,7 @@ a {
     -o-transition: all 0.25s ease-in-out;
 }
 
-a:hover {
-	color: #94D5CA;
-}
-
-a:visited {
-	color: #48ACB5;
-}
-
-a:visited:hover {
+a:hover, a:visited:hover {
 	color: #94D5CA;
 }
 
@@ -68,19 +60,18 @@ h1 {
 }
 
 h1:hover {
-	color: inherit;
+	-webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    color: inherit;
 }
 
-h1 a {
+h1 a, h1 a:visited {
 	color: #FF9C01;
 }
 
-h1 a:hover {
+h1 a:hover, h1 a:visited:hover {
 	color: #94D5CA;
-}
-
-h1 a:visited {
-	color: #FF9C01;
 }
 
 h2 {
