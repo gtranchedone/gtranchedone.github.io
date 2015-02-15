@@ -9,9 +9,9 @@ categories: [app-store, business, marketing]
 author: Gianluca Tranchedone
 author_url: https://plus.google.com/u/1/+GianlucaTranchedone
 
-featured_image: 2013-08-27-the-app-store-business/post_banner.png
-featured_image_length: 83366
-featured_image_width: 500
+featured_image: 2013-08-27-the-app-store-business/app_store.png
+featured_image_length: 380920
+featured_image_width: 760
 
 rss_description: "Apple has recently released an upgrade to Logic Pro as a separate app. Shall we follow this guide? Besides, are IAPs enough or do we need paid upgrades?"
 ---

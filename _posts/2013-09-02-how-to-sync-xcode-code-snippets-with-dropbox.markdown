@@ -4,14 +4,14 @@ date: 2013-09-02 09:00:00
 title: "How to Sync Xcode Code Snippets via Dropbox"
 
 comments_enabled: true
-categories: [xcode, code, productivity]
+categories: productivity
 
 author: Gianluca Tranchedone
 author_url: https://plus.google.com/u/1/+GianlucaTranchedone
 
-featured_image: 2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/post_banner.png
-featured_image_length: 196842
-featured_image_width: 500
+featured_image: 2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/dropbox_sync_xcode.png
+featured_image_length: 319794
+featured_image_width: 760
 
 rss_description: "This post will teach you how to sync code snippets created with Xcode across all your Macs using Dropbox. The same process can be used to sync other data too."
 ---

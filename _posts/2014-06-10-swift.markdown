@@ -4,14 +4,14 @@ date: 2014-06-10 11:00:00
 title: "The Swift Programming Language"
 
 comments_enabled: true
-categories: [cocoa, cocoa-touch]
+categories: swift
 
 author: Gianluca Tranchedone
 author_url: https://plus.google.com/u/1/+GianlucaTranchedone
 
-featured_image: 2014-06-10-swift/banner.png
-featured_image_length: 26325
-featured_image_width: 128
+featured_image: 2014-06-10-swift/apple_swift.png
+featured_image_length: 239004
+featured_image_width: 760
 
 social_description: "Apple has just introduced a new programming language for iOS and OS X development, Swift. Here are my first thoughts about this new language."
 ---

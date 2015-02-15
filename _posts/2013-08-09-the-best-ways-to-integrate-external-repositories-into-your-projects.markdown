@@ -9,9 +9,9 @@ categories: software-craftsmanship
 author: Gianluca Tranchedone
 author_url: https://plus.google.com/u/1/+GianlucaTranchedone
 
-featured_image: 2013-08-09-the-best-ways-to-integrate-external-repositories-into-your-projects/post_banner.png
-featured_image_length: 137578
-featured_image_width: 500
+featured_image: 2013-08-09-the-best-ways-to-integrate-external-repositories-into-your-projects/cocoa_pods.png
+featured_image_length: 370551
+featured_image_width: 760
 
 rss_description: "This article introduces two technologies available to Cocoa(-Touch) developers to integrate external repositories in their project: Git Submodule and CocoaPods."
 ---

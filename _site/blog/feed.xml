@@ -12,7 +12,7 @@
 				<pubDate>Mon, 16 Feb 2015 09:00:00 +0000</pubDate>
 				<link>http://gtranchedone.com/2015/02/16/appcode</link>
 				<guid isPermaLink="true">http://gtranchedone.com/2015/02/16/appcode</guid>
-				<enclosure url="http://gtranchedone.com/images/posts/2015-02-16-appcode/banner.png" length="83218" type="image/png" />
+				<enclosure url="http://gtranchedone.com/images/posts/2015-02-16-appcode/appcode_vs_xcode.png" length="423497" type="image/png" />
 			</item>
 		
 			<item>
@@ -21,7 +21,7 @@
 				<pubDate>Tue, 10 Jun 2014 12:00:00 +0100</pubDate>
 				<link>http://gtranchedone.com/2014/06/10/swift</link>
 				<guid isPermaLink="true">http://gtranchedone.com/2014/06/10/swift</guid>
-				<enclosure url="http://gtranchedone.com/images/posts/2014-06-10-swift/banner.png" length="26325" type="image/png" />
+				<enclosure url="http://gtranchedone.com/images/posts/2014-06-10-swift/apple_swift.png" length="239004" type="image/png" />
 			</item>
 		
 			<item>
@@ -30,7 +30,7 @@
 				<pubDate>Sun, 11 May 2014 20:00:00 +0100</pubDate>
 				<link>http://gtranchedone.com/2014/05/11/working-with-legacy-code</link>
 				<guid isPermaLink="true">http://gtranchedone.com/2014/05/11/working-with-legacy-code</guid>
-				<enclosure url="http://gtranchedone.com/images/posts/2014-05-09-working-with-legacy-code/banner.png" length="62470" type="image/png" />
+				<enclosure url="http://gtranchedone.com/images/posts/2014-05-09-working-with-legacy-code/legacy_code.png" length="62470" type="image/png" />
 			</item>
 		
 			<item>
@@ -39,7 +39,7 @@
 				<pubDate>Mon, 02 Sep 2013 10:00:00 +0100</pubDate>
 				<link>http://gtranchedone.com/2013/09/02/how-to-sync-xcode-code-snippets-with-dropbox</link>
 				<guid isPermaLink="true">http://gtranchedone.com/2013/09/02/how-to-sync-xcode-code-snippets-with-dropbox</guid>
-				<enclosure url="http://gtranchedone.com/images/posts/2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/post_banner.png" length="196842" type="image/png" />
+				<enclosure url="http://gtranchedone.com/images/posts/2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/dropbox_sync_xcode.png" length="319794" type="image/png" />
 			</item>
 		
 			<item>
@@ -48,7 +48,7 @@
 				<pubDate>Tue, 27 Aug 2013 10:00:00 +0100</pubDate>
 				<link>http://gtranchedone.com/2013/08/27/the-app-store-business</link>
 				<guid isPermaLink="true">http://gtranchedone.com/2013/08/27/the-app-store-business</guid>
-				<enclosure url="http://gtranchedone.com/images/posts/2013-08-27-the-app-store-business/post_banner.png" length="83366" type="image/png" />
+				<enclosure url="http://gtranchedone.com/images/posts/2013-08-27-the-app-store-business/app_store.png" length="380920" type="image/png" />
 			</item>
 		
 			<item>
@@ -57,7 +57,7 @@
 				<pubDate>Fri, 09 Aug 2013 10:00:00 +0100</pubDate>
 				<link>http://gtranchedone.com/2013/08/09/the-best-ways-to-integrate-external-repositories-into-your-projects</link>
 				<guid isPermaLink="true">http://gtranchedone.com/2013/08/09/the-best-ways-to-integrate-external-repositories-into-your-projects</guid>
-				<enclosure url="http://gtranchedone.com/images/posts/2013-08-09-the-best-ways-to-integrate-external-repositories-into-your-projects/post_banner.png" length="137578" type="image/png" />
+				<enclosure url="http://gtranchedone.com/images/posts/2013-08-09-the-best-ways-to-integrate-external-repositories-into-your-projects/cocoa_pods.png" length="370551" type="image/png" />
 			</item>
 		
 			<item>
@@ -66,7 +66,7 @@
 				<pubDate>Mon, 05 Aug 2013 10:00:00 +0100</pubDate>
 				<link>http://gtranchedone.com/2013/08/05/xcode-vs-appcode</link>
 				<guid isPermaLink="true">http://gtranchedone.com/2013/08/05/xcode-vs-appcode</guid>
-				<enclosure url="http://gtranchedone.com/images/posts/2013-08-05-xcode-vs-appcode/post_banner.png" length="83218" type="image/png" />
+				<enclosure url="http://gtranchedone.com/images/posts/2013-08-05-xcode-vs-appcode/appcode_vs_xcode.png" length="423497" type="image/png" />
 			</item>
 		
 	</channel>

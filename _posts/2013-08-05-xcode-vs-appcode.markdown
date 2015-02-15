@@ -9,9 +9,9 @@ categories: software-craftsmanship
 author: Gianluca Tranchedone
 author_url: https://plus.google.com/u/1/+GianlucaTranchedone
 
-featured_image: 2013-08-05-xcode-vs-appcode/post_banner.png
-featured_image_length: 83218
-featured_image_width: 500
+featured_image: 2013-08-05-xcode-vs-appcode/appcode_vs_xcode.png
+featured_image_length: 423497
+featured_image_width: 760
 
 rss_description: "A comparison between Xcode and AppCode by JetBrains. In this post I argued that Xcode is the must go choice for any Cocoa(-Touch) developer."
 ---
