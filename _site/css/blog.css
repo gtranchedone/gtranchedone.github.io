@@ -10,7 +10,6 @@
 }
 
 .post {
-	/* font-size: 22px; */
 	text-align: justify;
 	text-justify: inter-word;
 }
@@ -20,7 +19,7 @@
 }
 
 .post_footer {
-	padding: 0px 10px;
+	padding: 0px;
 }
 
 .post_featured_image {
@@ -97,12 +96,6 @@ sup {
 	font-size: 14px;
 }
 
-.post ul, .post ol {
-	margin-bottom: 30px;
-	margin-left: 1.5em;
-	margin-top: 0px;
-}
-
 .post .footnotes {
 	font-size: 14px;
 	list-style: none;
@@ -125,23 +118,44 @@ li sup {
 /*
 /*****************************************************************************/
 
-highlight {
-	overflow: scroll;
-}
-
 .hljs {
 	font: 14px/1.8em menlo, monospace;
 	border: 1px solid #E5E5E5;
 	background-color: #F9FAFA;
+	overflow-x: scroll;
 	padding: 20px;
 }
 
 code {
 	padding: 0px;
 	color: #586E75;
-	overflow: auto;
 	text-shadow: none;
 	background-color: #EFEFEF;
+}
+
+/*****************************************************************************/
+/*
+/* Social Sharing
+/*
+/*****************************************************************************/
+
+.share-page {
+    text-align: center;
+    color: #FC6536;
+    background: #FFFFFF;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 1.5em 0em;
+}
+
+.share-page a, .share-page a:visited {
+	color: inherit;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.share-page a:hover, .share-page a:visited:hover {
+	color: #F8C72E;
 }
 
 /*****************************************************************************/
