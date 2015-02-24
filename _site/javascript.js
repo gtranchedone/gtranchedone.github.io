@@ -1,3 +1,7 @@
+String.prototype.capitalize = function(lower) {
+    return (lower ? this.toLowerCase() : this).replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+};
+
 $(document).ready(function() {
 	var n = '#nav', no = 'nav_list_open', sc = '#social', sco = 'social_links_list_open', nb = '#nav_bar', nbo = 'nav_bar_open';
 	$('#nav_menu').click(function() {
@@ -33,4 +37,58 @@ $(document).ready(function() {
 		    // do nothing
 	    });
 	});
+
+
+  var group = [];
+  $('.highlight').each(function() {
+      group.push($(this));
+
+      if(!$(this).next().hasClass('highlight')) {
+        var container = $('<div class="highlight-group"></div>');
+        container.insertBefore(group[0]);
+
+        for (i in group) {
+            group[i].appendTo(container);
+        }
+
+        group = [];
+      }
+  });
+
+  $('.highlight-group').each(function() {
+    var languages = [];
+    $(this).find($("code")).each(function() {
+      languages.push($(this).attr("data-lang"));
+    });
+
+    $(this).children(".highlight:not(:first-child)").hide();
+
+    var span = $('<span class="language-toggle"></span>');
+    for (i in languages) {
+      var language = languages[i];
+      var a = $('<a data-lang="' + language + '">' + language.capitalize(true) + '</a>');
+      if (i == 0) {
+        a.addClass('active');
+      }
+      span.append(a);
+    }
+
+    $(this).prepend(span);
+  });
+
+  $('a[data-lang]').on('click', function() {
+    var lang = $(this).data('lang');
+    $('a[data-lang=' + lang + ']').each( function() {
+      $(this).siblings('a').removeClass('active');
+      $(this).addClass('active');
+      $(this).parent().siblings('.highlight').each(function() {
+        if ($(this).find('code').data('lang') === lang) {
+          $(this).show();
+        } else {
+          $(this).hide()
+        }
+      });
+    });
+  });
+  
 });

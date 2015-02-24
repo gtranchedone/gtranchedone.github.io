@@ -41,6 +41,7 @@ a, a:visited {
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     text-decoration: none;
+    cursor: pointer;
     color: #48ACB5;
 }
 
@@ -52,13 +53,14 @@ a:hover, a:visited:hover, a:hover h1, a:visited:hover h1 {
 }
 
 h1 {
-	margin: 20px 0 0 0;
+	margin: 0px;
 	padding: 0px;
 	color: #FF9C01;
 	font-size: 48px;
 	text-align: center;
 	font-weight: normal;
 	line-height: normal;
+	display: inline-block;
 	font-family: 'Lato Black';
 }
 
@@ -198,6 +200,7 @@ img {
 
 header {
 	clear: both;
+	text-align: center;
 }
 
 footer {
