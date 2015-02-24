@@ -6,8 +6,11 @@ title: "The App Store Business: do we need Paid Upgrades or can we live with In-
 comments_enabled: true
 categories: [app-store, business, marketing]
 
-author: Gianluca Tranchedone
-author_url: https://plus.google.com/u/1/+GianlucaTranchedone
+author:
+  name: Gianluca Tranchedone
+  facebook: gtranchedone
+  twitter: gtranchedone
+  google: +GianlucaTranchedone
 
 featured_image: 2013-08-27-the-app-store-business/app_store.png
 featured_image_length: 380920

@@ -3,7 +3,9 @@ String.prototype.capitalize = function(lower) {
 };
 
 $(document).ready(function() {
-	var n = '#nav', no = 'nav_list_open', sc = '#social', sco = 'social_links_list_open', nb = '#nav_bar', nbo = 'nav_bar_open';
+	var n = '#nav', no = 'nav_list_open';
+	var nb = '#nav_bar', nbo = 'nav_bar_open';
+	var sc = '#social', sco = 'social_links_list_open';
 	$('#nav_menu').click(function() {
 		if ($(n).hasClass(no)) {
 			$(n).animate({height:0}, 300);

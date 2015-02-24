@@ -6,8 +6,11 @@ title: "The Swift Programming Language"
 comments_enabled: true
 categories: swift
 
-author: Gianluca Tranchedone
-author_url: https://plus.google.com/u/1/+GianlucaTranchedone
+author:
+  name: Gianluca Tranchedone
+  facebook: gtranchedone
+  twitter: gtranchedone
+  google: +GianlucaTranchedone
 
 featured_image: 2014-06-10-swift/apple_swift.png
 featured_image_length: 239004

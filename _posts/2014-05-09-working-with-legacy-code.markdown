@@ -6,9 +6,13 @@ title: "Working with Legacy Code"
 comments_enabled: true
 categories: software-craftsmanship
 
-author: Gianluca Tranchedone
-author_url: https://plus.google.com/u/1/+GianlucaTranchedone
+author:
+  name: Gianluca Tranchedone
+  facebook: gtranchedone
+  twitter: gtranchedone
+  google: +GianlucaTranchedone
 
+sharing_image: 2014-05-09-working-with-legacy-code/legacy_code_sharing.png
 featured_image: 2014-05-09-working-with-legacy-code/legacy_code.png
 featured_image_length: 62470
 featured_image_width: 760
