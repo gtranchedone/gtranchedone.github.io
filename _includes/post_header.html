@@ -1,0 +1,11 @@
+<header class="post_header">
+	<a href="{{ include.param.url }}" class="excerpt_post_title">
+		{% if include.param.featured_image %}
+		<img class="post_featured_image" src="/images/posts/{{include.param.featured_image}}" alt="{{ include.param.title }}" width="{{include.param.featured_image_width}}" />
+		{% endif %}
+	</a>
+	<a href="{{ include.param.url }}" class="excerpt_post_title">
+		<h1>{{ include.param.title }}</h1>
+	</a>
+	<h4 class="meta">Posted on {{ include.param.date | date_to_long_string }} | Reading time: {{ include.param.content | reading_time | pluralize: "minute" }}</h4>
+</header>

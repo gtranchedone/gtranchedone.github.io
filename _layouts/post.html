@@ -2,13 +2,7 @@
 layout: blog
 ---
 <article>
-	<header class="post_header">
-		{% if page.featured_image %}
-		<img class="post_featured_image" src="/images/posts/{{page.featured_image}}" alt="{{ page.title }}" width="{{page.featured_image_width}}" />
-		{% endif %}
-		<h1>{{ page.title }}</h1>
-		<h4 class="meta">{{ page.date | date_to_long_string }}</h4>
-	</header>
+	{% include post_header.html param=page %}
 	<section class="post">
 		{{ content }}
 	</section>

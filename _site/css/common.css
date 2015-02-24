@@ -114,6 +114,11 @@ img {
 	display: inline-block;
 }
 
+.meta {
+	margin: 10px auto;
+	text-align: center;
+}
+
 /*****************************************************************************/
 /*
 /* Text Selection
