@@ -5,9 +5,9 @@
 		<section class="post">
 			{% if post.content contains "<!-- more -->" %}
 				{% capture content %}{{ post.content | split:"<!-- more -->" | first }}{% endcapture %}
-				<p>{{ content | strip_html | append: "..." }}</p>
+				<p>{{ content | strip_html | append: "[...]" }}</p>
 			{% else %}
-				{{ post.content }}
+				{{ post.content | truncatewords 50, [...] }}
 			{% endif %}
 		</section>
 	</article>
