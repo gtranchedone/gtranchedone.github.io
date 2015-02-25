@@ -109,133 +109,7 @@
 	<a href="/2015/02/16/appcode" class="excerpt_post_title">
 		<h1>Why AppCode has become my IDE of choice</h1>
 	</a>
-	<h4 class="meta">Posted on 16 February 2015<!--  | Reading time: <p>Just over a year ago I wrote a post titled “<a href="/2013/08/05/xcode-vs-appcode">Why AppCode is still no match for Xcode</a>”. Later, pushed by the feedback I’ve received from some fellow developers, I forced myself trying JetBrains’ IDE once more. I’ve been using <a href="https://www.jetbrains.com/objc/">AppCode</a> as my main tool for writing code for about a year now and this is what I think.</p>
-
-<!-- more -->
-
-<p><em>Disclaimer: JetBrains doesn’t pay me to sponsor their IDE and it’s not affiliate to me or any of my businesses in any way.</em></p>
-
-<h2>TL;DR</h2>
-
-<p>Go get <a href="https://www.jetbrains.com/objc/">AppCode</a>, it’s awesome! Try hard to use it before you ditch it to go back to Xcode. I’ve done it myself ones and I regret it. You’ll fall in love with the code editing and refactoring features of this IDE! (see a list of shortcuts at the end of this post.)</p>
-
-<h2>What went wrong last time</h2>
-
-<p>The last time I’ve used AppCode, the IDE’s user interface wasn’t great and made my eyes bleed every time I tried to use it. That certainly was the main reason I was coming back to Xcode all the time. Besides, support for all the “Apple specific” features - like Storyboard, visual editor for Core Data Models, Xcode project settings, etc. - where either missing or very basic. Therefore during my initial 30-days free trial period I’ve been using Xcode much more than I used AppCode. I wasn’t impressed.</p>
-
-<p>By the time I decided to give AppCode a second chance, the IDE had just got a major update featuring a nicer UI. With that my eyes weren’t bleeding anymore and I was more comfortable trying it for real. Also, this time around my trial was well over, so I had to purchase a license, which has been a great motivator to use AppCode more than Xcode.</p>
-
-<h2>Using AppCode as the main IDE</h2>
-
-<p>Both when I first tried it and again when I switched full-time to AppCode, the transition from Xcode has been quite painful at first. With time I’ve come to really appreciate all of the features and shortcuts AppCode provides but the structure and ease of use of Xcode are, to this day, still better. For example, although the guys at JetBrains have done a really good job adding better support for those files AppCode wasn’t able to edit, I still use Xcode to work on them. Editing such files - especially the project settings - is still a pain in AppCode for me.</p>
-
-<p>However, and that’s the whole reason why I’m using it as my main IDE, AppCode has amazing code editing and refactoring features. As software developers, that’s what we do. We write code and edit it all the time. Being able to to this efficiently and as quickly as possible is key for us, and it’s what an IDE should help with.</p>
-
-<blockquote>
-<p>AppCode makes you a far more productive developer. For me that’s a game changer compared to Xcode.</p>
-</blockquote>
-
-<p>AppCode makes you way more productive when it comes to writing or editing code. This is especially true once you learn a set of basic shortcuts (find a list of useful shortcuts at the bottom of the post).</p>
-
-<h2>Refactor, Refactor, Refactor</h2>
-
-<p>The true power of AppCode is in it’s refactoring tools. It’s unbelievable how good they are and it’s unbelievable how bad Xcode equivalents - if at all present - are instead!</p>
-
-<p>AppCode let’s you rename variables, constants, enums, classes, files, and anything else you can think of in a snap! It’s so fast sometimes you’re there wondering if it did something at all only to realise it applied your change to a ton of files already!</p>
-
-<p>Want to change the signature of a method but you’re afraid of having to go to all source files checking for it’s usage and manually change the code? Not anymore! If you ever tried to refactor a method signature in Xcode using the available tool, you know how painful and slow that is… when it works. With AppCode it’s another story entirely: not only it changes all usages of the method with the updated signature, it also passes either 0, nil/NULL or NO/false when you add a parameter.</p>
-
-<p>I almost always write code in a Test-Driven fashion, so for me refactoring is a very big deal. Having the right tool for the job makes the difference between being able to deliver quality code in time or missing the deadline (or having to compromise on quality). For me that’s a game changer compared to Xcode.</p>
-
-<p>AppCode also comes with a set of inspection that smartly suggest you how to improve your code of that some problem needs fixing. For example, it suggest you switch from something like</p>
-
-<div class="highlight"><pre><code class="objc"><span class="k">if</span> <span class="p">(</span><span class="n">someCondition</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">variable</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="k">else</span> <span class="p">{</span>
-    <span class="n">variable</span> <span class="o">=</span> <span class="n">y</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<p>to</p>
-
-<div class="highlight"><pre><code class="objc"><span class="n">variable</span> <span class="o">=</span> <span class="n">someCondition</span> <span class="o">?</span> <span class="n">x</span> <span class="o">:</span> <span class="n">y</span><span class="p">;</span>
-</code></pre></div>
-
-<p>for simple if/else statements.</p>
-
-<p>Another example is with unreachable code (code that will never get executed maybe because some condition can be never met)</p>
-
-<div class="highlight"><pre><code class="objc"><span class="c1">// The following code will be highlighted by AppCode</span>
-<span class="c1">// with a warning for unreachable code</span>
-<span class="kt">BOOL</span> <span class="n">someCondition</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">someCondition</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// some code</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<p>Other suggestions include localising strings. Move the cursor on a string and AppCode will suggest to localise it. It will help you doing so by wrapping the string in an <code>NSLocalizedString()</code> macro, letting you edit the key and adding the localisation to all Localisable.strings files in your project.</p>
-
-<p>I’m really looking for the day when Apple will finally announce a version of Xcode with decent refactoring and quick-fix tools.</p>
-
-<h2>Not only refactoring</h2>
-
-<p>Besides refactoring, AppCode has also a bunch of other useful features such as</p>
-
-<ul>
-<li>Interoperability with Xcode</li>
-<li>Swift support</li>
-<li>Spelling checks</li>
-<li>Automatically inserts missing imports</li>
-<li>Unused imports recognition (but only works from the top down, so if you have a redundant import of a class that also another class you’re importing imports - <img class='emoji' title=':smile:' alt=':smile:' src='https://assets.github.com/images/icons/emoji/smile.png' height='20' width='20' align='absmiddle' /> - that won’t get caught)</li>
-<li>Autocompletion for images and files in the app bundle</li>
-<li>Customisable Code Style (which gets enforced by the editor)</li>
-<li>Fully customisable editor</li>
-<li>Warning for unused code + quick fix to delete (awesome!!)</li>
-<li>Integrated support for <a href="http://revealapp.com">Reveal</a></li>
-<li>Integrated support for Git and GitHub (which lets you create Pull Requests or Gists from within the IDE)</li>
-<li>Built-in support for <a href="http://cocoapods.org">CocoaPods</a></li>
-</ul>
-
-<p>…an many, many more!</p>
-
-<h2>Features to be added or improved</h2>
-
-<p>AppCode is a fantastic IDE but Xcode still has a better UI and UX in my opinion. Editing the project file, Storyboard and other special files can still be tedious compared to Apple’s IDE. This few issues may block you from trying AppCode the fist time, but it’s totally worth it. A few more I found:</p>
-
-<ul>
-<li><p><strong>Comparing the current version of your code with a previously committed version (with VCS) isn’t great</strong>
-Xcode has much better support for it with the Assistant Editor and also comes with FileMerge which is pretty decent.</p></li>
-<li><p><strong>There’s no shortcut to let you run the test configuration while having the app configuration selected</strong>.
-Writing tests before any line of production code makes you confident that when you run the app, everything will be good. Most times, though, you’ll want to double check that you tested all scenarios and that the app is properly configured outside of the test code. Moreover you’ll need to actually run the app to check if everything also <em>looks</em> good. If you practice TDD such shortcut is really helpful. Xcode has it, I don’t know why AppCode doesn’t.</p></li>
-<li><p><strong>Running tests for only one class or method creates a new build configuration</strong>
-Being able to select a single tests or suites can be some times very convenient. BDD frameworks usually allow to run single tests or single test suites by prefixing an ‘it’ or ‘context’ block with some special key. If you’re not into BDD though, you’ll find it quite cumbersome with AppCode as it creates a new build configuration every time you run a single test or test suite the first time, with only that test or suite enabled.</p></li>
-</ul>
-
-<h2>Conclusion</h2>
-
-<p>Nowadays I write code almost exclusively in AppCode. I still use Xcode, in fact I often have it open alongside AppCode. I use  Xcode mostly to edit Apple proprietary files for the large part.</p>
-
-<p>The power of the of the tools AppCode provides is by far superior to Xcode, especially when it comes to refactoring, although Xcode still has a better UI and overall UX. Therefore I highly recommend giving AppCode a  good try. You won’t regret it!</p>
-
-<p><a href="https://www.jetbrains.com/objc/">Download AppCode</a> (once more JetBrains doesn’t pay me to sponsor their IDE)</p>
-
-<h2>P.S. Some useful shortcuts for AppCode</h2>
-
-<ul>
-<li>⌃⌥F7 Shows you all usages of a method, class or other symbol</li>
-<li>⌥⏎ Shows the Hint menu when available (a light bulb appears when the cursor is on a word or symbol that AppCode’s inspections recognise for suggestions (e.g. when on a non-localised string, AppCode will suggest you to localise it and by pressing ⌥⏎ AppCode will automatically wrap it in the <code>NSLocalizedString()</code> macro, let you type the key for that string and add it if necessary to a Localizable.strings file).</li>
-<li>⇧F6 Rename a variable or symbol</li>
-<li>⌘⌃F6 Change method signature</li>
-<li>⌘⌥V Extract variable</li>
-<li>⌘⌥M Extract method</li>
-<li>⌘⌥T Wrap selected code in if/while/for/etc. statements.</li>
-<li>⌘⇧T Jump to test class (if available)</li>
-<li>⌘N Generate method/test (I use it for test cases a lot, but not for other stuff)</li>
-</ul>
-
-<p>This two are the ones you’ll be using at all times. A part from those you’ll be using the build and run shortcuts quite often. AppCode’s shortcuts for those commands are quite different than Xcode’s. I’ve customised them in AppCode to make them more similar to Xcode, but still keeping a distinction between the two. So, for me, ⌥R runs the app with no debugger attached, ⌥D runs the app with the debugger attached, ⌃⌥R does the same as ⌥R but before building you get to choose the configuration - useful when switching between the main app target and the test one - and ⌃⌥D, as you would imagine does the same as ⌃⌥R but attaches the debugger to the process.</p>
- --></h4>
+	<h4 class="meta">Posted on 16 February 2015</h4>
 </header>
 		<section class="post">
 			
@@ -257,52 +131,7 @@ Being able to select a single tests or suites can be some times very convenient.
 	<a href="/2014/06/10/swift" class="excerpt_post_title">
 		<h1>The Swift Programming Language</h1>
 	</a>
-	<h4 class="meta">Posted on 10 June 2014<!--  | Reading time: <p>This year&#39;s <a href="https://www.youtube.com/watch?v=w87fOAG8fjk">WWDC Keynote</a>, the main event at Apple&#39;s yearly developer conference, has been mind-blowing. The company has released an impressive amount of tools and APIs for iOS 8 and OS X 10.10 Yosemite. They say it&#39;s the biggest release since the iPhone SDK was originally introduced… and I believe that!</p>
-
-<p>I&#39;ve been following the WWDC for a few years now, and every time Apple is able to surprise me. Most of the Keynote has been quite standard: updates about how the company is doing, new operating system for the Mac with fancy new features and UI, new operating system for mobile devices (iOS 8), etc. But then something happened: the last 20 minutes or so have seen Craig Federighi (Senior VP of Software Engineering) announce a bunch of new frameworks and tools for developers. So what? - you would say. Well, what has really been a surprise to all (you can tell by the loud &#39;wow&#39; from the on-site audience at the Moscone Center, where the conference was held), has been the introduction of a <strong>new programming language for iOS and OS X development, <a href="https://developer.apple.com/swift/">Swift</a></strong>.</p>
-
-<!-- more -->
-
-<h2>A modern programming language</h2>
-
-<p>I don&#39;t know about you, but while I was watching the Keynote that announcement literally kept me with my mouth open for a good five minutes! A new programming language?? When you&#39;ve got Objective-C?? What do you need that for?!?! <img class='emoji' title=':anguished:' alt=':anguished:' src='https://assets.github.com/images/icons/emoji/anguished.png' height='20' width='20' align='absmiddle' /></p>
-
-<blockquote>
-<p>Swift is an innovative new programming language for Cocoa and Cocoa Touch. Writing code is interactive and fun, the syntax is concise yet expressive, and apps run lightning-fast.</p>
-</blockquote>
-
-<p>I&#39;ve been in love with Objective-C from the moment I first started developing for iOS and OS X: the syntax is clear, the inline parameters make it much more readable than any other language out there and the naming conventions used throughout the frameworks are fantastic. Thus, when Swift was announced I didn&#39;t really know what to think!</p>
-
-<p>I need to admit that I was a bit shocked and sceptical at first, but now I&#39;ve got to say I&#39;m impressed by Swift. It resolves many problems that Objective-C inherited from C and makes sure, by design, that programmers avoid some common mistakes. Moreover, although Swift&#39;s syntax is very different and more compact, it keeps some of the best qualities of Objective-C and you can use all of Cocoa and Cocoa Touch frameworks with it. My favourite feature is named parameters:</p>
-
-<div class="highlight"><pre><code class="objc"><span class="n">func</span> <span class="n">join</span><span class="p">(</span><span class="n">string</span> <span class="n">s1</span><span class="o">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">toString</span> <span class="n">s2</span><span class="o">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">withJoiner</span> <span class="n">joiner</span><span class="o">:</span> <span class="n">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">String</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">joiner</span> <span class="o">+</span> <span class="n">s2</span>
-<span class="p">}</span>
-
-<span class="n">join</span><span class="p">(</span><span class="n">string</span><span class="o">:</span> <span class="s">&quot;hello&quot;</span><span class="p">,</span> <span class="n">toString</span><span class="o">:</span> <span class="s">&quot;world&quot;</span><span class="p">,</span> <span class="n">withJoiner</span><span class="o">:</span> <span class="s">&quot;, &quot;</span><span class="p">)</span>
-<span class="c1">// returns &quot;hello, world&quot;</span>
-</code></pre></div>
-
-<p>Without this feature I would have hated writing code, honestly! It&#39;s my biggest complain against all other languages out there: the ability to clearly specify what each parameter of a function is for. That&#39;s invaluable.</p>
-
-<p>Anyway, Apple has released an amazing 600-pages-long book about <a href="https://itunes.apple.com/us/book/the-swift-programming-language/id881256329?mt=11">The Swift Programming Language on iBooks</a>. Its entirety has been pretty much summarised with the WWDC sessions for developers - which I recommend you go and watch if you&#39;re a developer enrolled in one of the Apple Developer Programs - that are now available on the <a href="http://developer.apple.com">developers portal</a>.</p>
-
-<p>I watched the videos and I&#39;ve been reading the book for the last few days. I&#39;ve not yet finished it and there are still a few areas that I need to clarify for myself (e.g. I still have to understand how - if at all - can we declare private properties and methods). One thing that really surprised me, though, is how similar structs and classes have become. In fact, in Swift structs can have stored values and can have methods and initialisers associated with them. Also enums can have methods and initialisers, coming closer to structs and classes in a certain way. Enums, though, are still very different compared to classes and structs. However, I&#39;ve got the impression that the latter two will give an hard time to unexperienced developers: with such similar features I bet many will have troubles deciding whether to implement something using a struct or a class. In fact, I&#39;m a bit puzzled myself about what the right direction should be. But let&#39;s leave this topic for another time.</p>
-
-<h2>Swift and Objective-C</h2>
-
-<p>So, Swift is all good and nice and people are already building <a href="https://github.com/gscalzo/FlappySwift">Flappy Bird clones</a> with it, but what about Objective-C? All Apple&#39;s frameworks, all apps and third-party libraries are written in Objective-C. Shall we throw everything away? No, in fact:</p>
-
-<blockquote>
-<p>Swift is ready for your next iOS and OS X project — or for addition into your current app — because Swift code works side-by-side with Objective-C.</p>
-</blockquote>
-
-<p>But how does that work? Apple has released another document about it: <a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/">Using Swift with Cocoa and Objective-C</a>. In short, Objective-C headers are automatically translated to Swift and vice-versa when you add your first Swift file to an Objective-C project. You only need to import your Objective-C module or the generated Swift header into the appropriate files and that&#39;s it. You write code as usual.</p>
-
-<p>However, although far away then being deprecated, it looks like Objective-C is going to be abandoned in favour of this younger, modern language. I&#39;m sure Apple is going to push switching to Swift only apps in the upcoming future and therefore it would be wise to start using this new language as soon as possible. A good comparison of what is likely to happen to Objective-C is one I&#39;ve heard somewhere, probably in a podcast, right after the WWDC: it&#39;s likely that Objective-C will undergo the same process of .xib files for Interface Builder that, although available, are de facto deprecated in favour of Storyboards.</p>
-
-<p>What do you think about it? Tell me in the comments!</p>
- --></h4>
+	<h4 class="meta">Posted on 10 June 2014</h4>
 </header>
 		<section class="post">
 			
@@ -326,21 +155,7 @@ I&#39;ve been following the WWDC for a few years now, and every time Apple is ab
 	<a href="/2014/05/11/working-with-legacy-code" class="excerpt_post_title">
 		<h1>Working with Legacy Code</h1>
 	</a>
-	<h4 class="meta">Posted on 11 May 2014<!--  | Reading time: <p>Every software engineer feels a sense disgust when hearing the words <em>legacy code</em>. Strictly speaking legacy code it&#39;s code you &quot;inherit&quot; from someone else, however, the term is more broadly used to indicate a piece of software that&#39;s no longer maintained. Often it&#39;s code that, although deprecated, is still in use because of dependencies spread across a large system. Anyway, Michael Feathers has a better definition</p>
-
-<!-- more -->
-
-<blockquote>
-<p>To me, <em>legacy code</em> is simply code without tests. I&#39;ve gotten some grief for this definition. What do tests have to do with whether code is bad? To me, the answer is straightforward, and it is a point that I elaborate throughout the book:</p>
-
-<p><em>Code without tests is bad code. It doesn&#39;t matter how well written it is; it doesn&#39;t matter how pretty or object-oriented or well-encapsulated it is. With tests, we can change the behavior or our code quickly and verifiably. Without them, we really don&#39;t know if our code is getting better or worse.</em></p>
-
-<p>You might think that this is severe. What about clean code? If a code base is very clean and well structured, isn&#39;t that enough? Well, make no mistake. I love clean code. I love it more than most people I know, but while clean code is good, it&#39;s not enough. Teams take serious chances when they try to make large changes without tests. It is like doing aerial gymnastic without a net. It requires incredible skill and a clear understanding of what can happen at every step. Knowing precisely what will happen if you change a couple of variables is often like knowing whether another gymnast is going to catch your arms after you come out of a somersault.
-<span class="quote_author">--Michael Feathers</span></p>
-</blockquote>
-
-<p>I wish I had read Michael Feathers&#39; <a href="http://www.amazon.co.uk/gp/product/B005OYHF0A/ref=as_li_ss_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=B005OYHF0A&amp;linkCode=as2&amp;tag=gtranchedone-21">Effectively Working with Legacy Code</a> when I first started programming. I&#39;ve had it on my Amazon wish-list for a long time. One day I&#39;ve purchased the book but I&#39;ve committed the sin of not reading it until just a few days ago. <strong>If you are - or want to be - a software engineer you absolutely have to read this book now! <a href="http://www.amazon.co.uk/gp/product/B005OYHF0A/ref=as_li_ss_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=B005OYHF0A&amp;linkCode=as2&amp;tag=gtranchedone-21">Go get it!</a></strong></p>
- --></h4>
+	<h4 class="meta">Posted on 11 May 2014</h4>
 </header>
 		<section class="post">
 			
@@ -362,61 +177,7 @@ I&#39;ve been following the WWDC for a few years now, and every time Apple is ab
 	<a href="/2013/09/02/how-to-sync-xcode-code-snippets-with-dropbox" class="excerpt_post_title">
 		<h1>How to Sync Xcode Code Snippets via Dropbox</h1>
 	</a>
-	<h4 class="meta">Posted on 02 September 2013<!--  | Reading time: <p><em>Disclaimer: This post is based on an answer on StackOverflow to the question “How Can One Transfer Xcode 4 Code Snippets From One Machine To Another?”. I&#39;ve tried the following method myself and it works like magic. I&#39;m also using it to sync Xcode&#39;s custom colour schemes and other user-specific data across my Macs.</em></p>
-
-<p>Xcode&#39;s Code Snippets are located in <code>~/Library/Developer/Xcode/UserData/CodeSnippets/</code>. If you want to have all your code snippets synchronised between multiple Macs, you can use Dropbox to do so.</p>
-
-<!-- more -->
-
-<h2>Creating Code Snippets</h2>
-
-<p>To create a code snippet in Xcode, you proceed as follows:</p>
-
-<ol>
-<li>Write and select some code</li>
-<li><p>Drag and drop your code in the snippet&#39;s section in Xcode</p>
-
-<p><img src="/images/posts/2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/create_custom_code_snippet_xcode.png" alt="create custom code snippet in Xcode"></p></li>
-<li><p>Replace variables with placeholders if appropriate. To do so, select the code you want to replace and substitute it with a description wrapped in brackets and hash-signs like so <em>&lt;#yourDescription#&gt;</em>.</p></li>
-<li><p>Add name, a description and a shortcut</p>
-
-<p><img src="/images/posts/2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/edit_code_snippet_xcode.png" alt="edit custom code snippet in Xcode"></p></li>
-</ol>
-
-<p>You&#39;re done! Do the same for all of your snippets and keep reading once you&#39;re done or ready to synchronise. Any snippet created after you&#39;ve set up Dropbox to sync your Xcode data will automatically be synced.</p>
-
-<h2>Synchronising Code Snippets with Dropbox</h2>
-
-<p>To synchronise all your snippets using Dropbox, follow these steps:</p>
-
-<ol>
-<li>Quit Xcode.</li>
-<li>Move your CodeSnippets directory to your Dropbox. For example, let&#39;s say you moved them to <code>~/Dropbox/CodeSnippets</code>.</li>
-<li>Let Dropbox upload them.</li>
-<li>Pause Dropbox&#39;s syncing.</li>
-<li>Move them back to where Xcode stores them.</li>
-<li>Create a symbolic link into Dropbox: <code>ln -s ~/Library/Developer/Xcode/UserData/CodeSnippets ~/Dropbox/CodeSnippets</code>.</li>
-<li>Resume Dropbox syncing.</li>
-<li>Relaunch Xcode.</li>
-</ol>
-
-<p>On your other computer:</p>
-
-<ol>
-<li>Quit Xcode.</li>
-<li>Let Dropbox download everything, if it hasn&#39;t yet.</li>
-<li>Pause Dropbox syncing.</li>
-<li>Remove your local Xcode user data: <code>rm -R ~/Library/Developer/Xcode/UserData/CodeSnippets</code>.</li>
-<li>Move your UserData from Dropbox to Xcode: <code>mv ~/Dropbox/CodeSnippets ~/Library/Developer/Xcode/UserData/CodeSnippets</code>.</li>
-<li>Create a symbolic link from your UserData to DropBox: <code>ln -s ~/Library/Developer/Xcode/UserData/CodeSnippets ~/Dropbox/CodeSnippets</code>.</li>
-<li>Resume Dropbox syncing.</li>
-<li>Relaunch Xcode.</li>
-</ol>
-
-<p>The convolutions are necessary because Xcode will not follow a symlink, but Dropbox will. Dropbox will treat that symlink exactly as if the directory was actually there. This is not perfect; you will probably have to quit Xcode to have it recognise new snippets.</p>
-
-<p>I sync my entire UserData directory, which gets me synchronised key bindings, named tabs, font &amp; color schemes and code snippets. To do this, move and <code>ln ~/Library/Developer/Xcode/UserData</code> instead.</p>
- --></h4>
+	<h4 class="meta">Posted on 02 September 2013</h4>
 </header>
 		<section class="post">
 			
