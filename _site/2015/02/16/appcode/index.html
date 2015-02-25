@@ -112,7 +112,131 @@
 	<a href="/2015/02/16/appcode" class="excerpt_post_title">
 		<h1>Why AppCode has become my IDE of choice</h1>
 	</a>
-	<h4 class="meta">Posted on 16 February 2015 | Reading time: 7 minutes</h4>
+	<h4 class="meta">Posted on 16 February 2015 | Reading time: Just over a year ago I wrote a post titled “[Why AppCode is still no match for Xcode]({% post_url 2013-08-05-xcode-vs-appcode %})”. Later, pushed by the feedback I’ve received from some fellow developers, I forced myself trying JetBrains’ IDE once more. I’ve been using [AppCode][link_to_appcode] as my main tool for writing code for about a year now and this is what I think.
+
+<!-- more -->
+
+_Disclaimer: JetBrains doesn’t pay me to sponsor their IDE and it’s not affiliate to me or any of my businesses in any way._
+
+## TL;DR
+
+Go get [AppCode][link_to_appcode], it’s awesome! Try hard to use it before you ditch it to go back to Xcode. I’ve done it myself ones and I regret it. You’ll fall in love with the code editing and refactoring features of this IDE! (see a list of shortcuts at the end of this post.)
+
+## What went wrong last time
+
+The last time I’ve used AppCode, the IDE’s user interface wasn’t great and made my eyes bleed every time I tried to use it. That certainly was the main reason I was coming back to Xcode all the time. Besides, support for all the “Apple specific” features - like Storyboard, visual editor for Core Data Models, Xcode project settings, etc. - where either missing or very basic. Therefore during my initial 30-days free trial period I’ve been using Xcode much more than I used AppCode. I wasn’t impressed.
+
+By the time I decided to give AppCode a second chance, the IDE had just got a major update featuring a nicer UI. With that my eyes weren’t bleeding anymore and I was more comfortable trying it for real. Also, this time around my trial was well over, so I had to purchase a license, which has been a great motivator to use AppCode more than Xcode.
+
+## Using AppCode as the main IDE
+
+Both when I first tried it and again when I switched full-time to AppCode, the transition from Xcode has been quite painful at first. With time I’ve come to really appreciate all of the features and shortcuts AppCode provides but the structure and ease of use of Xcode are, to this day, still better. For example, although the guys at JetBrains have done a really good job adding better support for those files AppCode wasn’t able to edit, I still use Xcode to work on them. Editing such files - especially the project settings - is still a pain in AppCode for me.
+
+However, and that’s the whole reason why I’m using it as my main IDE, AppCode has amazing code editing and refactoring features. As software developers, that’s what we do. We write code and edit it all the time. Being able to to this efficiently and as quickly as possible is key for us, and it’s what an IDE should help with.
+
+>AppCode makes you a far more productive developer. For me that’s a game changer compared to Xcode.
+
+AppCode makes you way more productive when it comes to writing or editing code. This is especially true once you learn a set of basic shortcuts (find a list of useful shortcuts at the bottom of the post).
+
+## Refactor, Refactor, Refactor
+
+The true power of AppCode is in it’s refactoring tools. It’s unbelievable how good they are and it’s unbelievable how bad Xcode equivalents - if at all present - are instead!
+
+AppCode let’s you rename variables, constants, enums, classes, files, and anything else you can think of in a snap! It’s so fast sometimes you’re there wondering if it did something at all only to realise it applied your change to a ton of files already!
+
+Want to change the signature of a method but you’re afraid of having to go to all source files checking for it’s usage and manually change the code? Not anymore! If you ever tried to refactor a method signature in Xcode using the available tool, you know how painful and slow that is… when it works. With AppCode it’s another story entirely: not only it changes all usages of the method with the updated signature, it also passes either 0, nil/NULL or NO/false when you add a parameter.
+
+I almost always write code in a Test-Driven fashion, so for me refactoring is a very big deal. Having the right tool for the job makes the difference between being able to deliver quality code in time or missing the deadline (or having to compromise on quality). For me that’s a game changer compared to Xcode.
+
+AppCode also comes with a set of inspection that smartly suggest you how to improve your code of that some problem needs fixing. For example, it suggest you switch from something like
+
+{% highlight objc %}
+if (someCondition) {
+	variable = x;
+}
+else {
+	variable = y;
+}
+{% endhighlight %}
+
+to
+
+{% highlight objc %}
+variable = someCondition ? x : y;
+{% endhighlight %}
+
+for simple if/else statements.
+
+Another example is with unreachable code (code that will never get executed maybe because some condition can be never met)
+
+{% highlight objc %}
+// The following code will be highlighted by AppCode
+// with a warning for unreachable code
+BOOL someCondition = NO;
+if (someCondition) {
+	// some code
+}
+{% endhighlight %}
+
+Other suggestions include localising strings. Move the cursor on a string and AppCode will suggest to localise it. It will help you doing so by wrapping the string in an `NSLocalizedString()` macro, letting you edit the key and adding the localisation to all Localisable.strings files in your project.
+
+I’m really looking for the day when Apple will finally announce a version of Xcode with decent refactoring and quick-fix tools.
+
+## Not only refactoring
+
+Besides refactoring, AppCode has also a bunch of other useful features such as
+
+* Interoperability with Xcode
+* Swift support
+* Spelling checks
+* Automatically inserts missing imports
+* Unused imports recognition (but only works from the top down, so if you have a redundant import of a class that also another class you’re importing imports - <img class='emoji' title=':smile:' alt=':smile:' src='https://assets.github.com/images/icons/emoji/smile.png' height='20' width='20' align='absmiddle' /> - that won’t get caught)
+* Autocompletion for images and files in the app bundle
+* Customisable Code Style (which gets enforced by the editor)
+* Fully customisable editor
+* Warning for unused code + quick fix to delete (awesome!!)
+* Integrated support for [Reveal](http://revealapp.com)
+* Integrated support for Git and GitHub (which lets you create Pull Requests or Gists from within the IDE)
+* Built-in support for [CocoaPods](http://cocoapods.org)
+
+…an many, many more!
+
+## Features to be added or improved
+
+AppCode is a fantastic IDE but Xcode still has a better UI and UX in my opinion. Editing the project file, Storyboard and other special files can still be tedious compared to Apple’s IDE. This few issues may block you from trying AppCode the fist time, but it’s totally worth it. A few more I found:
+
+- **Comparing the current version of your code with a previously committed version (with VCS) isn’t great**
+Xcode has much better support for it with the Assistant Editor and also comes with FileMerge which is pretty decent.
+
+- **There’s no shortcut to let you run the test configuration while having the app configuration selected**.
+Writing tests before any line of production code makes you confident that when you run the app, everything will be good. Most times, though, you’ll want to double check that you tested all scenarios and that the app is properly configured outside of the test code. Moreover you’ll need to actually run the app to check if everything also *looks* good. If you practice TDD such shortcut is really helpful. Xcode has it, I don’t know why AppCode doesn’t.
+
+- **Running tests for only one class or method creates a new build configuration**
+Being able to select a single tests or suites can be some times very convenient. BDD frameworks usually allow to run single tests or single test suites by prefixing an ‘it’ or ‘context’ block with some special key. If you’re not into BDD though, you’ll find it quite cumbersome with AppCode as it creates a new build configuration every time you run a single test or test suite the first time, with only that test or suite enabled.
+
+## Conclusion
+
+Nowadays I write code almost exclusively in AppCode. I still use Xcode, in fact I often have it open alongside AppCode. I use  Xcode mostly to edit Apple proprietary files for the large part.
+
+The power of the of the tools AppCode provides is by far superior to Xcode, especially when it comes to refactoring, although Xcode still has a better UI and overall UX. Therefore I highly recommend giving AppCode a  good try. You won’t regret it!
+
+[Download AppCode][link_to_appcode] (once more JetBrains doesn’t pay me to sponsor their IDE)
+
+## P.S. Some useful shortcuts for AppCode
+
+* ⌃⌥F7 Shows you all usages of a method, class or other symbol
+* ⌥⏎ Shows the Hint menu when available (a light bulb appears when the cursor is on a word or symbol that AppCode’s inspections recognise for suggestions (e.g. when on a non-localised string, AppCode will suggest you to localise it and by pressing ⌥⏎ AppCode will automatically wrap it in the `NSLocalizedString()` macro, let you type the key for that string and add it if necessary to a Localizable.strings file).
+* ⇧F6 Rename a variable or symbol
+* ⌘⌃F6 Change method signature
+* ⌘⌥V Extract variable
+* ⌘⌥M Extract method
+* ⌘⌥T Wrap selected code in if/while/for/etc. statements.
+* ⌘⇧T Jump to test class (if available)
+* ⌘N Generate method/test (I use it for test cases a lot, but not for other stuff)
+
+This two are the ones you’ll be using at all times. A part from those you’ll be using the build and run shortcuts quite often. AppCode’s shortcuts for those commands are quite different than Xcode’s. I’ve customised them in AppCode to make them more similar to Xcode, but still keeping a distinction between the two. So, for me, ⌥R runs the app with no debugger attached, ⌥D runs the app with the debugger attached, ⌃⌥R does the same as ⌥R but before building you get to choose the configuration - useful when switching between the main app target and the test one - and ⌃⌥D, as you would imagine does the same as ⌃⌥R but attaches the debugger to the process.
+
+[link_to_appcode]: https://www.jetbrains.com/objc/</h4>
 </header>
 	<section class="post">
 		<p>Just over a year ago I wrote a post titled “<a href="/2013/08/05/xcode-vs-appcode">Why AppCode is still no match for Xcode</a>”. Later, pushed by the feedback I’ve received from some fellow developers, I forced myself trying JetBrains’ IDE once more. I’ve been using <a href="https://www.jetbrains.com/objc/">AppCode</a> as my main tool for writing code for about a year now and this is what I think.</p>
