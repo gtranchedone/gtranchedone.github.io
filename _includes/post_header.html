@@ -7,6 +7,12 @@
 	<a href="{{ include.param.url }}" class="excerpt_post_title">
 		<h1>{{ include.param.title }}</h1>
 	</a>
-	{% capture reading_time %}{{ include.param.content | strip_html | size | divided_by: 5 | divided_by: 250 }}{% endcapture %}
-	<h4 class="meta">Posted on {{ include.param.date | date_to_long_string }} | Reading time: {{ reading_time }} minutes</h4>
+	<!-- for info about subsequent calculation see http://en.wikipedia.org/wiki/Words_per_minute -->
+	{% assign reading_time = post.content | strip_html | size | divided_by:5 | divided_by:250 %}
+	{% if reading_time == 1 %}
+		{% assign reading_time_string = "1 minute" %}
+	{% else %}
+		{% assign reading_time_string = {{reading_time }} | append:" minutes" %}
+	{% endif %}
+	<h4 class="meta">Posted on {{ include.param.date | date_to_long_string }} | Reading time: {{ reading_time_string }}</h4>
 </header>
