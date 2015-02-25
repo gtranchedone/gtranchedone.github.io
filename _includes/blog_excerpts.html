@@ -5,8 +5,7 @@
 		<section class="post">
 			{% if post.content contains "<!-- more -->" %}
 				{% capture content %}{{ post.content | split:"<!-- more -->" | first }}{% endcapture %}
-				<p>{{ content | strip_html | append: "[...]" }}</p>
-				<!-- <p><a class="read_more_button" href="{{ post.url }}">Continue reading</a></p> -->
+				<p>{{ content | strip_html | append: "..." }}</p>
 			{% else %}
 				{{ post.content }}
 			{% endif %}
