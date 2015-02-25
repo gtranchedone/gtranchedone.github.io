@@ -56,9 +56,9 @@
 /*****************************************************************************/
 
 blockquote {
+	font-weight: 300;
 	margin: 0px 0px 0px 20px;
 	padding: 0px 0px 0px 20px;
-	font-family: 'Lato Light';
 	border-left: 4px solid #FF9C01;
 }
 
