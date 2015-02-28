@@ -10,8 +10,7 @@
 		<script src="/assets/highlight/highlight.pack.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
         <!-- Custom CSS -->
-        <link href="/assets/css/fonts.css" type="text/css" rel="stylesheet"/>
-        <link href="/assets/css/common.css" type="text/css" rel="stylesheet"/>
+        <link href="/assets/css/main.css" type="text/css" rel="stylesheet"/>
         <link href="/assets/css/navbar.css" type="text/css" rel="stylesheet"/>
         {% if page.style %}
         <link href=/assets/css/{{ page.style }} type="text/css" rel="stylesheet"/>
@@ -64,14 +63,14 @@
     	<footer>
     		{% include social_links.html %}
     		<div class="copyright">
-				<h5>&copy; 2013-
+				<h4>&copy; 2013-
 					<script type="text/javascript">
 						now = new Date
 						theYear = now.getYear()
 						if (theYear < 1900) theYear += 1900
 						document.write(theYear)
 					</script> Gianluca Tranchedone. All rights reserved.
-				</h5>
+				</h4>
     		</div>
 		</footer>
     </body>

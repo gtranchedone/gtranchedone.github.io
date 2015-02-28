@@ -3,97 +3,80 @@
 /* Intro Area
 /*
 /*****************************************************************************/
-
 .centered_content_container {
-	display: table;
-	width: 100%;
-	min-height: 100%;
-	color: white;
-	text-align: center;
-	background-color: #FC6536;
-}
+  display: table;
+  width: 100%;
+  min-height: 100%;
+  color: white;
+  text-align: center;
+  background-color: #FC6536; }
 
 .centered_content {
-   display: table-cell;
-   text-align: center;
-   vertical-align: middle;
-   padding: 20px;
-}
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px; }
 
 #intro {
-	position: relative;
-}
+  position: relative; }
 
 #intro h1 {
-	padding: 0px;
-	margin: 0.4em;
-	margin-top: 0px;
-	color: inherit;
-	font-size: 48px;
-	text-transform: none;
-}
+  padding: 0px;
+  margin: 0.4em;
+  margin-top: 0px;
+  color: inherit;
+  font-size: 48px;
+  text-transform: none; }
 
 #intro h3 {
-	margin: 0px;
-	padding: 0px;
-	color: inherit;
-	font-size: 24px;
-	font-weight: 900;
-	line-height: normal;
-	text-transform: uppercase;
-}
+  margin: 0px;
+  padding: 0px;
+  color: inherit;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase; }
 
 #intro p {
-	max-width: 720px;
-	margin: 0px auto;
-	text-align: center;
-}
+  max-width: 720px;
+  margin: 0px auto;
+  text-align: center; }
 
 #main a {
-	color: #F8C72E;
-}
+  color: #F8C72E; }
 
 #main a:hover {
-	color: #44E9BC;
-}
+  color: #44E9BC; }
 
 #main a:visited {
-	color: #F8C72E;
-}
+  color: #F8C72E; }
 
 #main a:visited:hover {
-	color: #44E9BC;
-}
+  color: #44E9BC; }
 
 #profile_picture {
-	border: 2px white solid;
-	border-radius: 100px;
-	margin: 20px auto;
-	width: 160px;
-	height: auto;
-}
+  border: 2px white solid;
+  border-radius: 100px;
+  margin: 20px auto;
+  width: 160px;
+  height: auto; }
 
 #social {
-	margin: 20px;
-}
+  margin: 20px; }
 
 #arrow_down {
-	margin: -30px auto 0px auto;
-}
+  margin: -30px auto 0px auto; }
 
 /*****************************************************************************/
 /*
 /* Links Area
 /*
 /*****************************************************************************/
-
 .socialButton {
-	color: white;
-}
+  color: white; }
 
 .socialButton:hover {
-	color: #F8C72E;
-}
+  color: #F8C72E; }
 
 /*
 #links {
@@ -103,7 +86,6 @@
     -o-transition: all 0.25s ease-in-out;
 }
 */
-
 /*
 #socialButtonTwitter {
 	background-color: #26A6D1;
@@ -145,36 +127,26 @@
 	background-color: #26AB64;
 }
 */
-
 /*****************************************************************************/
 /*
 /* Posts
 /*
 /*****************************************************************************/
-
 #posts {
-	margin: 20px;
-}
+  margin: 20px; }
 
 article {
-	margin-top: 40px;
-}
+  margin-top: 40px; }
 
 /*****************************************************************************/
 /*
 /* Responsive Design Code
 /*
 /*****************************************************************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  h1 {
+    font-size: 24px;
+    line-height: normal; }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-
-	h1 {
-		font-size: 24px;
-		line-height: normal;
-	}
-
-	h1 span {
-		font-size: 26px;
-	}
-
-}
+  h1 span {
+    font-size: 26px; } }

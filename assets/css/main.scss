@@ -1,3 +1,31 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+@import "fonts";
+
+// Our variables
+$base-font-family: 'Lato', Helvetica, Arial, sans-serif;
+$base-font-size:   20px;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:			#666666;
+$links-color-normal:	#48ACB5;
+$links-color-hover:		#94D5CA;
+$background-color:		#FEFEFE;
+
+$text-highlight-color:			#FFFFFF;
+$highlight-background-color: 	#F8C72E;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$max-content-width: 800px;
+
 /* IE10+ VIEWPORT FIX */
 @-ms-viewport { width:device-width; }
 @viewport { width:device-width; }
@@ -10,11 +38,10 @@
 
 body {
 	-webkit-font-smoothing:antialiased;
-	background-color: #FEFEFE;
-	font-family: 'Lato';
-	font-weight: normal;
-	font-size: 20px;
-	color: #666666;
+	background-color: $background-color;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	color: $text-color;
 	
 	/* Fix for code wrapping */
 	word-wrap: break-word;
@@ -40,16 +67,16 @@ a, a:visited {
 	-webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
+    color: $links-color-normal;
     text-decoration: none;
     cursor: pointer;
-    color: #48ACB5;
 }
 
 a:hover, a:visited:hover, a:hover h1, a:visited:hover h1 {
 	-webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
-    color: #94D5CA;
+    color: $links-color-hover;
 }
 
 h1 {
@@ -63,12 +90,7 @@ h1 {
 	display: inline-block;
 }
 
-h2 {
-	color: #4E5860;
-	font-weight: bold;
-}
-
-h3 {
+h2, h3 {
 	color: #4E5860;
 	font-weight: bold;
 }
@@ -81,21 +103,14 @@ h4 {
 	text-align: center;
 }
 
-h5 {
-	margin: 0px;
-	color: #A9A9A9;
-	font-size: 16px;
-	font-weight: 300;
-}
-
 p {
-	line-height: 1.5;
-	margin: 30px auto;
+	line-height: $base-line-height;
+	margin: $spacing-unit auto;
 	text-align: justify;
 }
 
 article {
-	max-width: 800px;
+	max-width: $max-content-width;
 	margin: 0px auto;
 	padding: 20px;
 }
@@ -123,21 +138,18 @@ img {
 /*****************************************************************************/
 
 *::selection {
-  background: #F8C72E;
-  text-shadow: none;
-  color: #FFFFFF;
+	background: $highlight-background-color;
+	color: $text-highlight-color;
 }
 
 *::-moz-selection {
-  background: #F8C72E;
-  text-shadow: none;
-  color: #FFFFFF;
+	background: $highlight-background-color;
+	color: $text-highlight-color;
 }
 
 *::-webkit-selection {
-  background: #F8C72E;
-  text-shadow: none;
-  color: #FFFFFF;
+  background: $highlight-background-color;
+  color: $text-highlight-color;
 }
 
 /*****************************************************************************/
@@ -234,4 +246,17 @@ footer #social .socialButton {
 		-o-transform: scale(1, 1);
 	}
 	
+}
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
 }
