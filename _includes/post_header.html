@@ -1,7 +1,7 @@
 <header class="post_header">
 	<a href="{{ include.param.url }}" class="excerpt_post_title">
 		{% if include.param.featured_image %}
-		<img class="post_featured_image" src="{{ site.imagesurl }}/posts/{{include.param.featured_image}}" alt="{{ include.param.title }}" width="{{include.param.featured_image_width}}" />
+		<img class="post_featured_image" src="{{ site.imagesurl }}{{include.param.featured_image}}" alt="{{ include.param.title }}" width="{{include.param.featured_image_width}}" />
 		{% endif %}
 	</a>
 	<a href="{{ include.param.url }}" class="excerpt_post_title">

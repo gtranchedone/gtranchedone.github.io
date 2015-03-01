@@ -12,8 +12,8 @@ author:
   twitter: gtranchedone
   google: +GianlucaTranchedone
 
-sharing_image: 2014-05-09-working-with-legacy-code/legacy_code_sharing.png
-featured_image: 2014-05-09-working-with-legacy-code/legacy_code.png
+sharing_image: /posts/2014-05-09-working-with-legacy-code/legacy_code_sharing.png
+featured_image: /posts/2014-05-09-working-with-legacy-code/legacy_code.png
 featured_image_length: 62470
 featured_image_width: 760
 

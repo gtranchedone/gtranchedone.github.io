@@ -46,7 +46,7 @@
         <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
         {% endif %}
 		{% if page.sharing_image %}
-		<meta property="og:image" content="{{ site.url }}/images/posts/{{ page.sharing_image }}" />
+		<meta property="og:image" content="{{ site.url }}{{ site.imagesurl }}{{ page.sharing_image }}" />
 		{% endif %}
 		{% if page.social_description %}
 		<meta property="og:description" content="{{ page.social_description }}" />
