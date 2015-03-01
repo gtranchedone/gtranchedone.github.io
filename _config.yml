@@ -10,7 +10,7 @@ lsi: false
 baseurl: /
 permalink: /:year/:month/:day/:title
 url: http://gtranchedone.com
-imagesurl: /assets/images
+imagesurl: /assets/images/
 
 title: "Gianluca Tranchedone"
 description: "Gianluca's Personal Website"

@@ -35,22 +35,27 @@
 		<!-- Google Authorship -->
 		{% if page.author %}
 		<link rel="author" href="https://plus.google.com/u/1/{{ page.author.google }}"/>
-		<meta property="article:author" content="https://facebook.com/{{ page.author.facebook }}" />
+		<meta property="article:author" content="https://facebook.com/{{ page.author.facebook }}"/>
+		<meta property="og:type" content="article"/>
 		{% endif %}
 		{% if page.featured_image %}
-		<meta itemprop="image" content="{{ site.url }}/images/posts/{{ page.featured_image }}">
+		<meta itemprop="image" content="{{ site.url }}{{ site.imagesurl }}{{ page.featured-image }}">
 		{% endif %}
         <!-- Facebook Sharing Optimization -->
         {% if page.title %}
         <meta property="og:title" content="{{ page.title }}" />
         <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
         {% endif %}
-		{% if page.sharing_image %}
-		<meta property="og:image" content="{{ site.url }}{{ site.imagesurl }}{{ page.sharing_image }}" />
+        {% if page.author %}
+		<link rel="author" href="https://plus.google.com/u/1/{{ page.author.google }}"/>
+		<meta property="article:author" content="https://facebook.com/{{ page.author.facebook }}"/>
+		<meta property="og:type" content="article"/>
+		{% endif %}
+		{% if page.sharing-image %}
+		<meta property="og:image" content="{{ site.url }}{{ site.imagesurl }}{{ page.sharing-image }}" />
 		{% endif %}
 		{% if page.social_description %}
-		<meta property="og:description" content="{{ page.social_description }}" />
-		<meta property="og:type" content="article" />
+		<meta property="og:description" content="{{ page.social-description }}"/>
 		{% endif %}
     </head>
     <body>

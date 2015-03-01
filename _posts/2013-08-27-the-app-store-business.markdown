@@ -12,11 +12,11 @@ author:
   twitter: gtranchedone
   google: +GianlucaTranchedone
 
-featured_image: 2013-08-27-the-app-store-business/app_store.png
-featured_image_length: 380920
-featured_image_width: 760
+featured-image: posts/2013-08-27-the-app-store-business/app_store.png
+featured-image_length: 380920
+featured-image_width: 760
 
-rss_description: "Apple has recently released an upgrade to Logic Pro as a separate app. Shall we follow this guide? Besides, are IAPs enough or do we need paid upgrades?"
+social-description: "Apple has recently released an upgrade to Logic Pro as a separate app. Shall we follow this guide? Besides, are IAPs enough or do we need paid upgrades?"
 ---
 
 Since the introduction of the App Store, and even more when the Mac App Store arrived, a lot of discussion has been made around apps' pricing models. Only last year a debate about the need for paid app upgrades raised among developers, but it eventually fade off… until a couple of weeks ago, when Apple released Logic Pro X as a separate, full-priced, app - deprecating the existing Logic Pro on the Store.

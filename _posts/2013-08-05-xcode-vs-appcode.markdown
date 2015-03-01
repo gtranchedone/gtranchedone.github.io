@@ -12,11 +12,11 @@ author:
   twitter: gtranchedone
   google: +GianlucaTranchedone
 
-featured_image: 2013-08-05-xcode-vs-appcode/appcode_vs_xcode.png
+featured_image: posts/2013-08-05-xcode-vs-appcode/appcode_vs_xcode.png
 featured_image_length: 423497
 featured_image_width: 760
 
-rss_description: "A comparison between Xcode and AppCode by JetBrains. In this post I argued that Xcode is the must go choice for any Cocoa(-Touch) developer."
+social-description: "A comparison between Xcode and AppCode by JetBrains. In this post I argued that Xcode is the must go choice for any Cocoa(-Touch) developer."
 ---
 
 _Edit (16 Feb 2015): A long time has passed since I originally wrote this post and I believe it can very well be considered out of date. As a matter of fact I’ve recently published a new post titled “[Why AppCode has become my IDE of choice]({% post_url 2015-02-16-appcode %})”._

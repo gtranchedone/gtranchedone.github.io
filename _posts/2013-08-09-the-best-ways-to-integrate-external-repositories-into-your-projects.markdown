@@ -12,11 +12,11 @@ author:
   twitter: gtranchedone
   google: +GianlucaTranchedone
 
-featured_image: 2013-08-09-the-best-ways-to-integrate-external-repositories-into-your-projects/cocoa_pods.png
-featured_image_length: 370551
-featured_image_width: 760
+featured-image: posts/2013-08-09-the-best-ways-to-integrate-external-repositories-into-your-projects/cocoa_pods.png
+featured-image-length: 370551
+featured-image-width: 760
 
-rss_description: "This article introduces two technologies available to Cocoa(-Touch) developers to integrate external repositories in their project: Git Submodule and CocoaPods."
+social-description: "This article introduces two technologies available to Cocoa(-Touch) developers to integrate external repositories in their project: Git Submodule and CocoaPods."
 ---
 
 When I started using version control systems (VCS) a few years ago, I've searched for the best way to integrate external repositories into my own. At that time, everyone I knew was simply copying the contents of those repositories into their project and eventually maintain that code alongside their own, often without giving anything back when fixing bugs in opens source libraries. What I was looking for, instead, was a way to integrate such libraries so that it would be trivial to get updates or to contribute back to those projects; but most of all, I wanted to share reusable components across multiple projects in a way that allowed me to only maintain the shared code once and get updates everywhere instantly. It turns out that all the most used VCS support such think in a way or another, but, as you'll see by the time you finish reading this, there also are tools that do not strictly require a specific VCS in order to accomplish the same task.

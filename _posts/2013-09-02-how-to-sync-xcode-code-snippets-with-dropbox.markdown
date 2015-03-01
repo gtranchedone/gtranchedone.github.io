@@ -12,11 +12,11 @@ author:
   twitter: gtranchedone
   google: +GianlucaTranchedone
 
-featured_image: 2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/dropbox_sync_xcode.png
-featured_image_length: 319794
-featured_image_width: 760
+featured-image: posts/2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/dropbox_sync_xcode.png
+featured-image-length: 319794
+featured-image-width: 760
 
-rss_description: "This post will teach you how to sync code snippets created with Xcode across all your Macs using Dropbox. The same process can be used to sync other data too."
+social-description: "This post will teach you how to sync code snippets created with Xcode across all your Macs using Dropbox. The same process can be used to sync other data too."
 ---
 
 *Disclaimer: This post is based on an answer on StackOverflow to the question “How Can One Transfer Xcode 4 Code Snippets From One Machine To Another?”. I've tried the following method myself and it works like magic. I'm also using it to sync Xcode's custom colour schemes and other user-specific data across my Macs.*
