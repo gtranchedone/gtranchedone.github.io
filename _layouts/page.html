@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head profile="http://www.w3.org/2005/10/profile">
-		<link rel="icon" type="image/png" href="{{ site.imagesurl }}/favicon.png">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
+        <link rel="icon" type="image/png" href="{{ site.imagesurl }}/favicon.png">
         <!-- Syntax Highlighting CSS -->
 		<link rel="stylesheet" href="/assets/highlight/styles/xcode.css">
 		<script src="/assets/highlight/highlight.pack.js"></script>
@@ -26,11 +27,11 @@
         <!-- Bit.ly Verification -->
         <meta name="bitly-verification" content="1629f330e22d"/>
         <!-- Common Social Media Optimization -->
-        {% if page.social_description %}
+        {% if page.social-description %}
         <html itemscope itemtype="http://schema.org/Article">
         <meta itemprop="name" content="{{ page.title }}">
-		<meta itemprop="description" content="{{ page.social_description }}"> 
-		<meta name="description" content="{{ page.social_description }}" />
+		<meta itemprop="description" content="{{ page.social-description }}"> 
+		<meta name="description" content="{{ page.social-description }}" />
 		{% endif %}
 		<!-- Google Authorship -->
 		{% if page.author %}
@@ -38,7 +39,7 @@
 		<meta property="article:author" content="https://facebook.com/{{ page.author.facebook }}"/>
 		<meta property="og:type" content="article"/>
 		{% endif %}
-		{% if page.featured_image %}
+		{% if page.featured-image %}
 		<meta itemprop="image" content="{{ site.url }}{{ site.imagesurl }}{{ page.featured-image }}">
 		{% endif %}
         <!-- Facebook Sharing Optimization -->
@@ -54,7 +55,7 @@
 		{% if page.sharing-image %}
 		<meta property="og:image" content="{{ site.url }}{{ site.imagesurl }}{{ page.sharing-image }}" />
 		{% endif %}
-		{% if page.social_description %}
+		{% if page.social-description %}
 		<meta property="og:description" content="{{ page.social-description }}"/>
 		{% endif %}
     </head>
