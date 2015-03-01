@@ -36,8 +36,6 @@
 		{% if page.author %}
 		<link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
 		<link rel="author" href="https://plus.google.com/u/1/{{ page.author.google }}"/>
-		<meta property="article:author" content="https://facebook.com/{{ page.author.facebook }}"/>
-		<meta property="og:type" content="article"/>
 		{% endif %}
 		{% if page.featured-image %}
 		<meta itemprop="image" content="{{ site.url }}{{ site.imagesurl }}{{ page.featured-image }}">
@@ -48,7 +46,6 @@
         <meta property="og:url" content="{{ site.url }}{{ page.url }}/"/>
         {% endif %}
         {% if page.author %}
-		<link rel="author" href="https://plus.google.com/u/1/{{ page.author.google }}"/>
 		<meta property="article:author" content="https://facebook.com/{{ page.author.facebook }}"/>
 		<meta property="og:type" content="article"/>
 		{% endif %}
