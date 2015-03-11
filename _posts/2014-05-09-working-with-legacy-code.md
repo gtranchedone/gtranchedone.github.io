@@ -1,16 +1,9 @@
 ---
 layout: post
-date: 2014-05-11 19:00:00
+
 title: "Working with Legacy Code"
-
-comments_enabled: true
-categories: software-craftsmanship
-
-author:
-  name: Gianluca Tranchedone
-  facebook: gtranchedone
-  twitter: gtranchedone
-  google: +GianlucaTranchedone
+category: Software Craftsmanship
+author: Gianluca Tranchedone
 
 sharing-image: posts/2014-05-09-working-with-legacy-code/legacy_code_sharing.png
 featured-image: posts/2014-05-09-working-with-legacy-code/legacy_code.png

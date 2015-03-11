@@ -11,19 +11,14 @@ baseurl: /
 permalink: /:year/:month/:day/:title
 url: http://gtranchedone.com
 imagesurl: /assets/images/
+paginate: 4
 
 title: "Gianluca Tranchedone"
 description: "Gianluca's Personal Website"
 
-author:
-  name: "Gianluca Tranchedone"
-  email: g.tranchedone@gmail.com
-  github: gtranchedone
-  twitter: gtranchedone
-  facebook: gtranchedone
-  google: +GianlucaTranchedone
-
-paginate: 4
+collections:
+  authors:
+    output: true
 
 gems:
   - jekyll-mentions

@@ -1,16 +1,9 @@
 ---
 layout: post
-date: 2013-08-09 09:00:00
+
 title: "The best ways to integrate external repositories into your projects"
-
-comments_enabled: true
-categories: software-craftsmanship
-
-author:
-  name: Gianluca Tranchedone
-  facebook: gtranchedone
-  twitter: gtranchedone
-  google: +GianlucaTranchedone
+category: Software Craftsmanship
+author: Gianluca Tranchedone
 
 featured-image: posts/2013-08-09-the-best-ways-to-integrate-external-repositories-into-your-projects/cocoa_pods.png
 featured-image-length: 370551

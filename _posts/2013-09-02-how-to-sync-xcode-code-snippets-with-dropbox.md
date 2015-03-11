@@ -1,16 +1,9 @@
 ---
 layout: post
-date: 2013-09-02 09:00:00
+
 title: "How to Sync Xcode Code Snippets via Dropbox"
-
-comments_enabled: true
-categories: productivity
-
-author:
-  name: Gianluca Tranchedone
-  facebook: gtranchedone
-  twitter: gtranchedone
-  google: +GianlucaTranchedone
+category: Productivity
+author: Gianluca Tranchedone
 
 featured-image: posts/2013-09-02-how-to-sync-xcode-code-snippets-with-dropbox/dropbox_sync_xcode.png
 featured-image-length: 319794

@@ -1,16 +1,9 @@
 ---
 layout: post
-date: 2013-08-27 09:00:00
+
 title: "The App Store Business: do we need Paid Upgrades or can we live with In-App Purchase only?"
-
-comments_enabled: true
-categories: [app-store, business, marketing]
-
-author:
-  name: Gianluca Tranchedone
-  facebook: gtranchedone
-  twitter: gtranchedone
-  google: +GianlucaTranchedone
+category: App Store
+author: Gianluca Tranchedone
 
 featured-image: posts/2013-08-27-the-app-store-business/app_store.png
 featured-image_length: 380920

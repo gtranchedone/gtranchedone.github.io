@@ -1,16 +1,9 @@
 ---
 layout: post
-date: 2013-08-05 09:00:00
+
 title: "Why AppCode Is Still No Match for Xcode"
-
-comments_enabled: true
-categories: software-craftsmanship
-
-author:
-  name: Gianluca Tranchedone
-  facebook: gtranchedone
-  twitter: gtranchedone
-  google: +GianlucaTranchedone
+category: Software Craftsmanship
+author: Gianluca Tranchedone
 
 featured_image: posts/2013-08-05-xcode-vs-appcode/appcode_vs_xcode.png
 featured_image_length: 423497

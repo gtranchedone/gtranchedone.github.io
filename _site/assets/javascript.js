@@ -93,4 +93,12 @@ $(document).ready(function() {
     });
   });
   
+  $(document).ready(function() {
+    $('.share-modal').click(function(e) {
+        e.preventDefault();
+        window.open($(this).attr('href'), 'fbShareWindow', 'height=650, width=550, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 325) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+        return false;
+    });
+  });
+  
 });
