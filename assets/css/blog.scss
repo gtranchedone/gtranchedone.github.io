@@ -7,7 +7,11 @@
 /*
 /*****************************************************************************/
 
-.post_featured_image {
+.post {
+	margin-top: 50px;
+}
+
+.post_header {
 	margin: 30px auto;
 }
 
@@ -29,33 +33,6 @@
 
 .excerpt_post_title:visited:hover {
 	color: #94D5CA;
-}
-
-/*****************************************************************************/
-/*
-/* Blockquote
-/*
-/*****************************************************************************/
-
-blockquote {
-	font-weight: 300;
-	margin: 0px 0px 0px 20px;
-	padding: 0px 0px 0px 20px;
-	border-left: 4px solid #FF9C01;
-}
-
-blockquote blockquote {
-	margin-bottom: 0px;
-}
-
-blockquote p em {
-	font-style: italic;
-}
-
-.quote_author {
-	display: block;
-	text-align: right;
-	font-style: italic;
 }
 
 /*****************************************************************************/

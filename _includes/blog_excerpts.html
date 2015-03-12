@@ -7,7 +7,7 @@
 				{% capture content %}{{ post.content | split:"<!-- more -->" | first }}{% endcapture %}
 				<p>{{ content | strip_html | append: "[...]" }}</p>
 			{% else %}
-				{{ post.content | truncatewords 50, [...] }}
+				{{ post.content }}
 			{% endif %}
 		</section>
 	</article>
