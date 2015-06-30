@@ -185,7 +185,13 @@ iframe {
 
 .socialButton {
 	margin: 4px;
+    width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 25px;
 	font-family: 'Grands';
+	font-size: 36px;
+	float: inherit;
 	background-color: none;
 	-webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -266,8 +272,8 @@ footer #social .socialButton {
 /*****************************************************************************/
 
 blockquote {
+    margin: 0px;
 	font-weight: 300;
-	margin: 0px 0px 0px 20px;
 	padding: 0px 0px 0px 20px;
 	border-left: 4px solid #FF9C01;
 	
@@ -276,10 +282,6 @@ blockquote {
 			font-style: italic;
 		}
 	}
-}
-
-blockquote blockquote {
-	margin-bottom: 0px;
 }
 
 .quote_author {
@@ -294,12 +296,20 @@ blockquote blockquote {
 /*
 /*****************************************************************************/
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-	
-	.socialButton {
-		width: 28px;
-		height: 28px;
-		font-size: 28px;
+@media screen and (max-width: 699px) {
+
+    .post_header h1 {
+        font-size: 30px;
+    }
+    
+    .post p {
+        font-size: 18px;
+    }
+
+    .socialButton {
+		width: 32px;
+		height: 32px;
+		font-size: 32px;
 		line-height: normal;
 	}
 
@@ -308,12 +318,13 @@ blockquote blockquote {
 		-moz-transform: scale(1, 1);
 		-o-transform: scale(1, 1);
 	}
-	
-	blockquote {
-    	margin: 0px;
-	}
-	
+    
 }
+
+/*
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+}
+*/
 
 // Using media queries with like this:
 // @include media-query($on-palm) {

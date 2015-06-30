@@ -138,16 +138,6 @@
 	display: none;
 }
 
-.socialButton {
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	border-radius: 25px;
-	font-family: 'Grands';
-	font-size: 36px;
-	float: inherit;
-}
-
 .nav_hold .socialButton {
 	width: 30px;
 	height: 30px;
@@ -176,13 +166,14 @@
 
 /* PHONE - 767px */
 @media screen and (max-width:767px) {
+    
 	.nav_logo {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.nav_menu {
 		padding: 20px 10px;
-		font-size: 18px;
+		font-size: 20px;
 		cursor: pointer;
 		display: block;
 		float: right;
@@ -215,10 +206,17 @@
 	}
 	
 	.nav_bar #social li a .socialButton {
-		width: 24px;
-		height: 24px;
-		line-height: 44px;
-		border-radius: 10px;
-		font-size: 20px;
+		width: 26px;
+		height: 26px;
+		font-size: 24px;
 	}
+	
+}
+
+@media only screen and (max-width: 549px) {
+    
+    .social_links_list {
+    	display: none;
+	}
+	
 }
