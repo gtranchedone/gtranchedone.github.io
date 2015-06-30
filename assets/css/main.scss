@@ -310,6 +310,10 @@ blockquote blockquote {
 		-o-transform: scale(1, 1);
 	}
 	
+	blockquote {
+    	margin: 0px;
+	}
+	
 }
 
 // Using media queries with like this:
