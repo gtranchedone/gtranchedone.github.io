@@ -7,17 +7,16 @@ title: Gianluca Tranchedone
 <div class="centered_content_container" id="main">
 	<div class="centered_content">
 		<div id="intro">
-			<img id="profile_picture" src="http://www.gravatar.com/avatar/2b98c09b232d45d7b03fd6804ed23e40?s=400" alt="Gianluca's Profile Picture" />
-			<h3>Gianluca Tranchedone</h3>
-			<h1>Hello! I'm a Software Craftsman.</h1>
-			<p>
-				My speciality is <strong>iOS & OS X development</strong> but in my spare time I also like to play with Ruby, HTML, CSS and JavaScript. By day I work as an <strong>independent contractor</strong> under my limited company, Cocoa Beans, and by night I work on personal projects.
-			</p>
+			<img class="profile_picture" src="http://www.gravatar.com/avatar/2b98c09b232d45d7b03fd6804ed23e40?s=400" alt="Gianluca's Profile Picture" />
+			<h1>Hi! My name is Gianluca Tranchedone</h1>
+			<h3>I can help you build awesome iOS, Apple Watch, Mac and Ruby on Rails apps</h3>
 		</div>
 		{% include social_links.html %}
+		<a href="#posts" class="slide-button">
+    		<img id="arrow_down" src="{{ site.imagesurl }}index_main_arrow_down.png" width="28px">
+        </a>
 	</div>
 </div>
-<a href="#posts" class="slide-button"><img id="arrow_down" src="{{ site.imagesurl }}index_main_arrow_down.png" width="28px"></a>
 <section id="posts">
 	{% include blog_excerpts.html %}
 </section>

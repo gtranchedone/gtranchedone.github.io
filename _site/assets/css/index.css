@@ -18,55 +18,47 @@
   padding: 20px; }
 
 #intro {
-  position: relative; }
-
-#intro h1 {
-  padding: 0px;
-  margin: 0.4em;
-  margin-top: 0px;
-  color: inherit;
-  font-size: 48px;
-  text-transform: none; }
-
-#intro h3 {
-  margin: 0px;
-  padding: 0px;
-  color: inherit;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: normal;
-  text-transform: uppercase; }
-
-#intro p {
-  max-width: 720px;
-  margin: 0px auto;
-  text-align: center; }
+  position: relative;
+  text-align: center;
+  margin: 0.5em auto;
+  max-width: 750px; }
+  #intro h1 {
+    padding: 0px;
+    margin: 0.3em;
+    color: inherit;
+    font-size: 42px;
+    text-transform: none; }
+  #intro h3 {
+    padding: 0px;
+    margin: 0.3em;
+    color: inherit;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: none; }
+  #intro p {
+    margin: 0.3em; }
+  #intro .profile_picture {
+    border: 2px white solid;
+    border-radius: 50px;
+    margin: 0.3em auto;
+    width: 100px;
+    height: auto; }
 
 #main a {
   color: #F8C72E; }
-
-#main a:hover {
-  color: #44E9BC; }
-
-#main a:visited {
-  color: #F8C72E; }
-
-#main a:visited:hover {
-  color: #44E9BC; }
-
-#profile_picture {
-  border: 2px white solid;
-  border-radius: 100px;
-  margin: 20px auto;
-  width: 160px;
-  height: auto; }
+  #main a:hover {
+    color: #44E9BC; }
+  #main a:visited {
+    color: #F8C72E; }
+  #main a:visited:hover {
+    color: #44E9BC; }
 
 #social {
-  margin: 20px; }
+  margin: 0.5em; }
 
 #arrow_down {
-  margin: -30px auto 0px auto;
-  padding-bottom: 30px; }
+  margin: 0.5em auto; }
 
 /*****************************************************************************/
 /*
@@ -75,59 +67,9 @@
 /*****************************************************************************/
 .socialButton {
   color: white; }
+  .socialButton:hover {
+    color: #F8C72E; }
 
-.socialButton:hover {
-  color: #F8C72E; }
-
-/*
-#links {
-	margin: 25px auto;
-	-webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-}
-*/
-/*
-#socialButtonTwitter {
-	background-color: #26A6D1;
-}
-
-#socialButtonTwitter:hover {
-	background-color: #D9592E;
-}
-
-#socialButtonLinkedIn {
-	background-color: #3F729B;
-}
-
-#socialButtonLinkedIn:hover {
-	background-color: #F08557;
-}
-
-#socialButtonGitHub {
-	background-color: #DD4B39;
-}
-
-#socialButtonGitHub:hover {
-	background-color: #22B4C6;
-}
-
-#socialButtonEmail {
-	background-color: #F1C40F;
-}
-
-#socialButtonEmail:hover {
-	background-color: #6414A2;
-}
-
-#socialButtonStackOverflow {
-	background-color: #F29C36;
-}
-
-#socialButtonStackOverflow:hover {
-	background-color: #26AB64;
-}
-*/
 /*****************************************************************************/
 /*
 /* Posts
@@ -143,10 +85,9 @@
 /*****************************************************************************/
 @media only screen and (max-width: 568px) {
   #intro h1 {
-    font-size: 34px; }
-
+    font-size: 24px; }
   #intro h3 {
-    font-size: 20px; }
+    font-size: 24px; }
 
   .slide-button {
     display: none; } }
