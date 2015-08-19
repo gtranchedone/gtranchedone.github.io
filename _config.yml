@@ -1,7 +1,12 @@
 timezone: Europe/London
 markdown: redcarpet
 redcarpet:
-  extensions: ["strikethrough"]
+  extensions:
+    - footnotes
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
 highlighter: pygments
 encoding: utf-8
 safe: false

@@ -33,7 +33,7 @@ Being employed is a straightforward form of work, everybody understands it: a co
 There’s a lot of advantages in being employed:
 
 - You don’t have to think about what to do next: that’s usually your employer or boss responsibly.
-- You should get paid regularly and shouldn’t have to worry about it[^We all know that this isn’t always true, unfortunately. There always are businesses winding down due to internal or external factors, economic crises or anything else really.].
+- You should get paid regularly and shouldn’t have to worry about it[^salary].
 - You get payed holidays, sick days, maternity, etc.
 - Above that, you often get a range of benefits which vary from company to company - the bigger the higher the chance of getting a larger range / better benefits is. This may include private medical insurance, pension, discounts, gym membership etc.
 - If you get fired or the company goes busted, you usually have at least 1 month of notice for which the company’s got to pay you in full. (However if the company suddenly goes busted it may avoid paying you when they cease operations.)
@@ -52,8 +52,8 @@ Having done contract work for the past two years, I can confidently say that, if
 
 ### Pros
 
-- Contracts tend to be full-time jobs that last for long periods of time[^In my experience, 3-6 months with a high chance of the contract being renewed for up to 12 months and may be longer than that in some cases.]. That means you can keep fairly busy with just a couple of contracts per year.
-- You get paid more on average[^If you keep yourself busy most of the year, and also depending on your skills and area of expertise.].
+- Contracts tend to be full-time jobs that last for long periods of time[^contract-length]. That means you can keep fairly busy with just a couple of contracts per year.
+- You get paid more on average[^pay].
 - You have more freedom. Being independent means that your clients cannot enforce rules on you on how, when and where you work. Unfortunately, though, the main reason companies hire contractors is to enforce the ‘where’: they’ll often want you to stay in their premises either full-time or most days; however you can get lucky and secure only remote contracts.
 - You get to work on many different projects throughout the years.
 - Changing often environment may allow you to make more friends.
@@ -65,8 +65,6 @@ Having done contract work for the past two years, I can confidently say that, if
 -  You’ve got to deal with taxes, pension, insurances and everything else yourself or pay an accountant, a tax advisor and a legal advisor to do *some* of this work for you.
 -  You need to search for work more often.
 -  For shorter contracts, changing often environments may make it hard to make friends.
-
-### Is contracting really advantageous?
 
 Quite often, when talking about what I do with other software engineers, especially the *newcomers*, I hear from them the same thing about why they’d like to become contractors: higher pay.
 
@@ -91,7 +89,7 @@ Freelancing, as far as I understand, if very similar to contracting. The pros an
 - You usually work for more clients at a given time and/or for shorter periods of time.
 - You usually work from home. As it’s expected, you won’t usually have to try to convince your potential clients that you’ll work the same remotely.
 - It might be harder to find friends as you need to deal with less people and you won’t be under the same roof.
-- Whilst contractors often find jobs through recruitment agencies[^Recruitment agencies tend to focus on full-time contractors and employees. I’m not really sure why they don’t look for freelancers as well. Maybe I’m just wrong.], freelancers usually find work by pitching companies or via their networks or directly by a company thanks to references or because of projects they built or contribute to that make them stand-out.
+- Whilst contractors often find jobs through recruitment agencies[^recruitment], freelancers usually find work by pitching companies or via their networks or directly by a company thanks to references or because of projects they built or contribute to that make them stand-out.
 
 Working on shorter or one-job projects means you need to find new work more often and may also mean you may end up working less throughout the year. This can be a bad thing or a good thing depending on your situation. If have or you’re trying to build your own products, this option might work out better for you… especially if you have less commitments, i.e. if you don’t have a family and / nor a mortgage to repay.
 
@@ -117,3 +115,10 @@ Whatever you choose to do, do what you like and what suites your interest best. 
 
 >Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle.
 ><span class="quote_author">-Steve Jobs</span>
+
+In the [second part of this post]({% post_url 2015-08-19-contracting-demystified-part-2 %}) I'll look into some of the myths and misconceptions around contracting.
+
+[^salary]: We all know that this isn’t always true, unfortunately. There always are businesses winding down due to internal or external factors, economic crises or anything else really.
+[^contract-length]: In my experience, 3-6 months with a high chance of the contract being renewed for up to 12 months and may be longer than that in some cases.
+[^pay]: If you keep yourself busy most of the year, and also depending on your skills and area of expertise.
+[^recruitment]: Recruitment agencies tend to focus on full-time contractors and employees. I’m not really sure why they don’t look for freelancers as well. Maybe I’m just wrong.

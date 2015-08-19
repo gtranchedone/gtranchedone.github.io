@@ -6,7 +6,7 @@
 
 // Our variables
 $base-font-family: 'Lato', Helvetica, Arial, sans-serif;
-$base-font-size:   20px;
+$base-font-size:   22px;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
@@ -27,6 +27,11 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $max-content-width: 800px;
+
+@mixin h-bold-style {
+    color: #4E5860;
+	font-weight: bold;
+}
 
 /* IE10+ VIEWPORT FIX */
 @-ms-viewport { width:device-width; }
@@ -83,21 +88,26 @@ a:hover, a:visited:hover, a:hover h1, a:visited:hover h1 {
 h1 {
 	margin: 0px;
 	padding: 0px;
-	font-size: 48px;
+	font-size: ($base-font-size * 2.2);
 	font-weight: 900;
 	line-height: normal;
 	color: $titles-color;
 	display: inline-block;
 }
 
-h2, h3 {
-	color: #4E5860;
-	font-weight: bold;
+h2 {
+	@include h-bold-style;
+	font-size: ($base-font-size * 1.5)
+}
+
+h3 {
+	@include h-bold-style;
+	font-size: ($base-font-size * 1.1)
 }
 
 h4 {
 	margin: 0px;
-	font-size: 16px;
+	font-size: ($base-font-size * 0.82);
 	font-weight: 300;
 	color: $details-text-color;
 }
@@ -133,6 +143,7 @@ iframe {
 
 .meta {
 	margin: 10px auto;
+	font-size: 18px;
 }
 
 /*****************************************************************************/

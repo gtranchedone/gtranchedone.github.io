@@ -79,7 +79,7 @@
 body {
   background-color: #FEFEFE;
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   color: #666666;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -115,19 +115,25 @@ a:hover, a:visited:hover, a:hover h1, a:visited:hover h1 {
 h1 {
   margin: 0px;
   padding: 0px;
-  font-size: 48px;
+  font-size: 48.4px;
   font-weight: 900;
   line-height: normal;
   color: #FF9C01;
   display: inline-block; }
 
-h2, h3 {
+h2 {
   color: #4E5860;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 33px; }
+
+h3 {
+  color: #4E5860;
+  font-weight: bold;
+  font-size: 24.2px; }
 
 h4 {
   margin: 0px;
-  font-size: 16px;
+  font-size: 18.04px;
   font-weight: 300;
   color: #666666; }
 
@@ -156,7 +162,8 @@ iframe {
   display: inline-block; }
 
 .meta {
-  margin: 10px auto; }
+  margin: 10px auto;
+  font-size: 18px; }
 
 /*****************************************************************************/
 /*

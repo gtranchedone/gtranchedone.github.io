@@ -196,7 +196,7 @@ pod &#39;MagicalRecord&#39;, &#39;~&gt; 2.1&#39;
 
 <p>One thing to notice is that pods usually come from repositories that were registered with CocoaPods (see the official documentation). What some may miss at first, but that might discover, soon is that not everything is on CocoaPods (yet :) ), especially internal libraries/components. What do you do when this happens? Can you still use CocoaPods for those? Of course you can! You just have to create a podspec for that library yourself! A podspec is a file where you specify information about a Pod. Once you&#39;ve done that you add this new pod in your Podfile as follows:</p>
 
-<p>pod &#39;MyLibrary&#39;, :podspec =&gt; &#39;config/pods/MyLibrary.podspec&#39;
+<p>pod &#39;MyLibrary&#39;, :podspec =&gt; &#39;config/pods/MyLibrary.podspec&#39;<br>
 Another commonly asked question is how to integrate a local Pod in your project while still working on the Pod, or how to work on a local copy of a Pod. Well, CocoaPods got you covered for this situations as well with Local Pods! To add a Local Pod, you simply declare it in your Podfile as follows:</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">pod &#39;MyPod&#39;, :path =&gt; &#39;~/[some path]/MyPod/&#39;, :branch =&gt; &#39;develop&#39;
 </code></pre></div>
@@ -230,13 +230,6 @@ Although I haven&#39;t shown it in this post, you can also target dependencies t
 
 	</section>
 	<footer class="post_footer">
-		<p><a href="/">&#x3031; All Blog Posts</a></p>
-		<div class="share-page">
-    Share this post on &rarr; 
-    <a class="share-modal" href="https://twitter.com/intent/tweet?text=The best ways to integrate external repositories into your projects%20by%20@&url=http://gtranchedone.com/2013/08/09/the-best-ways-to-integrate-external-repositories-into-your-projects" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
-    <a class="share-modal" href="https://facebook.com/sharer.php?u=http://gtranchedone.com/2013/08/09/the-best-ways-to-integrate-external-repositories-into-your-projects" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
-    <a href="https://plus.google.com/share?url=http://gtranchedone.com/2013/08/09/the-best-ways-to-integrate-external-repositories-into-your-projects" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
-</div>
 	</footer>
 	<footer class="comments">
 		<div id="disqus_thread"></div>

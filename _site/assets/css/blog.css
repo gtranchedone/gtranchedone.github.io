@@ -34,21 +34,21 @@ h1 {
   font-size: 48px; }
 
 sup {
-  font-size: 14px; }
+  font-size: 13px;
+  font-weight: bold; }
 
 .post .footnotes {
-  font-size: 14px;
+  font-size: 18px;
   list-style: none;
   margin: 20px 0px;
   padding: 0px; }
+  .post .footnotes p {
+    margin: 10px auto; }
 
 .comments {
   color: black;
   /* disqus determines the theme to use based on the text color */
   padding: 10px; }
-
-li sup {
-  font-size: 8px; }
 
 /*****************************************************************************/
 /*
