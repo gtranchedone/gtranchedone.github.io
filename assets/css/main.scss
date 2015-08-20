@@ -5,11 +5,11 @@
 @import "fonts";
 
 // Our variables
-$base-font-family: 'Lato', Helvetica, Arial, sans-serif;
-$base-font-size:   22px;
-$base-line-height: 1.5;
+$base-font-family:      'Lato', Helvetica, Arial, sans-serif;
+$base-font-size:        20px;
+$base-line-height:      1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:          30px;
 
 $text-color:			#666666;
 $details-text-color:	#666666;
@@ -31,6 +31,7 @@ $max-content-width: 800px;
 @mixin h-bold-style {
     color: #4E5860;
 	font-weight: bold;
+	line-height: $base-line-height + 0.5
 }
 
 /* IE10+ VIEWPORT FIX */
@@ -45,6 +46,7 @@ $max-content-width: 800px;
 
 body {
 	background-color: $background-color;
+	line-height: $base-line-height;
 	font-family: $base-font-family;
 	font-size: $base-font-size;
 	color: $text-color;
@@ -107,13 +109,12 @@ h3 {
 
 h4 {
 	margin: 0px;
+	color: $details-text-color;
 	font-size: ($base-font-size * 0.82);
 	font-weight: 300;
-	color: $details-text-color;
 }
 
 p {
-	line-height: $base-line-height;
 	margin: $spacing-unit auto;
 	text-align: justify;
 }
@@ -276,14 +277,19 @@ footer #social .socialButton {
 	text-align: center;
 }
 
+li {
+    margin-bottom: 10px;
+}
+
 /*****************************************************************************/
 /*
 /* Blockquote
 /*
 /*****************************************************************************/
 
+/*
 blockquote {
-    margin: 0px;
+    margin: 60px 0px;
 	font-weight: 300;
 	padding: 0px 0px 0px 20px;
 	border-left: 4px solid #FF9C01;
@@ -294,11 +300,24 @@ blockquote {
 		}
 	}
 }
+*/
 
-.quote_author {
-	display: block;
-	text-align: right;
-	font-style: italic;
+blockquote {
+    margin: 80px 0px;
+	font-weight: bold;
+    font-style: italic;
+    text-align: center;
+	color: $titles-color;
+	font-size: $base-font-size * 1.5;
+	
+	cite {
+    	text-align: right;
+        display: block;
+	}
+	
+	cite::before {
+        content: "\2014 \2009";
+    }
 }
 
 /*****************************************************************************/

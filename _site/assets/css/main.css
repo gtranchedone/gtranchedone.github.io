@@ -78,8 +78,9 @@
 /*****************************************************************************/
 body {
   background-color: #FEFEFE;
+  line-height: 1.5;
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   color: #666666;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -115,7 +116,7 @@ a:hover, a:visited:hover, a:hover h1, a:visited:hover h1 {
 h1 {
   margin: 0px;
   padding: 0px;
-  font-size: 48.4px;
+  font-size: 44px;
   font-weight: 900;
   line-height: normal;
   color: #FF9C01;
@@ -124,21 +125,22 @@ h1 {
 h2 {
   color: #4E5860;
   font-weight: bold;
-  font-size: 33px; }
+  line-height: 2;
+  font-size: 30px; }
 
 h3 {
   color: #4E5860;
   font-weight: bold;
-  font-size: 24.2px; }
+  line-height: 2;
+  font-size: 22px; }
 
 h4 {
   margin: 0px;
-  font-size: 18.04px;
-  font-weight: 300;
-  color: #666666; }
+  color: #666666;
+  font-size: 16.4px;
+  font-weight: 300; }
 
 p {
-  line-height: 1.5;
   margin: 30px auto;
   text-align: justify; }
 
@@ -272,23 +274,40 @@ footer #social .socialButton {
 .post_image_group {
   text-align: center; }
 
+li {
+  margin-bottom: 10px; }
+
 /*****************************************************************************/
 /*
 /* Blockquote
 /*
 /*****************************************************************************/
+/*
 blockquote {
-  margin: 0px;
-  font-weight: 300;
-  padding: 0px 0px 0px 20px;
-  border-left: 4px solid #FF9C01; }
-  blockquote p em {
-    font-style: italic; }
-
-.quote_author {
-  display: block;
-  text-align: right;
-  font-style: italic; }
+    margin: 60px 0px;
+	font-weight: 300;
+	padding: 0px 0px 0px 20px;
+	border-left: 4px solid #FF9C01;
+	
+	p {
+		em {
+			font-style: italic;
+		}
+	}
+}
+*/
+blockquote {
+  margin: 80px 0px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color: #FF9C01;
+  font-size: 30px; }
+  blockquote cite {
+    text-align: right;
+    display: block; }
+  blockquote cite::before {
+    content: "\2014 \2009"; }
 
 /*****************************************************************************/
 /*
