@@ -282,32 +282,25 @@ li {
 /* Blockquote
 /*
 /*****************************************************************************/
-/*
 blockquote {
-    margin: 60px 0px;
-	font-weight: 300;
-	padding: 0px 0px 0px 20px;
-	border-left: 4px solid #FF9C01;
-	
-	p {
-		em {
-			font-style: italic;
-		}
-	}
-}
-*/
-blockquote {
-  margin: 80px 0px;
-  font-weight: bold;
+  padding: 0 0 0 20px;
+  margin: 20px auto;
+  font-weight: 300; }
+
+.blockquote-large {
+  margin: 60px 0px;
   font-style: italic;
-  text-align: center;
+  text-align: justify;
+  font-weight: normal;
   color: #FF9C01;
   font-size: 30px; }
-  blockquote cite {
-    text-align: right;
-    display: block; }
-  blockquote cite::before {
-    content: "\2014 \2009"; }
+
+cite {
+  text-align: right;
+  display: block; }
+
+cite::before {
+  content: "\2014 \2009"; }
 
 /*****************************************************************************/
 /*
