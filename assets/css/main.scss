@@ -126,6 +126,7 @@ h4 {
 p {
 	margin: $spacing-unit auto;
 	text-align: justify;
+	overflow-x: scroll;
 }
 
 article {
@@ -226,8 +227,10 @@ iframe {
     -o-transform: scale(1.2, 1.2);
 }
 
-.pagination {
-	text-align: center;
+.container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: $max-content-width;
 }
 
 /*****************************************************************************/

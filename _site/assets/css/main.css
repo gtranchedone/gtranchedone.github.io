@@ -146,7 +146,8 @@ h4 {
 
 p {
   margin: 30px auto;
-  text-align: justify; }
+  text-align: justify;
+  overflow-x: scroll; }
 
 article {
   max-width: 800px;
@@ -230,8 +231,10 @@ iframe {
   -moz-transform: scale(1.2, 1.2);
   -o-transform: scale(1.2, 1.2); }
 
-.pagination {
-  text-align: center; }
+.container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px; }
 
 /*****************************************************************************/
 /*

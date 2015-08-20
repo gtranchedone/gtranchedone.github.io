@@ -1,0 +1,12 @@
+<!-- Blog Post -->
+<article>
+    {% include post_header.html param=post %}
+    <section class="post">
+    {% if post.content contains "<!-- more -->" %}
+        {% capture content %}{{ post.content | split:"<!-- more -->" | first }}{% endcapture %}
+            <p>{{ content | strip_html | append: "[...]" }}</p>
+        {% else %}
+            {{ post.content }}
+        {% endif %}
+    </section>
+</article>

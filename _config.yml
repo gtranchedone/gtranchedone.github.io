@@ -12,11 +12,14 @@ encoding: utf-8
 safe: false
 lsi: false
 
-baseurl: /
-permalink: /:year/:month/:day/:title
 url: http://gtranchedone.com
+baseurl: /
+
 imagesurl: /assets/images/
-paginate: 4
+permalink: /blog/:year/:month/:day/:title
+
+paginate_path: /blog/page:num/
+paginate: 5
 
 title: "Gianluca Tranchedone"
 description: "Gianluca's Personal Website"

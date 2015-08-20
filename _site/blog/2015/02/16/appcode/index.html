@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head profile="http://www.w3.org/2005/10/profile">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Why AppCode has become my IDE of choice</title>
+        <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+        <!-- Syntax Highlighting CSS -->
+		<link rel="stylesheet" href="/assets/highlight/styles/xcode.css">
+		<script src="/assets/highlight/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+        <!-- Custom CSS -->
+        <link href="/assets/css/main.css" type="text/css" rel="stylesheet"/>
+        <link href="/assets/css/navbar.css" type="text/css" rel="stylesheet"/>
+        
+        <link href=/assets/css/blog.css type="text/css" rel="stylesheet"/>
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <!-- JavaScript -->
+        <script type="text/javascript" src="/assets/javascript.js"></script>
+        <!-- RSS Feed -->
+        <link href="/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Atom RSS Feed"/>
+        <!-- Google Analytics -->
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49946891-1', 'gtranchedone.com');
+  ga('require', 'linkid', 'linkid.js');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+        <!-- Bit.ly Verification -->
+        <meta name="bitly-verification" content="1629f330e22d"/>
+        <!-- Common Social Media Optimization -->
+        
+        <html itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="name" content="Why AppCode has become my IDE of choice">
+		<meta itemprop="description" content="A long time ago I wrote a post titled ‘Why AppCode is still no match for Xcode’. Now you might be reading this post’s title again to be sure you’ve read it right the first time. And yes, that’s right, nowadays I’m actually using AppCode as my main IDE for iOS and OS X applications. So, what’s changed since last year?"> 
+		<meta name="description" content="A long time ago I wrote a post titled ‘Why AppCode is still no match for Xcode’. Now you might be reading this post’s title again to be sure you’ve read it right the first time. And yes, that’s right, nowadays I’m actually using AppCode as my main IDE for iOS and OS X applications. So, what’s changed since last year?" />
+		
+		
+		<!-- Google Authorship -->
+		
+		<link rel="canonical" href="http://gtranchedone.com/blog/2015/02/16/appcode/"/>
+		<link rel="author" href="https://plus.google.com/u/1/+GianlucaTranchedone"/>
+		
+		
+		<meta itemprop="image" content="http://gtranchedone.com/assets/images/posts/2015-02-16-appcode/appcode_vs_xcode.png">
+		
+        <!-- Facebook Sharing Optimization -->
+        
+        <meta property="og:title" content="Why AppCode has become my IDE of choice"/>
+        <meta property="og:url" content="http://gtranchedone.com/blog/2015/02/16/appcode/"/>
+        
+        
+		<meta property="article:author" content="https://facebook.com/gtranchedone"/>
+		<meta property="og:type" content="article"/>
+		
+		
+		
+		<meta property="og:description" content="A long time ago I wrote a post titled ‘Why AppCode is still no match for Xcode’. Now you might be reading this post’s title again to be sure you’ve read it right the first time. And yes, that’s right, nowadays I’m actually using AppCode as my main IDE for iOS and OS X applications. So, what’s changed since last year?"/>
+		
+    </head>
+    <body>
+    	
+    	<header>
+    		<nav class="nav_bar" id="nav_bar">
+	<div class="nav_hold">
+		<a href="/" class="nav_logo"><img id="small_profile_picture" src="http://www.gravatar.com/avatar/2b98c09b232d45d7b03fd6804ed23e40?s=80" alt="Gianluca's Profile Picture" /><span>Gianluca</span> Tranchedone</a>
+		<!-- Social Links -->
+<ul class="social_links_list" id="social">
+	<li>
+		<a href="http://twitter.com/gtranchedone">
+			<div class="socialButton" id="socialButtonTwitter">&#xe005;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://linkedin.com/in/gtranchedone">
+			<div class="socialButton" id="socialButtonLinkedIn">&#xe015;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://github.com/gtranchedone">
+			<div class="socialButton" id="socialButtonGitHub">&#xe01c;<!--&#xe01d;--></div>
+		</a>
+	</li>
+	<li>
+		<a href="http://stackoverflow.com/users/737105/gianluca-tranchedone">
+			<div class="socialButton" id="socialButtonStackOverflow">&#xe008;</div>
+		</a>
+	</li>
+	<li>
+		<a href="mailto:g.tranchedone@gmail.com">
+			<div class="socialButton" id="socialButtonEmail">&#xe023;</div>
+		</a>
+	</li>
+	
+	
+	<li>
+		<a href="/blog/feed.xml">
+			<div class="socialButton" id="socialButtonRSS">&#xe00c;</div>
+		</a>
+	</li>
+	
+</ul>
+<!-- END Social Links -->
+	</div>
+</nav>
+		</header>
+		
+    	<article>
+	<header class="post_header">
+	
+	<a href="/blog/2015/02/16/appcode" class="excerpt_post_image">
+		<img class="post_featured_image" src="/assets/images/posts/2015-02-16-appcode/appcode_vs_xcode.png" alt="Why AppCode has become my IDE of choice" width="760" />
+	</a>
+	
+	<a href="/blog/2015/02/16/appcode" class="excerpt_post_title">
+		<h1>Why AppCode has become my IDE of choice</h1>
+	</a>
+	<!-- for info about subsequent calculation see http://en.wikipedia.org/wiki/Words_per_minute -->
+	
+	
+		
+	
+	<h4 class="meta">Posted on 16 February 2015 | Reading time: 7 minutes</h4>
+</header>
+	<section class="post">
+		<p>Just over a year ago I wrote a post titled “<a href="/blog/2013/08/05/xcode-vs-appcode">Why AppCode is still no match for Xcode</a>”. Later, pushed by the feedback I’ve received from some fellow developers, I forced myself trying JetBrains’ IDE once more. I’ve been using <a href="https://www.jetbrains.com/objc/">AppCode</a> as my main tool for writing code for about a year now and this is what I think.</p>
+
+<!-- more -->
+
+<p><em>Disclaimer: JetBrains doesn’t pay me to sponsor their IDE and it’s not affiliate to me or any of my businesses in any way.</em></p>
+
+<h2>TL;DR</h2>
+
+<p>Go get <a href="https://www.jetbrains.com/objc/">AppCode</a>, it’s awesome! Try hard to use it before you ditch it to go back to Xcode. I’ve done it myself ones and I regret it. You’ll fall in love with the code editing and refactoring features of this IDE! (see a list of shortcuts at the end of this post.)</p>
+
+<h2>What went wrong last time</h2>
+
+<p>The last time I’ve used AppCode, the IDE’s user interface wasn’t great and made my eyes bleed every time I tried to use it. That certainly was the main reason I was coming back to Xcode all the time. Besides, support for all the “Apple specific” features - like Storyboard, visual editor for Core Data Models, Xcode project settings, etc. - where either missing or very basic. Therefore during my initial 30-days free trial period I’ve been using Xcode much more than I used AppCode. I wasn’t impressed.</p>
+
+<p>By the time I decided to give AppCode a second chance, the IDE had just got a major update featuring a nicer UI. With that my eyes weren’t bleeding anymore and I was more comfortable trying it for real. Also, this time around my trial was well over, so I had to purchase a license, which has been a great motivator to use AppCode more than Xcode.</p>
+
+<h2>Using AppCode as the main IDE</h2>
+
+<p>Both when I first tried it and again when I switched full-time to AppCode, the transition from Xcode has been quite painful at first. With time I’ve come to really appreciate all of the features and shortcuts AppCode provides but the structure and ease of use of Xcode are, to this day, still better. For example, although the guys at JetBrains have done a really good job adding better support for those files AppCode wasn’t able to edit, I still use Xcode to work on them. Editing such files - especially the project settings - is still a pain in AppCode for me.</p>
+
+<p>However, and that’s the whole reason why I’m using it as my main IDE, AppCode has amazing code editing and refactoring features. As software developers, that’s what we do. We write code and edit it all the time. Being able to to this efficiently and as quickly as possible is key for us, and it’s what an IDE should help with.</p>
+
+<blockquote>
+<p>AppCode makes you a far more productive developer. For me that’s a game changer compared to Xcode.</p>
+</blockquote>
+
+<p>AppCode makes you way more productive when it comes to writing or editing code. This is especially true once you learn a set of basic shortcuts (find a list of useful shortcuts at the bottom of the post).</p>
+
+<h2>Refactor, Refactor, Refactor</h2>
+
+<p>The true power of AppCode is in it’s refactoring tools. It’s unbelievable how good they are and it’s unbelievable how bad Xcode equivalents - if at all present - are instead!</p>
+
+<p>AppCode let’s you rename variables, constants, enums, classes, files, and anything else you can think of in a snap! It’s so fast sometimes you’re there wondering if it did something at all only to realise it applied your change to a ton of files already!</p>
+
+<p>Want to change the signature of a method but you’re afraid of having to go to all source files checking for it’s usage and manually change the code? Not anymore! If you ever tried to refactor a method signature in Xcode using the available tool, you know how painful and slow that is… when it works. With AppCode it’s another story entirely: not only it changes all usages of the method with the updated signature, it also passes either 0, nil/NULL or NO/false when you add a parameter.</p>
+
+<p>I almost always write code in a Test-Driven fashion, so for me refactoring is a very big deal. Having the right tool for the job makes the difference between being able to deliver quality code in time or missing the deadline (or having to compromise on quality). For me that’s a game changer compared to Xcode.</p>
+
+<p>AppCode also comes with a set of inspection that smartly suggest you how to improve your code of that some problem needs fixing. For example, it suggest you switch from something like</p>
+
+<div class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="k">if</span> <span class="p">(</span><span class="n">someCondition</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">variable</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+    <span class="n">variable</span> <span class="o">=</span> <span class="n">y</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>to</p>
+
+<div class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="n">variable</span> <span class="o">=</span> <span class="n">someCondition</span> <span class="o">?</span> <span class="nl">x</span> <span class="p">:</span> <span class="n">y</span><span class="p">;</span></code></pre></div>
+
+<p>for simple if/else statements.</p>
+
+<p>Another example is with unreachable code (code that will never get executed maybe because some condition can be never met)</p>
+
+<div class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="c1">// The following code will be highlighted by AppCode</span>
+<span class="c1">// with a warning for unreachable code</span>
+<span class="kt">BOOL</span> <span class="n">someCondition</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">someCondition</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// some code</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Other suggestions include localising strings. Move the cursor on a string and AppCode will suggest to localise it. It will help you doing so by wrapping the string in an <code>NSLocalizedString()</code> macro, letting you edit the key and adding the localisation to all Localisable.strings files in your project.</p>
+
+<p>I’m really looking for the day when Apple will finally announce a version of Xcode with decent refactoring and quick-fix tools.</p>
+
+<h2>Not only refactoring</h2>
+
+<p>Besides refactoring, AppCode has also a bunch of other useful features such as</p>
+
+<ul>
+<li>Interoperability with Xcode</li>
+<li>Swift support</li>
+<li>Spelling checks</li>
+<li>Automatically inserts missing imports</li>
+<li>Unused imports recognition (but only works from the top down, so if you have a redundant import of a class that also another class you’re importing imports - <img class='emoji' title=':smile:' alt=':smile:' src='https://assets.github.com/images/icons/emoji/unicode/1f604.png' height='20' width='20' align='absmiddle' /> - that won’t get caught)</li>
+<li>Autocompletion for images and files in the app bundle</li>
+<li>Customisable Code Style (which gets enforced by the editor)</li>
+<li>Fully customisable editor</li>
+<li>Warning for unused code + quick fix to delete (awesome!!)</li>
+<li>Integrated support for <a href="http://revealapp.com">Reveal</a></li>
+<li>Integrated support for Git and GitHub (which lets you create Pull Requests or Gists from within the IDE)</li>
+<li>Built-in support for <a href="http://cocoapods.org">CocoaPods</a></li>
+</ul>
+
+<p>…an many, many more!</p>
+
+<h2>Features to be added or improved</h2>
+
+<p>AppCode is a fantastic IDE but Xcode still has a better UI and UX in my opinion. Editing the project file, Storyboard and other special files can still be tedious compared to Apple’s IDE. This few issues may block you from trying AppCode the fist time, but it’s totally worth it. A few more I found:</p>
+
+<ul>
+<li><p><strong>Comparing the current version of your code with a previously committed version (with VCS) isn’t great</strong><br>
+Xcode has much better support for it with the Assistant Editor and also comes with FileMerge which is pretty decent.</p></li>
+<li><p><strong>There’s no shortcut to let you run the test configuration while having the app configuration selected</strong>.<br>
+Writing tests before any line of production code makes you confident that when you run the app, everything will be good. Most times, though, you’ll want to double check that you tested all scenarios and that the app is properly configured outside of the test code. Moreover you’ll need to actually run the app to check if everything also <em>looks</em> good. If you practice TDD such shortcut is really helpful. Xcode has it, I don’t know why AppCode doesn’t.</p></li>
+<li><p><strong>Running tests for only one class or method creates a new build configuration</strong><br>
+Being able to select a single tests or suites can be some times very convenient. BDD frameworks usually allow to run single tests or single test suites by prefixing an ‘it’ or ‘context’ block with some special key. If you’re not into BDD though, you’ll find it quite cumbersome with AppCode as it creates a new build configuration every time you run a single test or test suite the first time, with only that test or suite enabled.</p></li>
+</ul>
+
+<h2>Conclusion</h2>
+
+<p>Nowadays I write code almost exclusively in AppCode. I still use Xcode, in fact I often have it open alongside AppCode. I use  Xcode mostly to edit Apple proprietary files for the large part.</p>
+
+<p>The power of the of the tools AppCode provides is by far superior to Xcode, especially when it comes to refactoring, although Xcode still has a better UI and overall UX. Therefore I highly recommend giving AppCode a  good try. You won’t regret it!</p>
+
+<p><a href="https://www.jetbrains.com/objc/">Download AppCode</a> (once more JetBrains doesn’t pay me to sponsor their IDE)</p>
+
+<h2>P.S. Some useful shortcuts for AppCode</h2>
+
+<ul>
+<li>⌃⌥F7 Shows you all usages of a method, class or other symbol</li>
+<li>⌥⏎ Shows the Hint menu when available (a light bulb appears when the cursor is on a word or symbol that AppCode’s inspections recognise for suggestions (e.g. when on a non-localised string, AppCode will suggest you to localise it and by pressing ⌥⏎ AppCode will automatically wrap it in the <code>NSLocalizedString()</code> macro, let you type the key for that string and add it if necessary to a Localizable.strings file).</li>
+<li>⇧F6 Rename a variable or symbol</li>
+<li>⌘⌃F6 Change method signature</li>
+<li>⌘⌥V Extract variable</li>
+<li>⌘⌥M Extract method</li>
+<li>⌘⌥T Wrap selected code in if/while/for/etc. statements.</li>
+<li>⌘⇧T Jump to test class (if available)</li>
+<li>⌘N Generate method/test (I use it for test cases a lot, but not for other stuff)</li>
+</ul>
+
+<p>This two are the ones you’ll be using at all times. A part from those you’ll be using the build and run shortcuts quite often. AppCode’s shortcuts for those commands are quite different than Xcode’s. I’ve customised them in AppCode to make them more similar to Xcode, but still keeping a distinction between the two. So, for me, ⌥R runs the app with no debugger attached, ⌥D runs the app with the debugger attached, ⌃⌥R does the same as ⌥R but before building you get to choose the configuration - useful when switching between the main app target and the test one - and ⌃⌥D, as you would imagine does the same as ⌃⌥R but attaches the debugger to the process.</p>
+
+	</section>
+	<footer class="post_footer">
+</footer>
+	<footer class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'gtranchedone';
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>
+        Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">
+            comments powered by Disqus.</a>
+    </noscript>
+    <a href="http://disqus.com" class="dsq-brlink">
+        comments powered by <span class="logo-disqus">Disqus</span>
+    </a>
+</footer>
+</article>
+
+
+    	<footer>
+    		<!-- Social Links -->
+<ul class="social_links_list" id="social">
+	<li>
+		<a href="http://twitter.com/gtranchedone">
+			<div class="socialButton" id="socialButtonTwitter">&#xe005;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://linkedin.com/in/gtranchedone">
+			<div class="socialButton" id="socialButtonLinkedIn">&#xe015;</div>
+		</a>
+	</li>
+	<li>
+		<a href="http://github.com/gtranchedone">
+			<div class="socialButton" id="socialButtonGitHub">&#xe01c;<!--&#xe01d;--></div>
+		</a>
+	</li>
+	<li>
+		<a href="http://stackoverflow.com/users/737105/gianluca-tranchedone">
+			<div class="socialButton" id="socialButtonStackOverflow">&#xe008;</div>
+		</a>
+	</li>
+	<li>
+		<a href="mailto:g.tranchedone@gmail.com">
+			<div class="socialButton" id="socialButtonEmail">&#xe023;</div>
+		</a>
+	</li>
+	
+	
+	<li>
+		<a href="/blog/feed.xml">
+			<div class="socialButton" id="socialButtonRSS">&#xe00c;</div>
+		</a>
+	</li>
+	
+</ul>
+<!-- END Social Links -->
+    		<div class="copyright">
+				<h4>&copy; 2013-
+					<script type="text/javascript">
+						now = new Date
+						theYear = now.getYear()
+						if (theYear < 1900) theYear += 1900
+						document.write(theYear)
+					</script> Gianluca Tranchedone. All rights reserved.
+				</h4>
+    		</div>
+		</footer>
+    </body>
+</html>

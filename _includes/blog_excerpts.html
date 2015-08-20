@@ -1,26 +1,20 @@
-<!-- Blog posts -->
+<!-- Blog Posts -->
 {% for post in paginator.posts %}
-	<article>
-		{% include post_header.html param=post %}
-		<section class="post">
-			{% if post.content contains "<!-- more -->" %}
-				{% capture content %}{{ post.content | split:"<!-- more -->" | first }}{% endcapture %}
-				<p>{{ content | strip_html | append: "[...]" }}</p>
-			{% else %}
-				{{ post.content }}
-			{% endif %}
-		</section>
-	</article>
+    {% include blog_excerpt.html post=post %}
 {% endfor %}
 <!-- Pagination links -->
 <div class="pagination">
 	{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path }}" class="next">&larr; Older Posts</a>
+        <a href="{{ paginator.next_page_path }}" class="next">&larr; Older Posts</a>
 	{% endif %}
 	{% if paginator.next_page and paginator.previous_page %}
-		<span class="page_number "> | </span>
+		<span class="page-number-divider">|</span>
 	{% endif %}
 	{% if paginator.previous_page %}
-		<a href="{{ paginator.previous_page_path }}" class="previous">Next &rarr;</a>
+        {% if paginator.previous_page == 1 %}
+            <a href="/blog" class="previous">Newer Posts &rarr;</a>
+        {% else %}
+    	    <a href="{{ paginator.previous_page_path }}" class="previous">Newer Posts &rarr;</a>
+        {% endif %}
 	{% endif %}
 </div>

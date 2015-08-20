@@ -17,6 +17,10 @@ title: Gianluca Tranchedone
         </a>
 	</div>
 </div>
-<section id="posts">
-	{% include blog_excerpts.html %}
+<section class="container" id="posts">
+    <h2>Latest Blog Posts</h2>
+    {% for post in site.posts limit: 5 offset:0 %}
+    	{% include blog_excerpt.html param=post %}
+	{% endfor %}
+	<a href="/blog">Read all blog posts</a>
 </section>

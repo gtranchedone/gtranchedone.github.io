@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://gtranchedone.com/2015/08/20/contracting-in-uk</loc>
+    <loc>http://gtranchedone.com/blog/2015/08/20/contracting-in-uk</loc>
     <lastmod>2015-08-20T00:00:00+01:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://gtranchedone.com/2015/08/19/contracting-demystified-part-2</loc>
+    <loc>http://gtranchedone.com/blog/2015/08/19/contracting-demystified-part-2</loc>
     <lastmod>2015-08-19T00:00:00+01:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://gtranchedone.com/2015/08/19/contracting-demystified-part-1</loc>
+    <loc>http://gtranchedone.com/blog/2015/08/19/contracting-demystified-part-1</loc>
     <lastmod>2015-08-19T00:00:00+01:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://gtranchedone.com/2015/03/12/care</loc>
+    <loc>http://gtranchedone.com/blog/2015/03/12/care</loc>
     <lastmod>2015-03-12T00:00:00+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://gtranchedone.com/2015/02/16/appcode</loc>
+    <loc>http://gtranchedone.com/blog/2015/02/16/appcode</loc>
     <lastmod>2015-02-16T00:00:00+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://gtranchedone.com/2014/06/10/swift</loc>
+    <loc>http://gtranchedone.com/blog/2014/06/10/swift</loc>
     <lastmod>2014-06-10T00:00:00+01:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://gtranchedone.com/2014/05/09/working-with-legacy-code</loc>
+    <loc>http://gtranchedone.com/blog/2014/05/09/working-with-legacy-code</loc>
     <lastmod>2014-05-09T00:00:00+01:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://gtranchedone.com/2013/09/02/how-to-sync-xcode-code-snippets-with-dropbox</loc>
+    <loc>http://gtranchedone.com/blog/2013/09/02/how-to-sync-xcode-code-snippets-with-dropbox</loc>
     <lastmod>2013-09-02T00:00:00+01:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://gtranchedone.com/2013/08/27/the-app-store-business</loc>
+    <loc>http://gtranchedone.com/blog/2013/08/27/the-app-store-business</loc>
     <lastmod>2013-08-27T00:00:00+01:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://gtranchedone.com/2013/08/09/the-best-ways-to-integrate-external-repositories-into-your-projects</loc>
+    <loc>http://gtranchedone.com/blog/2013/08/09/the-best-ways-to-integrate-external-repositories-into-your-projects</loc>
     <lastmod>2013-08-09T00:00:00+01:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://gtranchedone.com/2013/08/05/xcode-vs-appcode</loc>
+    <loc>http://gtranchedone.com/blog/2013/08/05/xcode-vs-appcode</loc>
     <lastmod>2013-08-05T00:00:00+01:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://gtranchedone.com/404.html</loc>
-    <lastmod>2015-08-20T16:07:08+01:00</lastmod>
+    <lastmod>2015-08-20T17:52:27+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://gtranchedone.com/blog/</loc>
-    <lastmod>2015-08-20T16:07:08+01:00</lastmod>
+    <lastmod>2015-08-20T17:52:27+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://gtranchedone.com/</loc>
-    <lastmod>2015-08-20T16:07:08+01:00</lastmod>
+    <lastmod>2015-08-20T17:52:27+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://gtranchedone.com/authors/gianluca-tranchedone.html</loc>
-    <lastmod>2015-08-20T16:07:08+01:00</lastmod>
+    <lastmod>2015-08-20T17:52:27+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
