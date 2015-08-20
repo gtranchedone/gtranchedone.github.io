@@ -1,8 +1,14 @@
 ---
 layout: post
+
 title: "Contracting in the UK as a Software Engineer"
 author: Gianluca Tranchedone
 category: Business
+
+featured-image: Contractor_UK_banner.jpg
+featured-image-length: 313369
+featured-image-width: 600
+
 social-description: "A look at what it takes to become a software engineer contractor in the UK."
 ---
 

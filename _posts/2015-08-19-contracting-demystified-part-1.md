@@ -5,6 +5,10 @@ title: "Contracting Demystified - Part 1: Forms of Employed Work"
 category: Business
 author: Gianluca Tranchedone
 
+featured-image: Contractor_Form_Employment_banner.jpg
+featured-image-length: 293483
+featured-image-width: 600
+
 social-description: "In this first post of a two-part series, I’d like to explain what contracting is about and how it differs from other forms of employed work."
 ---
 

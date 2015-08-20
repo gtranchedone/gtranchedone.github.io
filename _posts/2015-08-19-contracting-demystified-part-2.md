@@ -5,6 +5,10 @@ title: "Contracting Demystified - Part 2: Myths and misconceptions"
 category: Business
 author: Gianluca Tranchedone
 
+featured-image: Contractor_Myths_banner.jpg
+featured-image-length: 260606
+featured-image-width: 600
+
 social-description: "In this post we can move on talking about a couple of myths and misconceptions I’ve bumped into over the years. This will really be just a list of stuff that make me mad every time I see."
 ---
 
