@@ -5,9 +5,9 @@ title: "Why AppCode Is Still No Match for Xcode"
 category: Software Craftsmanship
 author: Gianluca Tranchedone
 
-featured_image: posts/2013-08-05-xcode-vs-appcode/appcode_vs_xcode.png
-featured_image_length: 423497
-featured_image_width: 760
+featured-image: posts/2013-08-05-xcode-vs-appcode/appcode_vs_xcode.png
+featured-image-length: 423497
+featured-image-width: 760
 
 social-description: "A comparison between Xcode and AppCode by JetBrains. In this post I argued that Xcode is the must go choice for any Cocoa(-Touch) developer."
 ---
@@ -40,7 +40,7 @@ Again Xcode is the clear winner on this side as well.
 
 Despite all the above, the strongest point of AppCode is for sure it's refactoring feature set. JetBrains' IDEs have always been known for the extremely good support for refactoring and AppCode doesn't disappoint expectations in this area.
 
-![App Code Method Generation](/images/posts/2013-08-05-xcode-vs-appcode/app_code-methods-generation.png)
+![App Code Method Generation]({{ site.imagesurl }}/posts/2013-08-05-xcode-vs-appcode/app_code-methods-generation.png)
 
 There are so many refactoring features in AppCode it's impossible to cover them all in one post. Therefore I'm only going to mention my favourites:
 
