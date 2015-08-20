@@ -13,9 +13,10 @@ $spacing-unit:          30px;
 
 $text-color:			#666666;
 $details-text-color:	#666666;
-$titles-color:			#FF9C01;
-$links-color-normal:	#48ACB5;
-$links-color-hover:		#94D5CA;
+$titles-color:			#444444;
+$quotes-large-color:	#FC6536;
+$links-color-normal:	#FC6536;
+$links-color-hover:		#48ACB5;
 $background-color:		#FEFEFE;
 
 $text-highlight-color:			#FFFFFF;
@@ -78,6 +79,10 @@ a, a:visited {
     color: $links-color-normal;
     text-decoration: none;
     cursor: pointer;
+    
+    h1 {
+        color: $titles-color;
+    }
 }
 
 a:hover, a:visited:hover, a:hover h1, a:visited:hover h1 {
@@ -95,6 +100,10 @@ h1 {
 	line-height: normal;
 	color: $titles-color;
 	display: inline-block;
+	
+	a {
+    	color: $titles-color;
+	}
 }
 
 h2 {
@@ -298,7 +307,7 @@ blockquote {
     font-style: italic;
     text-align: justify;
     font-weight: normal;
-    color: $titles-color;
+    color: $quotes-large-color;
     font-size: $base-font-size * 1.5;
 }
 
@@ -344,8 +353,12 @@ cite::before {
 
 @media only screen and (max-width: 549px) {
     
-    .post h2, .post h3 {
+    .post, .post p, .post h2, .post h3 {
         text-align: left;
+    }
+    
+    .blockquote-large {
+        font-size: 20px;
     }
 	
 }

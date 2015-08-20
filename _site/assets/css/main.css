@@ -103,15 +103,17 @@ a, a:visited {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
-  color: #48ACB5;
+  color: #FC6536;
   text-decoration: none;
   cursor: pointer; }
+  a h1, a:visited h1 {
+    color: #444444; }
 
 a:hover, a:visited:hover, a:hover h1, a:visited:hover h1 {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
-  color: #94D5CA; }
+  color: #48ACB5; }
 
 h1 {
   margin: 0px;
@@ -119,8 +121,10 @@ h1 {
   font-size: 44px;
   font-weight: 900;
   line-height: normal;
-  color: #FF9C01;
+  color: #444444;
   display: inline-block; }
+  h1 a {
+    color: #444444; }
 
 h2 {
   color: #4E5860;
@@ -292,7 +296,7 @@ blockquote {
   font-style: italic;
   text-align: justify;
   font-weight: normal;
-  color: #FF9C01;
+  color: #FC6536;
   font-size: 30px; }
 
 cite {
@@ -325,8 +329,11 @@ cite::before {
     -moz-transform: scale(1, 1);
     -o-transform: scale(1, 1); } }
 @media only screen and (max-width: 549px) {
-  .post h2, .post h3 {
-    text-align: left; } }
+  .post, .post p, .post h2, .post h3 {
+    text-align: left; }
+
+  .blockquote-large {
+    font-size: 20px; } }
 /*
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
 }
