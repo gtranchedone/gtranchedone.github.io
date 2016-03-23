@@ -29,6 +29,7 @@ collections:
     output: true
 
 gems:
+  - jekyll-paginate
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
