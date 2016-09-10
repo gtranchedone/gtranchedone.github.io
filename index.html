@@ -3,23 +3,16 @@ id: Home
 layout: page
 style: index.css
 title: Gianluca Tranchedone
+show_footer: false
 ---
 <div class="centered_content_container" id="main">
 	<div class="centered_content">
 		<div id="intro">
 			<img class="profile_picture" src="http://www.gravatar.com/avatar/2b98c09b232d45d7b03fd6804ed23e40?s=400" alt="Gianluca's Profile Picture" />
-			<h1>Hi! My name is Gianluca Tranchedone</h1>
+			<h1>Hello, I'm Gianluca.</h1>
 			<h3>I can help you build awesome iOS, Apple Watch, Mac and Ruby on Rails apps.</h3>
 		</div>
 		{% include social_links.html %}
-		<a href="#posts" class="slide-button">
-    		<img id="arrow_down" src="{{ site.imagesurl }}index_main_arrow_down.png" width="28px">
-        </a>
+    <a class="btn btn-lg btn-info" href="https://medium.com/@gtranchedone">Read my articles on Medium</a>
 	</div>
 </div>
-<section class="container" id="posts">
-    {% for post in site.posts limit: 5 offset:0 %}
-    	{% include blog_excerpt.html param=post %}
-	{% endfor %}
-	<a href="/blog">Read all blog posts</a>
-</section>

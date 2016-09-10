@@ -1,5 +1,6 @@
 ---
 ---
+@import "variables";
 
 /*****************************************************************************/
 /*
@@ -8,82 +9,80 @@
 /*****************************************************************************/
 
 .centered_content_container {
-	display: table;
-	width: 100%;
-	min-height: 100%;
-	color: white;
-	text-align: center;
-	background-color: #FC6536;
-}
-
-.centered_content {
-   display: table-cell;
-   text-align: center;
-   vertical-align: middle;
-   padding: 20px;
+  color: white;
+  background-color: $brand-color;
 }
 
 #intro {
-    position: relative;
-    text-align: center;
-	margin: 0.5em auto;
-	max-width: 750px;
-    
-    h1 {
-	    padding: 0px;
-        margin: 0.3em;
-        color: inherit;
-        font-size: 42px;
-        text-transform: none;
-    }
+  position: relative;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 750px;
 
-    h3 {
-        padding: 0px;
-	    margin: 0.3em;
-        color: inherit;
-        font-size: 28px;
-        font-weight: 300;
-        line-height: normal;
-        text-transform: none;
-    }
-    
-    p {
-	    margin: 0.3em;
-    }
-    
-    .profile_picture {
-	    border: 2px white solid;
-	    border-radius: 50px;
-	    margin: 0.3em auto;
-	    width: 100px;
-	    height: auto;
-    }
+  h1 {
+    padding: 0px;
+    margin: 0.3em;
+    color: inherit;
+    font-size: 42px;
+    text-transform: none;
+  }
+
+  h3 {
+    padding: 0px;
+    margin: 0.3em;
+    color: inherit;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: none;
+  }
+
+  p {
+    margin: 0.3em;
+  }
+
+  .profile_picture {
+    border: 2px white solid;
+    border-radius: 50px;
+    margin: 0.3em auto;
+    width: 100px;
+    height: auto;
+  }
 }
 
 #main {
-    a {
-	    color: #F8C72E;
-	    
-	    &:hover {
-            color: #44E9BC;
-        }
-        
-        &:visited {
-            color: #F8C72E;
-        }
+  a {
+    color: #F8C72E;
 
-        &:visited:hover {
-            color: #44E9BC;
-        }
+    &:hover {
+      color: #44E9BC;
     }
-}
 
-#social {
-	margin: 0.5em;
+    &:visited {
+      color: #F8C72E;
+    }
+
+    &:visited:hover {
+      color: #44E9BC;
+    }
+
+  }
+
+  .btn-lg {
+    color: inherit;
+    &:active, &:hover, &:visited, &:visited:hover {
+      color: inherit;
+    }
+  }
+
+  .btn-info {
+    background-color: $brand-color;
+    border-color: white;
+  }
 }
 
 #arrow_down {
-	margin: 0.5em auto;
+  margin: 0.5em auto;
 }
 
 /*****************************************************************************/
@@ -93,11 +92,11 @@
 /*****************************************************************************/
 
 .socialButton {
-	color: white;
-    
-    &:hover {
-	    color: #F8C72E;
-    }
+  color: white;
+
+  &:hover {
+    color: #F8C72E;
+  }
 }
 
 /*****************************************************************************/
@@ -107,7 +106,7 @@
 /*****************************************************************************/
 
 #posts {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 /*****************************************************************************/
@@ -117,19 +116,19 @@
 /*****************************************************************************/
 
 @media only screen and (max-width: 568px) {
-    
-    #intro {
-        h1 {
-            font-size: 24px;
-        }
-        
-        h3 {
-            font-size: 24px;
-        }
+
+  #intro {
+    h1 {
+      font-size: 24px;
     }
-    
-    .slide-button {
-    	display: none;
-	}
-    
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+
+  .slide-button {
+    display: none;
+  }
+
 }
