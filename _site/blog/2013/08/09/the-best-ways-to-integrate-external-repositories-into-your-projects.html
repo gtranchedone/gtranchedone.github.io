@@ -100,14 +100,14 @@
 <p>So, you&#39;re using Git and have projects that you want to integrate in one of your own. It doesn&#39;t really matter whether those projects belong to you or other developers: what matters is that they must also be stored in Git repositories. If this requirements are satisfied you&#39;re ready to integrate other repositories into your own using Git Submodule.</p>
 
 <p>Git Submodule is a feature of Git that allows us to achieve what I&#39;ve just described. What it does is simply to store a reference to external repositories in a file, keeping their trees apart from your own. This means that all changes to those trees can be fetched as usual using the command &#39;git pull&#39;. Adding a submodule to your project is also trivial: you just have to type in the Terminal</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cd [your repository folder]
+<div class="highlight"><pre><code class="language-" data-lang="">cd [your repository folder]
 git submodule add [repository url] [path where you want to store the submodule]
 </code></pre></div>
 <p>Git will clone the repository at the specified path and of course make it a submodule of your repository. You just need to execute a couple of other commands, namely</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git submodule update --init [path]
+<div class="highlight"><pre><code class="language-" data-lang="">git submodule update --init [path]
 </code></pre></div>
 <p>and optionally</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cd [the submodule folder]
+<div class="highlight"><pre><code class="language-" data-lang="">cd [the submodule folder]
 git checkout [branch]
 </code></pre></div>
 <p>So far so good, but Git Submodule is not all a bed of roses. Don&#39;t mistake me, it&#39;s a great tool, I&#39;ve been using it in all the projects I&#39;ve worked on for the past 3 years, and I&#39;m still using it for most of them. Unfortunately, though, it comes with a couple of drawbacks:</p>
@@ -133,18 +133,18 @@ git checkout [branch]
 <p>This article doesn&#39;t want to be a comprehensive guide or tutorial on CocoaPods - a dedicated article may follow shortly, though - this is just an introduction to it written in order to discuss why you should consider using it in your projects. Therefore, just like I did with Git Submodule, I&#39;m just going to briefly tell you how to install CocoaPods on your machine and how to add your first dependencies to your project. The same instructions can be found on the CocoaPods&#39;s home page.</p>
 
 <p>To install CocoaPods, open the Terminal and type the following commands:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">[sudo] gem install cocoapods
+<div class="highlight"><pre><code class="language-" data-lang="">[sudo] gem install cocoapods
 pod setup
 </code></pre></div>
 <p>Now, go to your project&#39;s folder and create an empty text file called &#39;Podfile&#39; (the extension should be omitted, therefore it&#39;s better to simply write the command &#39;touch Podfile&#39; in a Terminal window to create it). CocoaPods will use this file to know what dependencies to add/update/remove to/from your project. Now, open the Podfile and add the following text in it:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">platform :ios, &#39;6.1&#39;
-pod &#39;AFNetworking&#39;
-pod &#39;MagicalRecord&#39;, &#39;~&gt; 2.1&#39;
+<div class="highlight"><pre><code class="language-" data-lang="">platform :ios, '6.1'
+pod 'AFNetworking'
+pod 'MagicalRecord', '~&gt; 2.1'
 </code></pre></div>
 <p>The first line of the file specifies the platform and version of your project. The second line specifies you want AFNetworking as a dependency. For AFNetworking, the latest available version will be used. The third line adds MagicalRecord as a second dependency, but in this case, using the specifier ~&gt; followed by a version number, we told CocoaPods that we want that version of the dependency and all the minor updates. In our example, therefore, MagicalRecord 2.1 will be downloaded and all subsequent versions up to but not including version 3.0. This is particularly useful to prevent that a major update to a Pod brakes your code or otherwise requires a major maintenance effort. You can find more information about the structure of the Podfile and what are the possible attributes you can add to each Pod here.</p>
 
 <p>Now, close the file and go back to the Terminal. We&#39;re done with the preparations and it&#39;s time to actually install our dependencies. Type the command</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">pod install
+<div class="highlight"><pre><code class="language-" data-lang="">pod install
 </code></pre></div>
 <p>This command tells CocoaPods to install all the dependencies contained in the Podfile. This command, as previously explained, will download the pods, create a project containing either a single library with all the dependencies or a single library for each of your dependencies, create or update an Xcode Workspace called as your project (e.g. &#39;MyProject.workspace) if needed, and add both your project and the CocoaPods project to it. If you previously had done this operation and modified the Podfile, any new dependency will be added and all the removed ones removed.</p>
 
@@ -156,7 +156,7 @@ pod &#39;MagicalRecord&#39;, &#39;~&gt; 2.1&#39;
 
 <p>pod &#39;MyLibrary&#39;, :podspec =&gt; &#39;config/pods/MyLibrary.podspec&#39;<br>
 Another commonly asked question is how to integrate a local Pod in your project while still working on the Pod, or how to work on a local copy of a Pod. Well, CocoaPods got you covered for this situations as well with Local Pods! To add a Local Pod, you simply declare it in your Podfile as follows:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">pod &#39;MyPod&#39;, :path =&gt; &#39;~/[some path]/MyPod/&#39;, :branch =&gt; &#39;develop&#39;
+<div class="highlight"><pre><code class="language-" data-lang="">pod 'MyPod', :path =&gt; '~/[some path]/MyPod/', :branch =&gt; 'develop'
 </code></pre></div>
 <h2>CocoaPods Recap</h2>
 

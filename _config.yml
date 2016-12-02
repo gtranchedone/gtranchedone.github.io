@@ -7,7 +7,7 @@ redcarpet:
     - no_intra_emphasis
     - autolink
     - strikethrough
-highlighter: pygments
+highlighter: rouge
 encoding: utf-8
 safe: false
 lsi: false

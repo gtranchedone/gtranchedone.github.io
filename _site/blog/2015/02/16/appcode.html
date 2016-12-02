@@ -139,18 +139,18 @@
 
 <p>to</p>
 
-<figure class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="n">variable</span> <span class="o">=</span> <span class="n">someCondition</span> <span class="o">?</span> <span class="nl">x</span> <span class="p">:</span> <span class="n">y</span><span class="p">;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="n">variable</span> <span class="o">=</span> <span class="n">someCondition</span> <span class="p">?</span> <span class="n">x</span> <span class="p">:</span> <span class="n">y</span><span class="p">;</span></code></pre></figure>
 
 <p>for simple if/else statements.</p>
 
 <p>Another example is with unreachable code (code that will never get executed maybe because some condition can be never met)</p>
 
-<figure class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="c1">// The following code will be highlighted by AppCode</span>
-<span class="c1">// with a warning for unreachable code</span>
-<span class="kt">BOOL</span> <span class="n">someCondition</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
+<figure class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="c1">// The following code will be highlighted by AppCode
+// with a warning for unreachable code
+</span><span class="n">BOOL</span> <span class="n">someCondition</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
 <span class="k">if</span> <span class="p">(</span><span class="n">someCondition</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// some code</span>
-<span class="p">}</span></code></pre></figure>
+    <span class="c1">// some code
+</span><span class="p">}</span></code></pre></figure>
 
 <p>Other suggestions include localising strings. Move the cursor on a string and AppCode will suggest to localise it. It will help you doing so by wrapping the string in an <code>NSLocalizedString()</code> macro, letting you edit the key and adding the localisation to all Localisable.strings files in your project.</p>
 
