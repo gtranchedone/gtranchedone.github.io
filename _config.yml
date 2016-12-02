@@ -1,5 +1,5 @@
 timezone: Europe/London
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
   extensions:
     - footnotes

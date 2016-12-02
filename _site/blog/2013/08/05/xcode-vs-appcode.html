@@ -91,78 +91,78 @@
 	<section class="post">
 		<p><em>Edit (16 Feb 2015): A long time has passed since I originally wrote this post and I believe it can very well be considered out of date. As a matter of fact I’ve recently published a new post titled “<a href="/blog/2015/02/16/appcode">Why AppCode has become my IDE of choice</a>”.</em></p>
 
-<p>A few months ago I heard about AppCode, an IDE (Integrated Development Environment) for Objective-C developed by the Czech software studio <a href="http://www.jetbrains.com/">JetBrains</a>. JetBrains is a well-known company in the software development community for their other IDEs (IntelliJ Idea for Java, PyCharm for Python, RubyMine for Ruby, etc.) and for their Continuous Integration products. Many Java developers favor JetBrains&#39;s IDE over Eclipse, especially since JetBrains released a &#39;Community Supported&#39;, and thus free, version of IntelliJ Idea. Moreover, Google recently partnered with the Czech company to create a dedicated IDE for Android, which is basically going to be a simplified version of IntelliJ: <a href="http://ccbeans.me/179eTAk">Android Studio</a>.</p>
+<p>A few months ago I heard about AppCode, an IDE (Integrated Development Environment) for Objective-C developed by the Czech software studio <a href="http://www.jetbrains.com/">JetBrains</a>. JetBrains is a well-known company in the software development community for their other IDEs (IntelliJ Idea for Java, PyCharm for Python, RubyMine for Ruby, etc.) and for their Continuous Integration products. Many Java developers favor JetBrains’s IDE over Eclipse, especially since JetBrains released a ‘Community Supported’, and thus free, version of IntelliJ Idea. Moreover, Google recently partnered with the Czech company to create a dedicated IDE for Android, which is basically going to be a simplified version of IntelliJ: <a href="http://ccbeans.me/179eTAk">Android Studio</a>.</p>
 
-<p>Fellow Cocoa(-Touch) developers, at least from what I could see or hear, are either uninterested or very excited about AppCode. As for myself, I&#39;ve had mixed feelings about trying AppCode for development with Objective-C, but after having spent some time gathering more information about it, I&#39;ve decided to give AppCode a try by taking advantage of the 30-days free trial being offered by JetBrains. I&#39;ve used AppCode for the entire trial period now and I&#39;d like to share my thoughts on it… and as I&#39;ve spoiled from this post&#39;s title, I&#39;m going to explain why I&#39;m not going to use it anymore.</p>
+<p>Fellow Cocoa(-Touch) developers, at least from what I could see or hear, are either uninterested or very excited about AppCode. As for myself, I’ve had mixed feelings about trying AppCode for development with Objective-C, but after having spent some time gathering more information about it, I’ve decided to give AppCode a try by taking advantage of the 30-days free trial being offered by JetBrains. I’ve used AppCode for the entire trial period now and I’d like to share my thoughts on it… and as I’ve spoiled from this post’s title, I’m going to explain why I’m not going to use it anymore.</p>
 
 <!-- more -->
 
-<h2>Price</h2>
+<h2 id="price">Price</h2>
 
-<p>As you might have guessed by now, AppCode, as all other JetBrain&#39;s products, is a payed software. It&#39;s sold with a per-version licence for a premium of 99$ (76£ or 89€) for a personal licence. Students, teachers and no-profit institutions can get a licence for much less or entirely for free (but they need to apply for it). This kind of licence also implies that when a new version of the IDE gets published you&#39;ll get it for free if you purchased the full licence within the previous 12 months, otherwise you&#39;ll have to pay an extra 59$ (45£ or 53€) for each major update.</p>
+<p>As you might have guessed by now, AppCode, as all other JetBrain’s products, is a payed software. It’s sold with a per-version licence for a premium of 99$ (76£ or 89€) for a personal licence. Students, teachers and no-profit institutions can get a licence for much less or entirely for free (but they need to apply for it). This kind of licence also implies that when a new version of the IDE gets published you’ll get it for free if you purchased the full licence within the previous 12 months, otherwise you’ll have to pay an extra 59$ (45£ or 53€) for each major update.</p>
 
-<p>As a matter of fact, AppCode might get quite expensive for companies or small development studios with few employees and if you also use other JetBrains&#39; products the overall cost is going to get quite high. Like many of you I honestly prefer Xcode for being free and available on the Mac App Store (which also means easy installation and updates). Xcode is thus the clear winner on this side. Moreover, all other Apple&#39;s amazing tools like Instruments or FileMerge come with Xcode and therefore are free as well.</p>
+<p>As a matter of fact, AppCode might get quite expensive for companies or small development studios with few employees and if you also use other JetBrains’ products the overall cost is going to get quite high. Like many of you I honestly prefer Xcode for being free and available on the Mac App Store (which also means easy installation and updates). Xcode is thus the clear winner on this side. Moreover, all other Apple’s amazing tools like Instruments or FileMerge come with Xcode and therefore are free as well.</p>
 
-<h2>UI and Usability</h2>
+<h2 id="ui-and-usability">UI and Usability</h2>
 
-<p>AppCode is written in Java, reusing many components of other JetBrains&#39; IDEs. Although perfectly understandable, this has the side effect of making AppCode slower than Xcode, especially if you compare it with the Xcode 5 Developer Preview (which is much faster and stable than Xcode 4). AppCode&#39;s slowness is especially noticeable when opening or creating a project.</p>
+<p>AppCode is written in Java, reusing many components of other JetBrains’ IDEs. Although perfectly understandable, this has the side effect of making AppCode slower than Xcode, especially if you compare it with the Xcode 5 Developer Preview (which is much faster and stable than Xcode 4). AppCode’s slowness is especially noticeable when opening or creating a project.</p>
 
-<p>Moreover, being build on top of the base for JetBrains&#39; other cross-platform IDEs, AppCode&#39;s UI is all but native. It can feel very tight as it has lots of controls squeezed together around the code editor. The only nice feature is the availability of a &#39;TODO&#39; tab that&#39;s automatically filled with the content of all comments starting with &#39;TODO:&#39; (e.g. &#39;// TODO: improve this bit of logic&#39; would appear in this tab as a TODO item). AppCode also has tons of settings, which some people might appreciate, but it makes it very hard to understand what the IDE can do and how to properly customize it. The code editor itself also doesn&#39;t leave quite a nice experience when typing code compared with Xcode: it just doesn&#39;t feel right.</p>
+<p>Moreover, being build on top of the base for JetBrains’ other cross-platform IDEs, AppCode’s UI is all but native. It can feel very tight as it has lots of controls squeezed together around the code editor. The only nice feature is the availability of a ‘TODO’ tab that’s automatically filled with the content of all comments starting with ‘TODO:’ (e.g. ‘// TODO: improve this bit of logic’ would appear in this tab as a TODO item). AppCode also has tons of settings, which some people might appreciate, but it makes it very hard to understand what the IDE can do and how to properly customize it. The code editor itself also doesn’t leave quite a nice experience when typing code compared with Xcode: it just doesn’t feel right.</p>
 
-<p>The biggest drawback for AppCode, however, is that it relies heavily on Xcode for much of what it can do. First and most of all, you&#39;ve got to have Xcode installed on your machine in order for AppCode to function at all. AppCode, in fact, has to ask Xcode&#39;s folder structure for the available SDKs, project templates, and the iPhone Simulators. Moreover, editing XIBs, Storyboards, and Core Data Model files cannot be done in AppCode. Trying to open such files with AppCode will redirect you to Xcode. If you add to this the new fantastic features for images and game projects that Xcode 5 will support (which will be available though custom files formats in a visual editor), the gap in usability will become even larger (Xcode 5 is still in Developer Preview and under NDA, therefore I cannot fully talk about it yet).</p>
+<p>The biggest drawback for AppCode, however, is that it relies heavily on Xcode for much of what it can do. First and most of all, you’ve got to have Xcode installed on your machine in order for AppCode to function at all. AppCode, in fact, has to ask Xcode’s folder structure for the available SDKs, project templates, and the iPhone Simulators. Moreover, editing XIBs, Storyboards, and Core Data Model files cannot be done in AppCode. Trying to open such files with AppCode will redirect you to Xcode. If you add to this the new fantastic features for images and game projects that Xcode 5 will support (which will be available though custom files formats in a visual editor), the gap in usability will become even larger (Xcode 5 is still in Developer Preview and under NDA, therefore I cannot fully talk about it yet).</p>
 
 <p>Again Xcode is the clear winner on this side as well.</p>
 
-<h2>Refactoring and Autocompletion</h2>
+<h2 id="refactoring-and-autocompletion">Refactoring and Autocompletion</h2>
 
-<p>Despite all the above, the strongest point of AppCode is for sure it&#39;s refactoring feature set. JetBrains&#39; IDEs have always been known for the extremely good support for refactoring and AppCode doesn&#39;t disappoint expectations in this area.</p>
+<p>Despite all the above, the strongest point of AppCode is for sure it’s refactoring feature set. JetBrains’ IDEs have always been known for the extremely good support for refactoring and AppCode doesn’t disappoint expectations in this area.</p>
 
-<p><img src="/assets/images//posts/2013-08-05-xcode-vs-appcode/app_code-methods-generation.png" alt="App Code Method Generation"></p>
+<p><img src="/assets/images//posts/2013-08-05-xcode-vs-appcode/app_code-methods-generation.png" alt="App Code Method Generation" /></p>
 
-<p>There are so many refactoring features in AppCode it&#39;s impossible to cover them all in one post. Therefore I&#39;m only going to mention my favourites:</p>
+<p>There are so many refactoring features in AppCode it’s impossible to cover them all in one post. Therefore I’m only going to mention my favourites:</p>
 
 <ul>
-<li>Creation of undeclared methods: if you&#39;re writing some code and decide you&#39;re going to wrap part of it in a new method, you can start calling that method and have AppCode create it for you.</li>
-<li>Creation of undeclared ivars and properties: just as for methods, you can use undeclared ivars and properties and have AppCode declare them for you.</li>
-<li>&quot;CamelHumps&quot; and &quot;Middle Matching&quot; autocompletion.</li>
-<li>Automatic Import and Import Optimisation: When you start using a class that is not yet imported, AppCode will suggest you to add the corresponding import automatically, or even add the import when you complete code. Moreover, with a number of code changes, some imports may become unused, these will be highlighted in the editor. To easily clean up your code, use Optimize Imports action that will remove unused, excessive and duplicating imports in your project.</li>
-<li>AppCode can automatically surround highlighted code in if/else, while, for statements and the like.
+  <li>Creation of undeclared methods: if you’re writing some code and decide you’re going to wrap part of it in a new method, you can start calling that method and have AppCode create it for you.</li>
+  <li>Creation of undeclared ivars and properties: just as for methods, you can use undeclared ivars and properties and have AppCode declare them for you.</li>
+  <li>“CamelHumps” and “Middle Matching” autocompletion.</li>
+  <li>Automatic Import and Import Optimisation: When you start using a class that is not yet imported, AppCode will suggest you to add the corresponding import automatically, or even add the import when you complete code. Moreover, with a number of code changes, some imports may become unused, these will be highlighted in the editor. To easily clean up your code, use Optimize Imports action that will remove unused, excessive and duplicating imports in your project.</li>
+  <li>AppCode can automatically surround highlighted code in if/else, while, for statements and the like.
 Refactoring is one of the key features of any decent IDE. Xcode only support some basic refactoring features and they not always work as they should. AppCode has without any doubt the best refactoring tools a developer could ever dream of. Xcode has still a long way to go on this.</li>
 </ul>
 
-<h2>Unit Testing</h2>
+<h2 id="unit-testing">Unit Testing</h2>
 
-<p>AppCode does have support for Unit Testing. In fact it support both the OCUnit and Kiwi testing frameworks. I&#39;m a bit disappointed, tough, that unlike the premium version of JetBrains&#39; IntelliJ IDE for Java, AppCode doesn&#39;t seem to have a code coverage feature. That would have made the difference between AppCode and Xcode, for me at least, and would have probably made me use AppCode instead of Xcode, if not for everything else, but for unit testing at least.</p>
+<p>AppCode does have support for Unit Testing. In fact it support both the OCUnit and Kiwi testing frameworks. I’m a bit disappointed, tough, that unlike the premium version of JetBrains’ IntelliJ IDE for Java, AppCode doesn’t seem to have a code coverage feature. That would have made the difference between AppCode and Xcode, for me at least, and would have probably made me use AppCode instead of Xcode, if not for everything else, but for unit testing at least.</p>
 
-<p>As it is at the time of this writing I don&#39;t feel either Xcode or AppCode to be particularly superior to each other on this field but AppCode has a nice refactoring feature that allows to create a test class with just a couple of clicks from an existing class&#39; interface or implementation file.</p>
+<p>As it is at the time of this writing I don’t feel either Xcode or AppCode to be particularly superior to each other on this field but AppCode has a nice refactoring feature that allows to create a test class with just a couple of clicks from an existing class’ interface or implementation file.</p>
 
-<h2>Version Control</h2>
+<h2 id="version-control">Version Control</h2>
 
-<p>Also on the version control side, I feel I can give no more than a tie to both IDEs. They both support the most common used VCS like SVN and Git. I don&#39;t personally use this features neither in Xcode nor AppCode: I like to use the Terminal or dedicated tools like <a href="https://www.atlassian.com/software/sourcetree/overview">SourceTree</a> to manage my repositories.</p>
+<p>Also on the version control side, I feel I can give no more than a tie to both IDEs. They both support the most common used VCS like SVN and Git. I don’t personally use this features neither in Xcode nor AppCode: I like to use the Terminal or dedicated tools like <a href="https://www.atlassian.com/software/sourcetree/overview">SourceTree</a> to manage my repositories.</p>
 
-<h2>General</h2>
+<h2 id="general">General</h2>
 
 <p>Mixed Pros for AppCode:</p>
 
 <ul>
-<li>Highly customizable</li>
-<li>Has nice color schemes like the &#39;Darcula&#39; one.</li>
+  <li>Highly customizable</li>
+  <li>Has nice color schemes like the ‘Darcula’ one.</li>
 </ul>
 
 <p>Mixed Cons for AppCode:</p>
 
 <ul>
-<li>AppCode&#39;s editor is quite clumsy with code indentation. Unlike Xcode, it doesn&#39;t keep you for jumping to any column in any editor&#39;s row. If you&#39;re only used to Xcode it will feel quite awkward to write code in AppCode at the beginning. If you use other JetBrains&#39; IDEs though, code editing works just the same way as those other IDEs and you won&#39;t have any problem with it.</li>
-<li>Documentation looks better in Xcode and it&#39;s much more intuitive to have it pop in while writing or highlighting a method or class name.</li>
+  <li>AppCode’s editor is quite clumsy with code indentation. Unlike Xcode, it doesn’t keep you for jumping to any column in any editor’s row. If you’re only used to Xcode it will feel quite awkward to write code in AppCode at the beginning. If you use other JetBrains’ IDEs though, code editing works just the same way as those other IDEs and you won’t have any problem with it.</li>
+  <li>Documentation looks better in Xcode and it’s much more intuitive to have it pop in while writing or highlighting a method or class name.</li>
 </ul>
 
-<h2>Conclusion</h2>
+<h2 id="conclusion">Conclusion</h2>
 
-<p>AppCode is generally a good IDE but the UI and performance are not ideal. Add to that the need to have Xcode installed on your machine and the lack of support for editing some key files like Storyboards and Core Data Models and you won&#39;t really have reasons not to use Xcode as your primary editor. Moreover, Instruments and other performance tuning tools are only available through Apple&#39;s IDE. <strong>Why then use a different app if you&#39;re coming back to Xcode most of the time anyway?</strong> Is some cool refactoring feature the only reason to switch? I definitely don&#39;t think so.</p>
+<p>AppCode is generally a good IDE but the UI and performance are not ideal. Add to that the need to have Xcode installed on your machine and the lack of support for editing some key files like Storyboards and Core Data Models and you won’t really have reasons not to use Xcode as your primary editor. Moreover, Instruments and other performance tuning tools are only available through Apple’s IDE. <strong>Why then use a different app if you’re coming back to Xcode most of the time anyway?</strong> Is some cool refactoring feature the only reason to switch? I definitely don’t think so.</p>
 
-<p>Some people also argue in favour of Xcode that all articles and tutorials on the web for Cocoa(-Touch) development use it - quite understandably - but I don&#39;t believe that is a real pro in favour of Xcode over any other editor. What I&#39;d add to what I&#39;ve already said, is that Apple is spending a great deal of effort on Xcode and we saw that both with Xcode 4 and, for those of you who could, with Xcode 5. I&#39;m sure more has yet to come, especially in the Unit Testing and Continuous Integration areas. Moreover, any new feature that comes with it or with Objective-C itself, are under Apple&#39;s control, which gives you another reason to stick with their tools.</p>
+<p>Some people also argue in favour of Xcode that all articles and tutorials on the web for Cocoa(-Touch) development use it - quite understandably - but I don’t believe that is a real pro in favour of Xcode over any other editor. What I’d add to what I’ve already said, is that Apple is spending a great deal of effort on Xcode and we saw that both with Xcode 4 and, for those of you who could, with Xcode 5. I’m sure more has yet to come, especially in the Unit Testing and Continuous Integration areas. Moreover, any new feature that comes with it or with Objective-C itself, are under Apple’s control, which gives you another reason to stick with their tools.</p>
 
-<p>Those are the reasons why I don&#39;t believe I&#39;ll ever go back to AppCode again. If you have any thoughts on this argument I&#39;d like to hear them in the comments below!</p>
+<p>Those are the reasons why I don’t believe I’ll ever go back to AppCode again. If you have any thoughts on this argument I’d like to hear them in the comments below!</p>
 
 	</section>
 	<footer class="post_footer">
