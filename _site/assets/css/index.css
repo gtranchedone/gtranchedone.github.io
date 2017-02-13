@@ -5,27 +5,26 @@
 /*****************************************************************************/
 .centered_content_container {
   color: white;
-  background-color: #FC6536; }
+  background-color: #FE522C; }
 
 #intro {
   position: relative;
   text-align: center;
   margin: 20px auto;
   max-width: 750px; }
-  #intro h1 {
+  #intro h1, #intro h2, #intro h3 {
     padding: 0px;
     margin: 0.3em;
     color: inherit;
-    font-size: 42px;
-    text-transform: none; }
-  #intro h3 {
-    padding: 0px;
-    margin: 0.3em;
-    color: inherit;
-    font-size: 28px;
-    font-weight: 300;
     line-height: normal;
     text-transform: none; }
+  #intro h1 {
+    font-size: 42px; }
+  #intro h2 {
+    font-weight: normal; }
+  #intro h3 {
+    font-size: 28px;
+    font-weight: 300; }
   #intro p {
     margin: 0.3em; }
   #intro .profile_picture {
@@ -35,21 +34,21 @@
     width: 100px;
     height: auto; }
 
-#main a {
-  color: #F8C72E; }
-  #main a:hover {
-    color: #44E9BC; }
-  #main a:visited {
-    color: #F8C72E; }
-  #main a:visited:hover {
-    color: #44E9BC; }
-#main .btn-lg {
+#main a, #main a:visited {
+  color: #0E6192;
+  text-decoration: none;
+  font-weight: 600; }
+  #main a:hover, #main a:visited:hover {
+    color: #FCA336; }
+#main a.btn, #main a .socialButton {
+  font-weight: normal; }
+  #main a.btn:hover, #main a.btn:visited:hover, #main a .socialButton:hover, #main a .socialButton:visited:hover {
+    color: #FCA336; }
+#main a.btn-lg {
   color: inherit; }
-  #main .btn-lg:active, #main .btn-lg:hover, #main .btn-lg:visited, #main .btn-lg:visited:hover {
-    color: inherit; }
 #main .btn-info {
-  background-color: #FC6536;
-  border-color: white; }
+  background-color: #FE522C;
+  border-color: inherit; }
 
 #arrow_down {
   margin: 0.5em auto; }
@@ -62,7 +61,7 @@
 .socialButton {
   color: white; }
   .socialButton:hover {
-    color: #F8C72E; }
+    color: inherit; }
 
 /*****************************************************************************/
 /*
