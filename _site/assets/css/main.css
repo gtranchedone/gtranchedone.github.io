@@ -77,11 +77,11 @@
 /*
 /*****************************************************************************/
 body {
-  background-color: #FEFEFE;
+  background-color: #6F737E;
   line-height: 1.5;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 20px;
-  color: #666666;
+  color: white;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   -webkit-hyphens: none;
@@ -103,17 +103,17 @@ a, a:visited {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
-  color: #FE522C;
+  color: white;
   text-decoration: none;
   cursor: pointer; }
   a h1, a:visited h1 {
-    color: #444444; }
+    color: white; }
 
 a:hover, a:visited:hover, a:hover h1, a:visited:hover h1 {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
-  color: #48ACB5; }
+  color: #FE522C; }
 
 h1 {
   margin: 0px;
@@ -121,10 +121,10 @@ h1 {
   font-size: 44px;
   font-weight: 900;
   line-height: normal;
-  color: #444444;
+  color: white;
   display: inline-block; }
   h1 a {
-    color: #444444; }
+    color: white; }
 
 h2 {
   color: #4E5860;
@@ -140,7 +140,7 @@ h3 {
 
 h4 {
   margin: 0px;
-  color: #666666;
+  color: white;
   font-size: 16.4px;
   font-weight: 300; }
 
@@ -178,15 +178,15 @@ iframe {
 /*
 /*****************************************************************************/
 *::selection {
-  background: #F8C72E;
+  background: white;
   color: #FFFFFF; }
 
 *::-moz-selection {
-  background: #F8C72E;
+  background: white;
   color: #FFFFFF; }
 
 *::-webkit-selection {
-  background: #F8C72E;
+  background: white;
   color: #FFFFFF; }
 
 /*****************************************************************************/
@@ -327,7 +327,7 @@ blockquote {
   font-style: italic;
   text-align: justify;
   font-weight: normal;
-  color: #FE522C;
+  color: white;
   font-size: 30px; }
 
 cite {

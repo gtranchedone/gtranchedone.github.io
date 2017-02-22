@@ -1,5 +1,5 @@
-$brand-color: #FE522C;
-$brand-info: #F8C72E;
+$brand-color: white;
+$brand-info: white;
 
 $base-font-family:      'Lato', Helvetica, Arial, sans-serif;
 $base-font-size:        20px;
@@ -7,16 +7,17 @@ $base-line-height:      1.5;
 
 $spacing-unit:          30px;
 
-$text-color:		    	#666666;
-$details-text-color:	#666666;
-$titles-color:			  #444444;
+$background-color:		#6F737E;
+
+$text-color:		    	white;
+$details-text-color:	white;
+$titles-color:			  white;
 $quotes-large-color:	$brand-color;
 $links-color-normal:	$brand-color;
-$links-color-hover:		#48ACB5;
-$background-color:		#FEFEFE;
+$links-color-hover:		#FE522C;
 
-$alt-links-color-normal: #0E6192;
-$alt-links-color-hover: #FCA336;
+$alt-links-color-normal: white;
+$alt-links-color-hover: #FE522C;
 
 $text-highlight-color:		   	#FFFFFF;
 $highlight-background-color: 	$brand-info;

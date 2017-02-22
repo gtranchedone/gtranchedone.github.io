@@ -5,7 +5,7 @@
 /*****************************************************************************/
 .centered_content_container {
   color: white;
-  background-color: #FE522C; }
+  background-color: #6F737E; }
 
 #intro {
   position: relative;
@@ -35,20 +35,23 @@
     height: auto; }
 
 #main a, #main a:visited {
-  color: #0E6192;
+  color: white;
   text-decoration: none;
   font-weight: 600; }
   #main a:hover, #main a:visited:hover {
-    color: #FCA336; }
+    color: #FE522C; }
 #main a.btn, #main a .socialButton {
   font-weight: normal; }
   #main a.btn:hover, #main a.btn:visited:hover, #main a .socialButton:hover, #main a .socialButton:visited:hover {
-    color: #FCA336; }
+    color: #FE522C; }
 #main a.btn-lg {
   color: inherit; }
 #main .btn-info {
-  background-color: #FE522C;
-  border-color: inherit; }
+  background-color: #6F737E;
+  border-color: white;
+  border-radius: 100px; }
+  #main .btn-info:hover {
+    border-color: #FE522C; }
 
 #arrow_down {
   margin: 0.5em auto; }

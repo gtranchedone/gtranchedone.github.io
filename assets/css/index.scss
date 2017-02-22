@@ -10,7 +10,7 @@
 
 .centered_content_container {
   color: white;
-  background-color: $brand-color;
+  background-color: $background-color;
 }
 
 #intro {
@@ -78,8 +78,15 @@
   }
 
   .btn-info {
-    background-color: $brand-color;
-    border-color: inherit;
+    background-color: $background-color;
+    border-color: $links-color-normal;
+    
+    // rounder and rounder
+    border-radius: 100px;
+    
+    &:hover {
+      border-color: $links-color-hover;
+    }
   }
 }
 
