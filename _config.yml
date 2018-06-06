@@ -28,7 +28,7 @@ collections:
   authors:
     output: true
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-mentions
   - jekyll-redirect-from

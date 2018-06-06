@@ -95,29 +95,26 @@
 
 <p>The first version control system I’ve used has been SVN at my day-job. After few months, I discovered and started using Git for my side projects. SVN, although many companies still use it, has grown old, and I find Git to be much more incline to what a modern VCS should be. Therefore in this post I’m only going to cover Git, but, if you still use SVN, you should definitely check <a href="http://svnbook.red-bean.com/en/1.7/svn.advanced.externals.html">SVN Externals</a> and the last part of this post where I talk about CocoaPods which you can use with SVN as well. However, nowadays Git is the most popular version control system thanks to its distributed nature and to services like <a href="https://github.com/">GitHub</a> that make trivial to manage a Git repository, handle pull-requests, comments, issues, etc. Most companies now use Git, especially newly formed ones that have no previous set of data in other system to migrate to Git. Migrating to Git from SVN is actually easier than what you think, GitHub also provides a migration tool, for example. If you’re still using SVN or Mercure you should definitely give Git a try. Jeff Kreeftmeiier wrote a nice article about <a href="http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/">why you should use Git</a> and “The Git Guys” also wrote one about <a href="http://www.gitguys.com/topics/why-use-git-instead-of-a-legacy-version-control-system/">why you should use Git instead of other VCS</a>.</p>
 
-<h2 id="integrating-other-repositories-into-your-own-with-git-submodule">Integrating other repositories into your own with Git Submodule</h2>
+<p>##Integrating other repositories into your own with Git Submodule</p>
 
 <p>So, you’re using Git and have projects that you want to integrate in one of your own. It doesn’t really matter whether those projects belong to you or other developers: what matters is that they must also be stored in Git repositories. If this requirements are satisfied you’re ready to integrate other repositories into your own using Git Submodule.</p>
 
 <p>Git Submodule is a feature of Git that allows us to achieve what I’ve just described. What it does is simply to store a reference to external repositories in a file, keeping their trees apart from your own. This means that all changes to those trees can be fetched as usual using the command ‘git pull’. Adding a submodule to your project is also trivial: you just have to type in the Terminal</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>cd [your repository folder]
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd [your repository folder]
 git submodule add [repository url] [path where you want to store the submodule]
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Git will clone the repository at the specified path and of course make it a submodule of your repository. You just need to execute a couple of other commands, namely</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git submodule update --init [path]
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git submodule update --init [path]
+</code></pre></div></div>
 
 <p>and optionally</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>cd [the submodule folder]
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd [the submodule folder]
 git checkout [branch]
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>So far so good, but Git Submodule is not all a bed of roses. Don’t mistake me, it’s a great tool, I’ve been using it in all the projects I’ve worked on for the past 3 years, and I’m still using it for most of them. Unfortunately, though, it comes with a couple of drawbacks:</p>
 
@@ -133,53 +130,49 @@ git checkout [branch]
 
 <p>There also are a couple of alternatives to Git Submodule. One of the most appealing one is Git Subtree. Nicola Paolucci wrote an interesting article about <a href="http://blogs.atlassian.com/2013/05/alternatives-to-git-submodule-git-subtree/">Git Subtree</a> that you might want to check out.</p>
 
-<h2 id="a-better-integration-tool-for-cocoa-touch-developers-cocoapods">A better integration tool for Cocoa(-Touch) Developers: CocoaPods</h2>
+<p>##A better integration tool for Cocoa(-Touch) Developers: CocoaPods</p>
 
 <p>Cocoa(-Touch) developers have an extra tool at their disposal to integrate other repositories into their own: <a href="http://cocoapods.org/">CocoaPods</a>. CocoaPods is a Ruby gem that aims to be “The best way to manage library dependencies in Objective-C”, and it is! CocoaPods doesn’t actually require the external projects to be stored into Git repositories, it should also work with other VCS. In a nutshell, what it does is getting a list of dependencies you specify in a file called “Podfile” (more about it later) and it generates a new Xcode project containing a static library out of each dependency and adds it to this new project; it then creates a Xcode workspace with your project and the libraries project. The command ‘pod install’ and the workspace will make the dependency between the two projects implicit. Repositories you can use as dependencies, called “pods”, have to have a file in them with extension ‘.podspec’ and they are usually be registered with CocoaPods. Most Open Source projects are available with CocoaPods, so you shouldn’t worry about this at the moment. You can always contribute to unavailable Open Source projects and add a <a href="http://docs.cocoapods.org/specification.html">podspec</a> file to them yourself. Moreover, CocoaPods also supports private pods. Check the <a href="http://cocoapods.org/">CocoaPods official website</a> for more information.</p>
 
-<p>~~In my last post I discussed why you should keep using Xcode and never move to AppCode; here’s another reason: AppCode doesn’t fully support workspaces and you cannot use CocoaPods with it.~~ (Edit: AppCode 2.5+ natively supports CocoaPods.)</p>
+<p><del>In my last post I discussed why you should keep using Xcode and never move to AppCode; here’s another reason: AppCode doesn’t fully support workspaces and you cannot use CocoaPods with it.</del> (Edit: AppCode 2.5+ natively supports CocoaPods.)</p>
 
 <p>This article doesn’t want to be a comprehensive guide or tutorial on CocoaPods - a dedicated article may follow shortly, though - this is just an introduction to it written in order to discuss why you should consider using it in your projects. Therefore, just like I did with Git Submodule, I’m just going to briefly tell you how to install CocoaPods on your machine and how to add your first dependencies to your project. The same instructions can be found on the CocoaPods’s home page.</p>
 
 <p>To install CocoaPods, open the Terminal and type the following commands:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>[sudo] gem install cocoapods
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[sudo] gem install cocoapods
 pod setup
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Now, go to your project’s folder and create an empty text file called ‘Podfile’ (the extension should be omitted, therefore it’s better to simply write the command ‘touch Podfile’ in a Terminal window to create it). CocoaPods will use this file to know what dependencies to add/update/remove to/from your project. Now, open the Podfile and add the following text in it:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>platform :ios, '6.1'
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>platform :ios, '6.1'
 pod 'AFNetworking'
 pod 'MagicalRecord', '~&gt; 2.1'
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The first line of the file specifies the platform and version of your project. The second line specifies you want AFNetworking as a dependency. For AFNetworking, the latest available version will be used. The third line adds MagicalRecord as a second dependency, but in this case, using the specifier ~&gt; followed by a version number, we told CocoaPods that we want that version of the dependency and all the minor updates. In our example, therefore, MagicalRecord 2.1 will be downloaded and all subsequent versions up to but not including version 3.0. This is particularly useful to prevent that a major update to a Pod brakes your code or otherwise requires a major maintenance effort. You can find more information about the structure of the Podfile and what are the possible attributes you can add to each Pod here.</p>
 
 <p>Now, close the file and go back to the Terminal. We’re done with the preparations and it’s time to actually install our dependencies. Type the command</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pod install
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pod install
+</code></pre></div></div>
 
 <p>This command tells CocoaPods to install all the dependencies contained in the Podfile. This command, as previously explained, will download the pods, create a project containing either a single library with all the dependencies or a single library for each of your dependencies, create or update an Xcode Workspace called as your project (e.g. ‘MyProject.workspace) if needed, and add both your project and the CocoaPods project to it. If you previously had done this operation and modified the Podfile, any new dependency will be added and all the removed ones removed.</p>
 
 <p>That’s it, we’re done. From now on, you should only use the workspace created by CocoaPods to work on your project.</p>
 
-<h2 id="working-with-pods">Working with Pods</h2>
+<p>##Working with Pods</p>
 
 <p>One thing to notice is that pods usually come from repositories that were registered with CocoaPods (see the official documentation). What some may miss at first, but that might discover, soon is that not everything is on CocoaPods (yet :) ), especially internal libraries/components. What do you do when this happens? Can you still use CocoaPods for those? Of course you can! You just have to create a podspec for that library yourself! A podspec is a file where you specify information about a Pod. Once you’ve done that you add this new pod in your Podfile as follows:</p>
 
 <p>pod ‘MyLibrary’, :podspec =&gt; ‘config/pods/MyLibrary.podspec’
 Another commonly asked question is how to integrate a local Pod in your project while still working on the Pod, or how to work on a local copy of a Pod. Well, CocoaPods got you covered for this situations as well with Local Pods! To add a Local Pod, you simply declare it in your Podfile as follows:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pod 'MyPod', :path =&gt; '~/[some path]/MyPod/', :branch =&gt; 'develop'
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pod 'MyPod', :path =&gt; '~/[some path]/MyPod/', :branch =&gt; 'develop'
+</code></pre></div></div>
 
-<h2 id="cocoapods-recap">CocoaPods Recap</h2>
+<p>##CocoaPods Recap</p>
 
 <p>As you can see, CocoaPods has many advantages over Git Submodule:</p>
 
@@ -199,7 +192,7 @@ Although I haven’t shown it in this post, you can also target dependencies to 
 
 <p><em>Free Tip: a plugin for Xcode to help you with the basic usage of CocoaPods is available on <a href="https://github.com/kattrali/cocoapods-xcode-plugin?source=c">GitHub</a>.</em></p>
 
-<h2 id="conclusion">Conclusion</h2>
+<p>##Conclusion</p>
 
 <p>Managing dependencies of your projects can be a daunting task and we should take advantage of all the tools at our disposal to make the job as easy as possible. Simply copying sources from project to project is just a waste of time and energy and you won’t benefit from all the community or developer’s support (or your own) to those sources if you don’t have some sort of dependency management system that makes working on them project-independent.</p>
 
